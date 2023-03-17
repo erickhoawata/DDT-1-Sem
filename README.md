@@ -1,9 +1,9 @@
 # DDT-1-Bim
 API do primeiro bimestre
 
-Erick Hideki Oyakawa Awata (SM)
-Ryan Seiji Wakugawa (PO)
-Maria Eduarda Peleteiro Leite (ST)
-Matheus Cipriano Machado (ST)
-Cauã Nascimento Coelho Sbruzi Dezidera (ST)
+Erick Hideki Oyakawa Awata (SM) <br>
+Ryan Seiji Wakugawa (PO) <br>
+Maria Eduarda Peleteiro Leite (ST) <br>
+Matheus Cipriano Machado (ST) <br>
+Cauã Nascimento Coelho Sbruzi Dezidera (ST) <br>
 Pedro Santos Kajiya (ST)
