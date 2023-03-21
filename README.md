@@ -1,6 +1,7 @@
-# DDT-1-Bim
-API do primeiro bimestre
+# DDT-1ºBim
+API do primeiro Bimestre
 
+<h1>Grupo</h1>
 Erick Hideki Oyakawa Awata (SM) <br>
 Ryan Seiji Wakugawa (PO) <br>
 Maria Eduarda Peleteiro Leite (ST) <br>
