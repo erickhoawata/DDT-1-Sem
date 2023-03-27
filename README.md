@@ -1,13 +1,12 @@
 # DDT-1ºBim
 
 **Equipe: <br>**
-Erick Hideki Oyakawa Awata (SM) <br>
-Ryan Seiji Wakugawa (PO) <br>
-Maria Eduarda Peleteiro Leite (ST) <br>
-Matheus Cipriano Machado (ST) <br>
-Cauã Nascimento Coelho Sbruzi Dezidera (ST) <br>
-Pedro Santos Kajiya (ST) <br>
-<a href="url">Exemplo</a> <br>
+<a href="https://github.com/erickhoawata">Erick Hideki Oyakawa Awata</a> (SM) <br>
+<a href="https://github.com/ryan-wakugawa">Ryan Seiji Wakugawa</a> (PO) <br>
+<a href="https://github.com/Dudaleite08">Maria Eduarda Peleteiro Leite)</a> (ST) <br>
+<a href="https://github.com/cipriano1419">Matheus Cipriano Machado (ST)</a> (ST)  <br>
+<a href="https://github.com/kajiyap">Pedro Santos Kajiya)</a> (ST)  <br>
+<a href="https://github.com/CauaDezidera">Cauã Nascimento Coelho Sbruzi Dezidera</a> (ST)  <br>
 
 **Protótipo do Produto (Figma) <br>**
 https://www.figma.com/file/tDrqLQKNsiGbglnTp2CcwX/Prot%C3%B3tipo-API?node-id=0%3A1&t=eVwAQYOeAMkhSUlc-1 <br>
