@@ -21,4 +21,4 @@ DDT (Development Dream Team), é um time de desenvolvimento web do 1°Bimestre d
 - [x] Protótipo navegável no Figma
 
 **<h2>Tecnologias Utilizadas</h2>**
-*<a href="https://www.figma.com/">Figma</a><br>
+<a href="https://www.figma.com/">Figma</a><br>
