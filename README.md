@@ -15,7 +15,7 @@ https://www.figma.com/file/tDrqLQKNsiGbglnTp2CcwX/Prot%C3%B3tipo-API?node-id=0%3
 DDT (Development Dream Team), é um time de desenvolvimento web do 1°Bimestre de Análise e Desenvolvimento da FATEC São José dos Campos - Prof. Jessen Vidal. A equipe possui como objetivo principal desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  da  metodologia  ágil (Scrum), com foco em deixar a aplicação fácil e intuitiva, proporcionando maior experiência para o usuário para que o mesmo possa aplicar as informações adiquiridas nos seus projetos futuros.
 
 **<h2>Entregas</h2>**
-**<h3>Entrega 1</h3>**
+**<h3>Entrega 1 (13.03 - 02.04)</h3>**
 - [x] Planejamento do BackLog e Burndown <br>
 - [ ] Documentação no GitHub
 - [x] Protótipo navegável no Figma
