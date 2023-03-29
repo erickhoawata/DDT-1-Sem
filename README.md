@@ -25,3 +25,4 @@ DDT (Development Dream Team), é um time de desenvolvimento web do 1°Bimestre d
 
 **<h2>Tecnologias Utilizadas</h2>**
 <a href="https://www.figma.com/">Figma</a><br>
+<a href="https://trello.com/pt-BR">Trello</a><br>
