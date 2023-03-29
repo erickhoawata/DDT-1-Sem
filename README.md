@@ -20,7 +20,7 @@ DDT (Development Dream Team), é um time de desenvolvimento web do 1°Bimestre d
 ![legenda](src/legenda.png)
 **<h3>Entrega 1 (13.03 - 02.04)</h3>**
 - [x] Planejamento do BackLog e Burndown <br>
-- [ ] Documentação no GitHub
+- [x] Documentação no GitHub
 - [x] Protótipo navegável no Figma
 
 **<h2>Tecnologias Utilizadas</h2>**
