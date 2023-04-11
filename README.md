@@ -36,6 +36,16 @@ O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cl
 - [x] Documentação no GitHub
 - [x] Protótipo navegável no Figma
 
+**<h3>Entrega 2 (03.04 - 23.04)</h3>**
+- [x] Tela Home <br>
+- [x] Tela trilha de aprendizagem
+- [x] Tela ferramentas
+- [x] Tela equipe
+- [x] Tela eventos
+- [x] Tela artefatos
+- [x] Tela três pilares 
+- [x] Tela de avaliação
+
 **<h2>Tecnologias Utilizadas</h2>**
 <li>
 <a href="https://www.figma.com/">Figma</a><br>
