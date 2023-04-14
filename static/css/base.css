@@ -1,10 +1,11 @@
 body{
-    font-family: montserrat;
+    margin:0;
 }
 .navtop{
     display:flex;
+    width: 100%;
     height:50px;
-    background-color: #18a0fb;
+    background-color: #18AF10;
 }
 .titulo{
     margin-left: 77px;
@@ -18,14 +19,4 @@ body{
 }
 h1{
     font-family: montserrat;
-}
-.center{
-    text-align: center;
-}
-button{
-    font-family: montserrat;
-}
-.corpo{
-    margin-left: 5%;
-    margin-right: 5%;
 }
