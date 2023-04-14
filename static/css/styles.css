@@ -19,6 +19,14 @@ body{
 h1{
     font-family: montserrat;
 }
+h3{
+    font-family: montserrat;
+    font-size: 56px;
+}
+h4{
+    font-family: montserrat;
+    font-size: 30px;
+}
 .center{
     text-align: center;
 }
@@ -28,4 +36,15 @@ button{
 .corpo{
     margin-left: 5%;
     margin-right: 5%;
+}
+.container {
+    display: flex;
+}
+.elemento {
+    text-align: justify;
+    width: 572px;
+    border: 1px solid black;
+}
+.espaco {
+    width: 144px;
 }
