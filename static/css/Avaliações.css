@@ -9,13 +9,11 @@ body{
 .conteudo-introducao{
     max-width: 50%;
     margin: 5%;
-   
 }
 
 .img-introducao{
     max-width: 50%;
     margin: 2%;
-   
 }
 
 .conteudo{
@@ -30,7 +28,6 @@ body{
 .conteudod{
     margin: 5%;
     justify-content: right;
-      
 }
 
 .img-conteudo{
