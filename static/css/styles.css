@@ -3,7 +3,7 @@ body{
 }
 .navtop{
     display:flex;
-    height:50px;
+    height: 50px;
     background-color: #18a0fb;
 }
 .titulo{
@@ -16,27 +16,46 @@ body{
     justify-content: end;
     margin-right:77px;
 }
+
+/*PARA TÍTULO*/
 h1{
     font-family: montserrat;
 }
+
+/*PARA SUBTÍTULO*/
+h2{
+    font-family: montserrat;
+}
+/*SLOGAN*/
 h3{
     font-family: montserrat;
     font-size: 56px;
 }
+
+/*Texto tela home*/
 h4{
     font-family: montserrat;
     font-size: 30px;
 }
+
 .center{
     text-align: center;
 }
-button{
-    font-family: montserrat;
+.botcontato{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px 15px;
+}
+.botcontato:hover{
+    background-color: rgb(255, 255, 255, .3);
 }
 .corpo{
     margin-left: 5%;
     margin-right: 5%;
 }
+
+/*FORMATAÇÃO DAS POSIÇÕES DOS PEQUENOS TEXTOS E IMAGENS*/
 .container {
     display: flex;
 }
