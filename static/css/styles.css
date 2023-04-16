@@ -67,3 +67,40 @@ h4{
 .espaco {
     width: 144px;
 }
+/*BARRA DE MENU*/
+.navtop li {
+    display: inline-block;
+    margin-top: -15px;
+}
+.navtop li a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    display: inline-block;
+    padding: 15px 15px;
+    background-color: #18a0fb;
+    display: block;
+    text-align: center;
+}
+
+.navtop ul {
+    list-style: none;
+}
+
+.navtop li a:hover{
+    background-color: rgba(125, 232, 246, 0.531);
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #2ca5f6;   
+}
+
+.dropdown-menu a{
+    display: block;
+    box-shadow: 0 0 2px white;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
