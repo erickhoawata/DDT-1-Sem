@@ -1,133 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
+body{
+    font-family: montserrat;
+}
+.navtop{
+    display:flex;
+    height: 50px;
+    background-color: #18a0fb;
+}
+.titulo{
+    margin-left: 77px;
+    align-self: center;
+}
+.links{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-right:77px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DDT - Método Scrum</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
-    <link rel="stylesheet" href="../static/css/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap">
+/*PARA TÍTULO*/
+h1{
+    font-family: montserrat;
+}
 
-    
-</head>
+/*PARA SUBTÍTULO*/
+h2{
+    font-family: montserrat;
+    font-weight: bold
+}
+/*SLOGAN*/
+h3{
+    font-family: montserrat;
+    font-size: 56px;
+}
 
-<body>
-    <!-- cabeçalho (copiar a partir daqui) -->
-    <div class="navtop">
-        <div class="titulo"><h1>DDT</h1></div>
-        <ul class="links">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li class="dropdown">
-                <a href="">Aprenda Conosco</a>
+/*Texto tela home*/
+h4{
+    font-family: montserrat;
+    font-size: 30px;
+}
+/*Azul home*/
+.azul {
+    color: #31DAFF;
+}
+.scrum {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 80px;
+}
+.center{
+    text-align: center;
+}
 
-                <div class="dropdown-menu">
-                        <a href="">Três Pilares</a>
-                        <a href="artefatos.html">Artefatos</a>
-                        <a href="equipe.html">Equipe</a>
-                        <a href="">Ferramentas</a>
-                        <a href="Avaliações.html">Avaliações</a>
-                        <a href="">Eventos</a>
-                </div>
-            </li>
-            <li>
-                <a href="contato.html">Contato</a>
-            </li>
-        </ul>
-    </div>
-    <!-- cabeçalho (copiar até daqui) -->
-    <div class="corpo">
+.botcontato{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-top: -15px;
+    padding: 15px 15px;
+}
+.botcontato:hover{
+    background-color: rgba(255, 255, 255, 3);
+    display: block;
+}
+.corpo{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
-        <!-- imagem -->
-        <h3>
-            “Scrum: gere valor,<br>
-            supere expectativas,<br>
-            entregue resultados.”
-        </h3>
-        <h4>
-            Scrum é um framework ágil de<br>
-            gerenciamento de projetos, onde equipes<br>
-            colaborativas entregam produtos em<br>
-            ciclos curtos de trabalho, focando em<br>
-            transparência, inspeção e adaptação<br>
-            contínua.
-        </h4>
-        <hr>
+/*FORMATAÇÃO DAS POSIÇÕES DOS PEQUENOS TEXTOS E IMAGENS*/
+.container {
+    display: flex;
+}
 
-        <!-- metodo scrum -->
-        <h1>Método Scrum</h1>
-        <h2>Introdução</h2>
-        <div class="container">
-            <p class="elemento">
-                Scrum é uma metodologia empregada no gerenciamento de projetos complexos, para facilitar a vizualização
-                dos processos de maneira mais simples e clara, mantendo registros visíveis do andamento das etapas.
-                <br><br>
+.elemento {
+    text-align: justify;
+    width: 572px;
+    font-family: 'Montserrat', sans-serif;
+}
+.espaco {
+    width: 144px;
+}
 
-                A metodologia é aplicado a partir de ciclos rápidos, chamados de sprints, nos quais há um tempo
-                determinado para que as atividades sejam concluídas - geralmente, entre duas e quatro semanas.
-            </p>
-            <div class="espaco"></div>
-            <div class="elemento">
-                <p>
-                    Priorizando a criatividade e a fluidez nos processos, o Scrum segue seis principais princípios:
-                </p>
-                <ul>
-                    <li>Flexibilidade dos resultados</li>
-                    <li>Flexibilidade dos prazos</li>
-                    <li>Times pequenos</li>
-                    <li>Revisões constantes</li>
-                    <li>Colaboração</li>
-                    <li>Orientação a projetos</li>
-                </ul>
-            </div>
-        </div>
+/*BARRA DE MENU*/
+.navtop li {
+    display: inline-block;
+    margin-top: -15px;
+}
+.navtop li a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    display: inline-block;
+    padding: 15px 15px;
+    background-color: #18a0fb;
+    display: block;
+    text-align: center;
+}
 
-        <hr>
-        <!-- historia-->
-        <h2>História</h2>
-        <div class="container">
-            <p class="elemento">
-                O scrum foi idealizado em 1993, por três programadores que
-                formularam o manifesto ágil: Mike Beedle, Ken Schwaber, e Jeff 
-                Sutherland.<br><br>
+.navtop ul {
+    list-style: none;
+}
 
-                O método ágil foi criado, pois os desenvolvedores estavam
-                insatisfeitos com o formato de cascata utilizado no processo de
-                produção de softwares e resolveram buscar alternativas mais
-                eficazes.<br><br>
+.navtop li a:hover{
+    background-color: rgba(125, 232, 246, 0.531);
+}
 
-                Eles perceberam que os líderes dedicavam meses na elaboração
-                de planos detalhados que quase nunca se compriam.
-            </p>
-            <div class="espaco"></div>
-            <div class="elemento">
-                <p>
-                    A partir de estudos de caso, em especial das boas práticas
-                    implementadas na indústria japonesa (Toyota e Honda), os
-                    programadores chegaram aos princípios scrum.<br><br>
+.dropdown-menu {
+    display: none;
+    background-color: #2ca5f6;   
+}
 
-                    O nome dessa ferramenta veio do universo do Rugby, no qual
-                    Scrum corresponde a uma reunião breve, feita antes de os
-                    jogadores iniciarem um lance.<br><br>
+.dropdown-menu a{
+    display: block;
+    box-shadow: 0 0 2px white;
+}
 
-                    Da mesma forma, a metodologia Scrum inclui a realização de
-                    reuniões rápidas diariamente, a fim de que todos sejam
-                    informados sobre o andamento do projeto e os próximos
-                    passos.
-            </div>
-        </div>
-        <hr>
-
-
-        <!-- acessar a trilha -->
-        <div class="center">
-            Para aprender ainda mais sobre o metódo Scrum, é só clicar abaixo!<br>
-            <button type="button">Trilha de Aprendizagem</button>
-        </div>
-    </div>
-</body>
-
-</html>
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
