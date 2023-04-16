@@ -25,6 +25,7 @@ h1{
 /*PARA SUBTÍTULO*/
 h2{
     font-family: montserrat;
+    font-weight: bold
 }
 /*SLOGAN*/
 h3{
@@ -37,18 +38,31 @@ h4{
     font-family: montserrat;
     font-size: 30px;
 }
-
+/*Azul home*/
+.azul {
+    color: #31DAFF;
+}
+.scrum {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 80px;
+}
 .center{
     text-align: center;
 }
+
 .botcontato{
     text-decoration: none;
     color: black;
-    display: block;
+    display: inline-block;
+    margin-top: -15px;
     padding: 15px 15px;
 }
 .botcontato:hover{
-    background-color: rgb(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, 3);
+    display: block;
 }
 .corpo{
     margin-left: 5%;
@@ -59,14 +73,16 @@ h4{
 .container {
     display: flex;
 }
+
 .elemento {
     text-align: justify;
     width: 572px;
-    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
 }
 .espaco {
     width: 144px;
 }
+
 /*BARRA DE MENU*/
 .navtop li {
     display: inline-block;
