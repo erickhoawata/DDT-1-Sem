@@ -59,6 +59,14 @@ h4{
     font-size: 56px;
     line-height: 80px;
 }
+
+.ddt {
+    font-family: 'Montserrat';
+    font-style: italic; 
+    margin-left: 77px;
+    align-self: center;
+}
+
 .center{
     text-align: center;
     display: block;
@@ -107,7 +115,14 @@ h4{
 .espaco {
     width: 144px;
 }
-
+.imghome {
+    background-image: url("../img/fundo\ home (2).png");
+    background-repeat: no-repeat;
+    width: 1349px;
+    height: 766px;
+    left: -73px;
+    top: -106px;
+}
 /*BARRA DE MENU*/
 .navtop li {
     display: inline-block;
