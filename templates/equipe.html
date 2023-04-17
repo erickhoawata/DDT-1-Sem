@@ -7,52 +7,117 @@
     <title>Equipe</title>
     <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="../static/css/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- cabeçalho -->
     <div class="navtop">
         <div class="titulo"><h1>DDT</h1></div>
-        <div class="links">
-            <button href="home.html">Home</button>
-            <button href="aprendaconosco.html">Aprenda consco</button>
-            <button href="contato.html">Contato</button>
-        </div>
-    </div>
-    <div class="corpo">
+        <ul class="links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="">Aprenda Conosco</a>
 
-        <!-- equipe -->
-        <h1>Equipe Scrum</h1>
-        <p>Embora todos os membros tenham importância, existem funções diferentes dentro de uma equipe Scrum:
-        <ul>
-            <li>Scrum Master</li>
-            <li>Product Owner</li>
-            <li>Time de Desenvolvimento</li>
+                <div class="dropdown-menu">
+                        <a href="">Três Pilares</a>
+                        <a href="artefatos.html">Artefatos</a>
+                        <a href="equipe.html">Equipe</a>
+                        <a href="">Ferramentas</a>
+                        <a href="Avaliações.html">Avaliações</a>
+                        <a href="">Eventos</a>
+                </div>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
         </ul>
-        </p>
+    </div>
+
+    <!-- corpo -->
+    <div class="corpo">
+        <h1>Equipe Scrum</h1>
+        
+        <!-- equipe -->
+        <div class="container">
+            <div class="left">
+                <p>
+                    Embora todos os membros tenham importância, existem funções diferentes dentro de uma equipe Scrum:
+                <ul>
+                    <li>Scrum Master</li>
+                    <li>Product Owner</li>
+                    <li>Time de Desenvolvimento</li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <img src="../static/img/equipe.svg" alt="equipe">
+            </div>
+        </div>
+
         <hr>
 
         <!-- scrum master -->
-        <h2>Scrum Master (SM)</h2>
-        <p>Responsável por garantir que a equipe esteja seguindo as práticas ágeis e as regras do Scrum, além de facilitar o processo de desenvolvimento, removendo obstáculos e ajudando a equipe a se tornar cada vez mais autogerenciável. É aquele que mais deve conhecer sobre a metodologia Scrum.</p>
+        <h1>Scrum Master (SM)</h1>
+        <div class="container">
+            <div class="left">
+                <p>Responsável por garantir que a equipe esteja seguindo as práticas ágeis e as regras do Scrum, além de facilitar o processo de desenvolvimento, removendo obstáculos e ajudando a equipe a se tornar cada vez mais autogerenciável. É aquele que mais deve conhecer sobre a metodologia Scrum.</p>
+            </div>
+            <div>
+                <img src="../static/img/scrummaster.svg" alt="Scrum Master">
+            </div>
+        </div>
 
         <!-- product owner -->
-        <h2>Product Owner (PO)</h2>
-        Responsável por definir e priorizar as funcionalidades do produto, trabalhando em estreita colaboração com os stakeholders para garantir que as necessidades dos usuários finais sejam atendidas. O Product Owner é responsável por manter o Product Backlog atualizado, de forma que a equipe possa trabalhar nas tarefas mais importantes em cada Sprint. É aquele que mais entra em contato direto com o cliente.
+        <h1>Product Owner (PO)</h1>
+        <div class="container">
+            <div>
+                <img src="../static/img/productowner.svg">
+            </div>
+            <div class="right">
+                <p>Responsável por definir e priorizar as funcionalidades do produto, trabalhando em estreita colaboração com os stakeholders para garantir que as necessidades dos usuários finais sejam atendidas. O Product Owner é responsável por manter o Product Backlog atualizado, de forma que a equipe possa trabalhar nas tarefas mais importantes em cada Sprint. É aquele que mais entra em contato direto com o cliente.</p>
+            </div> 
+        </div>
 
         <!-- Time de desenvolvimento -->
-        <h2>Time de Desenvolvimento (Dev Team)</h2>
-        Responsável por criar o produto, transformando as funcionalidades definidas pelo Product Owner em software funcional. O Time de Desenvolvimento é uma equipe multifuncional e auto-organizável, que trabalha em conjunto para completar as tarefas do Sprint.
+        <h1>Time de Desenvolvimento (Dev Team)</h1>
+        <div class="container">
+            <div class="left">
+                Responsável por criar o produto, transformando as funcionalidades definidas pelo Product Owner em software funcional. O Time de Desenvolvimento é uma equipe multifuncional e auto-organizável, que trabalha em conjunto para completar as tarefas do Sprint.
+            </div>
+            <div>
+                <img src="../static/img/devteams.svg">
+            </div>
+        </div> 
 
         <hr>
 
         <!-- retornar a trilha -->
         <div class="center">
-        <img src="../static/img/" class="center" alt="trofeu trilha"><br>
+        <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
         Agora você já sabe quais são as funções de um time Scrum!<br>
         Retorne a trilha para o próximo aprendizado!<br>
+        <br>
         <button type="button">Retornar à trilha</button>
         </div>
+    </div>
+    <br>
+    <!-- rodapé -->
+    <div class="navbot">
+        <div class="titulo"><h1>DDT</h1></div>
+        <ul class="links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+            © DDT. 2023. Método Scrum
+        </ul>
+    </div>
+    <div class="navbot2">
+        <p class="center">“Scrum: gere valor, supere expectativas, entregue resultados.”</p>
     </div>
 </body>
 </html>

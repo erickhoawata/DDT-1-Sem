@@ -1,11 +1,21 @@
 body{
     font-family: montserrat;
+    text-align: justify;
+    line-height: 1.5;
 }
+hr{
+    margin-left: 1%;
+    margin-right: 1%;
+    min-width: 600px;
+}
+
 .navtop{
     display:flex;
-    height: 50px;
+    height: 60px;
     background-color: #18a0fb;
+    font-weight: bold;
 }
+
 .titulo{
     margin-left: 77px;
     align-self: center;
@@ -51,6 +61,20 @@ h4{
 }
 .center{
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left{
+    width: 600px;
+    padding: 70px 0;
+}
+
+.right{
+    text-align: justify;
+    width: 600px;
+    padding: 70px 0;
 }
 
 .botcontato{
@@ -65,13 +89,14 @@ h4{
     display: block;
 }
 .corpo{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 /*FORMATAÇÃO DAS POSIÇÕES DOS PEQUENOS TEXTOS E IMAGENS*/
 .container {
     display: flex;
+    justify-content: space-between;
 }
 
 .elemento {
@@ -99,6 +124,7 @@ h4{
     text-align: center;
 }
 
+/* navbar */
 .navtop ul {
     list-style: none;
 }
@@ -109,7 +135,8 @@ h4{
 
 .dropdown-menu {
     display: none;
-    background-color: #2ca5f6;   
+    background-color: #2ca5f6;
+    position: relative;
 }
 
 .dropdown-menu a{
@@ -119,4 +146,31 @@ h4{
 
 .dropdown:hover .dropdown-menu{
     display: block;
+}
+
+
+/* Rodapé */
+.navbot{
+    display:flex;
+    height: 60px;
+    background-color: #dadada;
+}
+.navbot2{
+    display:flex;
+    height: 50px;
+    background-color: #6C6C6C;
+    color: #FFFFFF;
+}
+.navbot li {
+    display: inline-block;
+    margin-top: -15px;
+}
+.navbot li a {
+    text-decoration:none;
+    font-weight: bolder;
+    display: inline-block;
+    color: black;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
 }

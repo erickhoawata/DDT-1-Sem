@@ -7,57 +7,117 @@
     <title>Artefatos</title>
     <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="../static/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navtop">
         <div class="titulo"><h1>DDT</h1></div>
-        <div class="links">
-            <button href="home.html">home</button>
-            <button href="aprendaconosco.html">Aprenda consco</button>
-            <button href="contato.html">Contato</button>
+        <ul class="links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="">Aprenda Conosco</a>
+
+                <div class="dropdown-menu">
+                        <a href="">Três Pilares</a>
+                        <a href="artefatos.html">Artefatos</a>
+                        <a href="equipe.html">Equipe</a>
+                        <a href="">Ferramentas</a>
+                        <a href="Avaliações.html">Avaliações</a>
+                        <a href="">Eventos</a>
+                </div>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="corpo">
+        <!-- introdução -->
+        <h1>Artefatos</h1>
+        <div class="container">
+            <div class="left">
+            O Scrum possui alguns artefatos que dão uma visão do andamento do projeto e das Sprints, facilitando o entendimento, a organização e a divisão do projeto. Os artefatos são informações que a equipe e as partes interessadas usam para detalhar o produto que está sendo desenvolvido, as ações para a produção dele e as ações realizadas durante o projeto. Os artefatos  de Scrum são: Product Backlog, Sprint Backlog, Product Increment, Definition of Done e Burndown Charts.
+            </div>
+            <div>
+                <img src="../static/img/artefatos.png" alt="artefatos">
+            </div>
+        </div>
+        
+        <hr>
+
+        <!-- corpo -->
+        <h1>Introdução aos artefatos</h1>
+        <div class="container">
+            <div class="left">
+                <b>Product Backlog</b>:<br>
+                <p>O Product Backlog é uma lista ordenada criada pelo Time Scrum, mas onde somente o Product Owner pode inserir, remover ou reordenar os itens. geralmente itens mais importantes ficam no topo, e serão implementados antes. Em geral, os itens de maior importância são os itens que se têm maior conhecimento, e por isso possuem um detalhamento maior. Itens que precisem de maior refinamento geralmente têm uma importância menor e ficam mais abaixo no Product Backlog.</p>
+                <img src="../static/img/backlog.png" class="center">
+            </div>
+            <div class="right">
+                <b>Sprint Backlog</b><br>
+                <p>SprintBacklog é o conjunto de itens selecionados para serem implementados durante a Sprint mais o plano para transforma-los em um Incremento. Normalmente, o plano é composto das tarefas técnicas necessárias para transformar o item em um incremento do produto. O objetivo do Sprint Backlog é tornar visível o trabalho necessário para que a equipe atinja a meta da Sprint.</p>
+                <img src="../static/img/sprint backlog.png" class="center">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="left">
+                <b>Product Increment</b><br>
+                <p>Product Increment é a soma dos Itens do Backlog do Produto entregues no final de cada Sprint. Entregar o incremento a cada Sprint é fundamental para o Scrum, porque quando o trabalho é dividido em partes simples, ele pode ser finalizado em iterações curtas. Para a equipe é importante entender que o Incremento deve ser algo potencialmente entregável – o cliente pode optar por colocar imediatamente em produção.</p>
+                <img src="../static/img/increment.png" class="center">
+            </div>
+            <div class="right">
+                <b>Definition of Done</b><br>
+                <p>Como o próprio nome indica, o Definition Of Done (DoD), estabelece os critérios para que uma tarefa seja considerada “finalizada” dentro de um modelo de trabalho Scrum.  Uma    funcionalidade    somente    é    considerada    “pronta”    se    tiver    passado por todas as etapas definidas pela equipe para se garantir a qualidade do que se esteja produzindo durante a Sprint.</p>
+                <img src="../static/img/definition of done.png" class="center">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="left">
+                <b>Burndown Charts</b><br>
+               <p>Burndown Chart é o gráfico utilizado pelas equipes Scrum para representar diariamente o progresso do trabalho em desenvolvimento. Ele torna visível a evolução diária do trabalho da equipe, pois mostra a comparação entre o trabalho estimado inicialmente com a quantidade restante estimada de trabalho. Normalmente, as unidades utilizadas são de esforço (em horas) planejado pelo tempo decorrido. Além de ajudar o time a se autogerenciar, o Burndown Chart também permite que o restante da organização também possa acompanhar o andamento da Sprint.</p>
+               <img src="../static/img/burndown.png" class="center">
+            </div>
+            <div class="right">
+            <!-- exemplos -->
+            <button type="button">Exemplo 1</button><br>
+            <button type="button">Exemplo 2</button><br>
+            <button type="button">Exemplo 3</button><br>
+            <button type="button">Exemplo 4</button>
+            </div> 
+        </div>
+
+        <hr>
+
+        <!-- retornar a trilha -->
+        <div class="center">
+            <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
+            Agora você já sabe quais são as funções de um time Scrum!<br>
+            Retorne a trilha para o próximo aprendizado!<br>
+            <br>
+            <button type="button">Retornar à trilha</button>
         </div>
     </div>
-
-    <!-- introdução -->
-    <h1>Artefatos</h1>
-    O Scrum possui alguns artefatos que dão uma visão do andamento do projeto e das Sprints, facilitando o entendimento, a organização e a divisão do projeto. Os artefatos são informações que a equipe e as partes interessadas usam para detalhar o produto que está sendo desenvolvido, as ações para a produção dele e as ações realizadas durante o projeto. Os artefatos  de Scrum são: Product Backlog, Sprint Backlog, Product Increment, Definition of Done e Burndown Charts.
-    <hr>
-
-    <!-- corpo -->
-    <h2>Introdução aos artefatos</h2>
-    <div>
-        Product Backlog:<br>
-        <p>O Product Backlog é uma lista ordenada criada pelo Time Scrum, mas onde somente o Product Owner pode inserir, remover ou reordenar os itens. geralmente itens mais importantes ficam no topo, e serão implementados antes. Em geral, os itens de maior importância são os itens que se têm maior conhecimento, e por isso possuem um detalhamento maior. Itens que precisem de maior refinamento geralmente têm uma importância menor e ficam mais abaixo no Product Backlog.</p>
+    <br>
+    <!-- rodapé -->
+    <div class="navbot">
+        <div class="titulo"><h1>DDT</h1></div>
+        <ul class="links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+            © DDT. 2023. Método Scrum
+        </ul>
     </div>
-    <div>
-        Sprint Backlog<br>
-        <p>SprintBacklog é o conjunto de itens selecionados para serem implementados durante a Sprint mais o plano para transforma-los em um Incremento. Normalmente, o plano é composto das tarefas técnicas necessárias para transformar o item em um incremento do produto. O objetivo do Sprint Backlog é tornar visível o trabalho necessário para que a equipe atinja a meta da Sprint.</p>
-    </div>
-    <div>
-        Product Increment<br>
-        <p>Product Increment é a soma dos Itens do Backlog do Produto entregues no final de cada Sprint. Entregar o incremento a cada Sprint é fundamental para o Scrum, porque quando o trabalho é dividido em partes simples, ele pode ser finalizado em iterações curtas. Para a equipe é importante entender que o Incremento deve ser algo potencialmente entregável – o cliente pode optar por colocar imediatamente em produção.</p>
-    </div>
-    <div>
-        Definition od Done<br>
-        <p>Como o próprio nome indica, o Definition Of Done (DoD), estabelece os critérios para que uma tarefa seja considerada “finalizada” dentro de um modelo de trabalho Scrum.  Uma    funcionalidade    somente    é    considerada    “pronta”    se    tiver    passado por todas as etapas definidas pela equipe para se garantir a qualidade do que se esteja produzindo durante a Sprint.</p>
-    </div>
-    <div>
-        Burndown Charts<br>
-        <p>Burndown Chart é o gráfico utilizado pelas equipes Scrum para representar diariamente o progresso do trabalho em desenvolvimento. Ele torna visível a evolução diária do trabalho da equipe, pois mostra a comparação entre o trabalho estimado inicialmente com a quantidade restante estimada de trabalho. Normalmente, as unidades utilizadas são de esforço (em horas) planejado pelo tempo decorrido. Além de ajudar o time a se autogerenciar, o Burndown Chart também permite que o restante da organização também possa acompanhar o andamento da Sprint.</p>
-    </div>
-
-    <!-- exemplos -->
-    <button type="button">Exemplo 1</button>
-    <button type="button">Exemplo 2</button>
-    <button type="button">Exemplo 3</button>
-    <button type="button">Exemplo 4</button>
-
-    <!-- retornar a trilha -->
-    <div>
-        <img src="../static/img/" class="center" alt="trofeu trilha"><br>
-        Agora você já sabe quais são as funções de um time Scrum!<br>
-        Retorne a trilha para o próximo aprendizado!<br>
-        <button type="button">Retornar à trilha</button>
+    <div class="navbot2">
+        <p class="center">“Scrum: gere valor, supere expectativas, entregue resultados.”</p>
     </div>
 </body>
 </html>
