@@ -116,12 +116,11 @@ h4{
     width: 144px;
 }
 .imghome {
-    background-image: url("../img/fundo\ home (2).png");
-    background-repeat: no-repeat;
-    width: 1349px;
-    height: 766px;
-    left: -73px;
-    top: -106px;
+    background-image: url("../img/fundo\ home.png");
+    display:flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 /*BARRA DE MENU*/
 .navtop li {
