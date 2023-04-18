@@ -30,26 +30,22 @@ body{
     justify-content: right;
 }
 
-.img-conteudo{
-    margin-top: 20%;
-}
+
 
 .dialogo{
     display: flex;
 }
 
+.img-conteudo{
+    margin-top: 20%;
+}
+
+
+
 .img-dialogo{
     height: 10%;
     margin-top: 20%;
 }
-
-.img-vetor{
-    height: 5%;
-    margin-top: 35%;
-
-}
-
-
 
 
 /* CONFIGURAÇÔES PADRÕES */
