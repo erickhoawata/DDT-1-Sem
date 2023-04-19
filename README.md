@@ -26,30 +26,27 @@ DDT (Development Dream Team), é um time de desenvolvimento web do 1°Bimestre d
 **<h2>🖥 Protótipo do Produto (Figma) </h2>**
 O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cliente e para a vizulização do projeto sem que todo o código tenha que ser baixado.<br>
 <a href="https://www.figma.com/file/tDrqLQKNsiGbglnTp2CcwX/Prot%C3%B3tipo-API?node-id=0%3A1&t=iDi9wkiwjeJAybF1-1">Link para o protótipo</a><br>
+
+<div align="center">
+
 ![Prototipo](src/prototipo.gif)
 
-**<h2>📑 Entregas</h2>**
-![Backlog](src/backlog.png)
-![legenda](src/legenda.png)
-**<h3>Entrega 1 (13.03 - 02.04)</h3>**
-- [x] Planejamento do BackLog e Burndown <br>
-- [x] Documentação no GitHub
-- [x] Protótipo navegável no Figma
+</div>
 
-**<h3>📑 Entrega 2 (03.04 - 23.04)</h3>**
-- [x] Tela Home <br>
-- [x] Tela trilha de aprendizagem
-- [x] Tela ferramentas
-- [x] Tela equipe
-- [x] Tela eventos
-- [x] Tela artefatos
-- [x] Tela três pilares 
-- [x] Tela de avaliação
+<div align="center">
+
+![mvp](src/mvp.jpg)
+
+</div>
 
 **<h2>⚙ Tecnologias Utilizadas</h2>**
-<li>
-<a href="https://www.figma.com/">Figma</a><br>
-</li>
-<li>
-<a href="https://trello.com/pt-BR">Trello</a><br>
-</li>
+<div align="center">
+  <img src="https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white" title="trello" alt="trello"/>&nbsp;
+  <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" title="trello" alt="trello"/>&nbsp;
+  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" title="trello" alt="trello"/>&nbsp;
+  <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" title="trello" alt="trello"/>&nbsp;
+  <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white" title="trello" alt="trello"/>&nbsp;
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" title="trello" alt="trello"/>&nbsp;
+  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" title="trello" alt="trello"/>&nbsp;
+  
+</div>
