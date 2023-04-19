@@ -8,15 +8,6 @@ hr{
     margin-right: 1%;
     min-width: 600px;
 }
-.bottrilha{
-    display: flexbox;
-    height: 50px;
-    text-decoration: none;
-    border: none;
-    background-color: #18a0fb;
-    margin: auto;
-    text-align: center;
-}
 
 .navtop{
     display:flex;
@@ -229,17 +220,8 @@ h4{
     justify-content: right;
 }
 
-.dialogo{
-    display: flex;
-}
-
-.img-conteudo{
-    margin-top: 20%;
-}
-
-.img-dialogo{
-    height: 10%;
-    margin-top: 20%;
+.tabela{
+    width: 90%;
 }
 
 table{
@@ -273,17 +255,22 @@ input{
     box-shadow: 0px 4px 0px 0px #00000035 ;
 }
 
-/*css para imagens*/
+.imgev2{
+    text-align: justify;
+    width: 400px;
+    padding: 0px 30px 0px;
+    margin-top: 20%;
+}
+
+
+
+/*------css para imagens------*/
 .imgev1{
     text-align: justify;
     width: 400px;
     padding: 0px 30px 0px;
 }
-.imgev2{
-    text-align: justify;
-    width: 400px;
-    padding: 0px 30px 0px;
-}
+
 .left1{
     margin-top: 20px;
     width: 600px;
@@ -295,3 +282,8 @@ input{
     width: 600px;
     padding: 10px 10px;
 }
+
+
+
+
+ 
