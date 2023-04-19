@@ -8,6 +8,15 @@ hr{
     margin-right: 1%;
     min-width: 600px;
 }
+.bottrilha{
+    display: flexbox;
+    height: 50px;
+    text-decoration: none;
+    border: none;
+    background-color: #18a0fb;
+    margin: auto;
+    text-align: center;
+}
 
 .navtop{
     display:flex;
@@ -286,8 +295,3 @@ input{
     width: 600px;
     padding: 10px 10px;
 }
-
-
-
-
- 
