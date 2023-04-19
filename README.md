@@ -31,6 +31,8 @@ O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cl
 
 ![Prototipo](src/prototipo.gif)
 
+<hr>
+
 </div>
 
 <div align="center">
