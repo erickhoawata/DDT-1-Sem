@@ -30,7 +30,7 @@ DDT (Development Dream Team), é um time de desenvolvimento web do 1°Bimestre d
   
 </div>
 
-**<h2>🗂🗂 Planejamento de Entregas e MVP</h2>**
+**<h2>🗂 Planejamento de Entregas e MVP</h2>**
 
 <div align="center">
 
