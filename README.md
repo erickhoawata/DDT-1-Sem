@@ -6,7 +6,7 @@ DDT (Development Dream Team), é um time de desenvolvimento web do 1°Bimestre d
 <br>
 
 **<h2>🎯 Desafio</h2>**
-Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  da  metodologia  ágil (Scrum),  todos os processosdeverão  ter conceitos  e  fundamentos  com  referências,  bem  como  a aplicação com exemplos práticos para aplena compreensão do usuário do sistema.
+Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  da  metodologia  ágil (Scrum),  todos os processos deverão  ter conceitos  e  fundamentos  com  referências,  bem  como  a aplicação com exemplos práticos para aplena compreensão do usuário do sistema.
 
 <br>
 
