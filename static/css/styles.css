@@ -122,6 +122,11 @@ h4{
     height: 100%;
     width: 100%;
 }
+
+.bottrilha a {
+    text-decoration: none;
+}
+
 /*BARRA DE MENU*/
 .navtop li {
     display: inline-block;
@@ -162,6 +167,9 @@ h4{
     display: block;
 }
 
+.trilha a {
+    text-decoration: none;
+}
 
 /* Rodapé */
 .navbot{
