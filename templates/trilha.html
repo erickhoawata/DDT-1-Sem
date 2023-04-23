@@ -1,47 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trilha SCRUM</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
-    <link rel="stylesheet" href="../static/css/normalize.css">
+    {% extends 'base.html' %}
+
+    {% block titulo %}
+    <title>Trilha de aprendizado</title>
     <link rel="stylesheet" href="../static/css/trilha.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- fonte -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+    {% endblock %}
 </head>
 <body>
-<!-- cabeçalho -->
-<div class="navtop">
-    <div class="ddt"><h1>DDT</h1></div>
-    <ul class="links">
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li class="dropdown">
-            <a href="trilha.html">Aprenda Conosco</a>
-
-            <div class="dropdown-menu">
-                    <a href="pilares.html">Três Pilares</a>
-                    <a href="artefatos.html">Artefatos</a>
-                    <a href="equipe.html">Equipe</a>
-                    <a href="Avaliações.html">Avaliações</a>
-                    <a href="eventos.html">Eventos</a>
-            </div>
-        </li>
-        <li>
-            <a href="contato.html">Contato</a>
-        </li>
-    </ul>
-</div>
+{% block conteudo %}
 <!-- corpo -->
     <div class="explicacao">
         <div class="balao"><p>Olá, esta é a nossa 
@@ -62,42 +30,26 @@
         <div class=seta><img src="../static/img/seta-curva (1).png" alt="" height="50px"></div>
 
         <div class="pilares">
-        <div class="circulo2"><a href="./equipe.html"><img src="../static/img/Office work-pana 1.png" alt="" height="70px"></a></div><h4 class="titulotrilha">Equipes</h4></div>
+        <div class="circulo2"><a href="./equipe"><img src="../static/img/Office work-pana 1.png" alt="" height="70px"></a></div><h4 class="titulotrilha">Equipes</h4></div>
 
         <div class=seta><img src="../static/img/seta-curva (1).png" alt="" height="50px"></div>
 
         <div class="pilares">
-        <div class="circulo3"><a href="./artefatos.html"><img src="../static/img/Checklist-rafiki 1.png" alt="" height="100px"></a></div><h4 class="titulotrilha">Artefatos</h4></div>
+        <div class="circulo3"><a href="./artefatos"><img src="../static/img/Checklist-rafiki 1.png" alt="" height="100px"></a></div><h4 class="titulotrilha">Artefatos</h4></div>
 
-       <div class=seta><img src="../static/img/seta-curva (1).png" alt="" height="50px"></div>
+    <div class=seta><img src="../static/img/seta-curva (1).png" alt="" height="50px"></div>
 
-       <div class="pilares">
-        <div class="circulo4"><a href="./eventos.html"><img src="../static/img/At the office-amico 2.png" alt="" height="100px"></a></div><h4 class="titulotrilha">Eventos</h4></div>
+    <div class="pilares">
+        <div class="circulo4"><a href="./eventos"><img src="../static/img/At the office-amico 2.png" alt="" height="100px"></a></div><h4 class="titulotrilha">Eventos</h4></div>
 
         <div class=seta><img src="../static/img/seta-curva (1).png" alt="" height="50px"></div>
 
         <div class="avaliações">
-        <div class="circulo5"><a href="./Avaliações.html"><img src="../static/img/Confirmed-rafiki 1.png" alt="" height="100px"></a></div><h4 class="titulotrilha">Avaliações</h4></div>
+        <div class="circulo5"><a href="./avaliacao"><img src="../static/img/Confirmed-rafiki 1.png" alt="" height="100px"></a></div><h4 class="titulotrilha">Avaliações</h4></div>
 
 
     </div>
 </div>
-
-<!-- rodapé -->
-    <div class="navbot">
-        <div class="ddt"><h1>DDT</h1></div>
-        <ul class="links">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="contato.html">Contato</a>
-            </li>
-            © DDT. 2023. Método Scrum
-        </ul>
-    </div>
-    <div class="navbot2">
-        <p class="center">“Scrum: gere valor, supere expectativas, entregue resultados.”</p>
-    </div>
+{% endblock %}
 </body>
 </html>
