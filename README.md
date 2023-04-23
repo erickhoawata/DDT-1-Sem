@@ -59,7 +59,7 @@ O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cl
 
 <div align="center">
 
-![Prototipo](src/prototipo.gif)
+![Prototipo](src/api.gif)
 
 </div>
 
