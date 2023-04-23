@@ -2,24 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DDT - Método Scrum</title>
-    <!-- formatação -->
-    <link rel="stylesheet" href="../static/css/styles.css">
-    <link rel="stylesheet" href="../static/css/normalize.css">
+{% extends 'base.html' %}
 
-    <!-- fonte -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
-  
+{% block titulo %}
+DDT - Método Scrum!
+{% endblock %}
 </head>
 
+{% block conteudo %}
 <body>
     <!-- cabeçalho -->
     <div class="navtop">
@@ -127,21 +117,6 @@
         </div>
     </div>
     <br>
-    <!-- rodapé -->
-    <div class="navbot">
-        <div class="ddt"><h1>DDT</h1></div>
-        <ul class="links">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="contato.html">Contato</a>
-            </li>
-            © DDT. 2023. Método Scrum
-        </ul>
-    </div>
-    <div class="navbot2">
-        <p class="center">“Scrum: gere valor, supere expectativas, entregue resultados.”</p>
-    </div>
+    {% endblock %}
 </body>
 </html>

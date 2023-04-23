@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>nome da página</title>
+    <title>{% {% block titulo %}{% endblock titulo %}%}</title>
     <!-- formatação -->
     <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="../static/css/normalize.css">
@@ -42,23 +42,10 @@
         </ul>
     </div>
     <!-- corpo -->
-    <div class="corpo">
+    {% block conteudo %}
 
-    </div>
+    {% endblock %}
 
-
-        <!-- retornar a trilha -->
-
-        <div class="center">
-            <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
-            Agora você já sabe como avaliar seu time Scrum!<br>
-            Retorne a trilha para o próximo aprendizado!<br>
-            <br>
-            <button type="button" class="bottrilha"><a href="trilha.html">Retornar à trilha</a></button>
-        </div>
-    </div>
-
-    <br>
 
     <!-- rodapé -->
     <div class="navbot">
@@ -74,9 +61,7 @@
         </ul>
     </div>
     <div class="navbot2">
-    <p class="center">“Scrum: gere valor, supere expectativas, entregue resultados.”</p>
+        <p class="center">“Scrum: gere valor, supere expectativas, entregue resultados.”</p>
     </div>
-    
-
 </body>
 </html>
