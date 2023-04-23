@@ -15,7 +15,7 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
   
 |Nome|Função|GitHub|Linkedin|
 | -------- |-------- |-------- |-------- |
-|**Erick Hideki Oyakawa Awata**|Scrum Master|[@GitHub](https://github.com/erickhoawata)|[@Linkedin](http://linkedin.com/in/julia-gonzalez-moreira)
+|**Erick Hideki Oyakawa Awata**|Scrum Master|[@GitHub](https://github.com/erickhoawata)|[@Linkedin](http://linkedin.com/in/érick-awata)
 |**Ryan Seiji Wakugawa**|Product Owner|[@GitHub](https://github.com/ryan-wakugawaa)|[@Linkedin]()
 |**Maria Eduarda Peleteiro Leite**|Desenvolvedor|[@GitHub](https://github.com/Dudaleite08">)|[@Linkedin]()
 |**Matheus Cipriano Machado**|Desenvolvedor|[@GitHub](https://github.com/cipriano141)|[@Linkedin]()
@@ -54,7 +54,7 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 <br>
 
 **<h2>🖥 Protótipo do Produto (Figma) </h2>**
-O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cliente e para a vizulização do projeto sem que todo o código tenha que ser baixado.<br>
+O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cliente e para a vizualização do projeto sem que todo o código tenha que ser baixado.<br>
 <a href="https://www.figma.com/file/tDrqLQKNsiGbglnTp2CcwX/Prot%C3%B3tipo-API?node-id=0%3A1&t=iDi9wkiwjeJAybF1-1">Link para o protótipo</a><br>
 
 <div align="center">
