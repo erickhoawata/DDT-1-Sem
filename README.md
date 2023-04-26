@@ -18,7 +18,6 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 |**Erick Hideki Oyakawa Awata**|Scrum Master|[@GitHub](https://github.com/erickhoawata)|[@Linkedin](http://linkedin.com/in/érick-awata)
 |**Ryan Seiji Wakugawa**|Product Owner|[@GitHub](https://github.com/ryan-wakugawaa)|[@Linkedin]()
 |**Maria Eduarda Peleteiro Leite**|Desenvolvedor|[@GitHub](https://github.com/Dudaleite08">)|[@Linkedin]()
-|**Matheus Cipriano Machado**|Desenvolvedor|[@GitHub](https://github.com/cipriano141)|[@Linkedin]()
 |**Pedro Santos Kajiya**|Desenvolvedor|[@GitHub](https://github.com/kajiyap)|[@Linkedin](https://www.linkedin.com/in/pedro-santos-kajiya-65763b260/)
 |**Cauã Nascimento Coelho Sbruzi Dezidera**|Desenvolvedor|[@GitHub](https://github.com/CauaDezidera)|[@Linkedin]()
   
