@@ -227,40 +227,32 @@ h4{
     margin: 5%;
     justify-content: right;
 }
-
-.tabela{
-    width: 90%;
-}
-
-table{
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    width: 90%;
-}
-
 th{
    font-weight: bold;
    font-size: 16px;
-   padding-bottom: 1%;
+   padding: 0px 15px;
 }
-
-th,td{
-    margin: 8%;
-}
-
-
 td{
-    padding-bottom: 1%;
+    padding: 0px 15px;
 }
-
 input{
-    padding: 3%;
     background-color: #E1E1E1;
     border-radius: 10px;
     border: none;
     box-sizing: border-box;
     box-shadow: 0px 4px 0px 0px #00000035 ;
+    padding: 0px 40px;
+}
+.botenviar{
+    margin: 3%;
+    padding: 1.5%;
+    background-color: #18a0fb;
+}
+.resultado{
+    margin-bottom: 0%;
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .imgev2{
