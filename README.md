@@ -52,7 +52,7 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 
 <br>
 
-**<h2>🖥 Protótipo do Produto (Figma) </h2>**
+**<h2>🖥 Site desenvolvido em HTML e CSS </h2>**
 O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cliente e para a vizualização do projeto sem que todo o código tenha que ser baixado.<br>
 <a href="https://www.figma.com/file/tDrqLQKNsiGbglnTp2CcwX/Prot%C3%B3tipo-API?node-id=0%3A1&t=iDi9wkiwjeJAybF1-1">Link para o protótipo</a><br>
 
