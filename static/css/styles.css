@@ -246,7 +246,7 @@ th{
 }
 
 th,td{
-    margin: 5%;
+    margin: 8%;
 }
 
 
@@ -270,8 +270,6 @@ input{
     margin-top: 20%;
 }
 
-
-
 /*------css para imagens------*/
 .imgev1{
     text-align: justify;
@@ -290,8 +288,3 @@ input{
     width: 600px;
     padding: 10px 10px;
 }
-
-
-
-
- 
