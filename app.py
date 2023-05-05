@@ -1,4 +1,4 @@
-from flask import Flask, request ,render_template
+from flask import Flask, request ,render_template, make_response
 
 app = Flask("__name__")
 
@@ -13,14 +13,23 @@ def artefatos():
 @app.route("/avaliacao", methods=["GET","POST"])
 def avaliacao():
     if request.method == "POST":
-
+        
         try:
+            # Para os nomes:
+            n1 = str(request.form.get("n1"))
+            n2 = str(request.form.get("n2"))
+            n3 = str(request.form.get("n3"))
+            n4 = str(request.form.get("n4"))
+            n5 = str(request.form.get("n5"))
+            n6 = str(request.form.get("n6"))
+            n7 = str(request.form.get("n7"))
             # Pegando a b c da linha 1 
             a1 = int(request.form.get("a1"))
             b1 = int(request.form.get("b1"))
             c1 = int(request.form.get("c1"))
             # achando o d da linha 1
             d1 = a1*0.3+b1*0.3+c1*0.4
+            d1 = int(d1)
             # devolvendo o d para seu lugar
             
         
@@ -31,6 +40,7 @@ def avaliacao():
             c2 = int(request.form.get("c2"))
             # achando o d da linha 2
             d2 = a2*0.3+b2*0.3+c2*0.4
+            d2 = int(d2)
             # devolvendo o d para seu lugar
             
         
@@ -41,6 +51,7 @@ def avaliacao():
             c3 = int(request.form.get("c3"))
             # achando o d da linha 3
             d3 = a3*0.3+b3*0.3+c3*0.4
+            d3 = int(d3)
             # devolvendo o d para seu lugar
             
         
@@ -51,6 +62,7 @@ def avaliacao():
             c4 = int(request.form.get("c4"))
             # achando o d da linha 4
             d4 = a4*0.3+b4*0.3+c4*0.4
+            d4 = int(d4)
             # devolvendo o d para seu lugar
             
 
@@ -61,6 +73,7 @@ def avaliacao():
             c5 = int(request.form.get("c5"))
             # achando o d da linha 5
             d5 = a5*0.3+b5*0.3+c5*0.4
+            d5 = int(d5)
             # devolvendo o d para seu lugar
             
         
@@ -71,6 +84,7 @@ def avaliacao():
             c6 = int(request.form.get("c6"))
             # achando o d da linha 1
             d6 = a6*0.3+b6*0.3+c6*0.4
+            d6 = int(d6)
             # devolvendo o d para seu lugar
             
         
@@ -81,8 +95,9 @@ def avaliacao():
             c7 = int(request.form.get("c7"))
             # achando o d da linha 7
             d7 = a7*0.3+b7*0.3+c7*0.4
+            d7 = int(d7)
             # devolvendo o d para seu lugar
-            return render_template("Avaliações.html", d7 = d7,d1 = d1,d2 = d2,d3 = d3,d4 = d4,d5 = d5,d6 = d6)
+            return render_template("Avaliações.html", d7 = d7, d1 = d1, d2 = d2, d3 = d3, d4 = d4, d5 = d5, d6 = d6, n1=n1, n2=n2, n3=n3, n4=n4, n5=n5, n6=n6, n7=n7)
         except ValueError:
             return render_template("Avaliações.html")
     else:

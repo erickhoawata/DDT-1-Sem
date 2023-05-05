@@ -9,21 +9,74 @@
 </head>
 
 <body>
-    <!-- cabeçalho -->
+     <!--  Tabela  -->
     {% block conteudo %}
     
     <div class="corpo">
         <!--  Introdução da página de Avaliações  -->
         <h1>Como avaliar sua equipe?</h1>
-        <div class="container">
-            <div class="left">
-
-                <p>Por mais completo e funcional que seja, o metódo Scrum não fornece padrões de como uma equipe deve se avaliar.
-                Como o Scrum preza pela colaboração, empenho e honestidade entre os membros de uma equipe, um dos meios de avaliação mais indicados são aqueles em que 
-                cada membro da equipe fornece sua visão sobre si mesmo e os demais. </p>
-            </div>
-                
-            <img class="img-introducao" src="../static/img/imagem-lupa.png" alt="">
+        <div class="containertable">
+            <form method="post">
+                <table>
+                    <tr>
+                        <th class="coluna">Nome</th>
+                        <th class="coluna">Processo</th>
+                        <th class="coluna">Produto</th>
+                        <th class="coluna">Conhecimento</th>
+                        <th class="coluna">Nota Final</th>
+                    </tr>
+                    <tr style="padding: 0%;">
+                        <td > <input type="text"  name="n1" value="{{n1}}" class="pedaço"></td>
+                        <td > <input type="number" max="10" min="0" value="0" name="a1" class="pedaço"></td>
+                        <td > <input type="number" max="10" min="0" value="0" name="b1" class="pedaço"></td>
+                        <td > <input type="number" max="10" min="0" value="0" name="c1" class="pedaço"></td>
+                        <td > <p type="number" class="pedaço">{{ d1 }}</p></td>          
+                    </tr>
+                    <tr>
+                        <td > <input type="text"  name="n2" value="{{n2}}" class="pedaço"></td>
+                        <td > <input type="number" max="10" min="0" value="0" name="a2" class="pedaço"></td>
+                        <td > <input type="number" max="10" min="0" value="0" name="b2" class="pedaço"></td>
+                        <td > <input type="number" max="10" min="0" value="0" name="c2" class="pedaço"></td>
+                        <td > <p  type="number" class="pedaço">{{ d2 }}</p></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text"  name="n3" value="{{n3}}" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="a3" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="b3" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="c3" class="pedaço"></td>
+                        <td> <p  type="number" class="pedaço">{{ d3 }}</p></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text"  name="n4" value="{{n4}}" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="a4" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="b4" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="c4" class="pedaço"></td>
+                        <td> <p  type="number" class="pedaço">{{ d4 }}</p></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text"  name="n5" value="{{n5}}" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="a5" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="b5" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="c5" class="pedaço"></td>
+                        <td> <p  type="number" class="pedaço">{{ d5 }}</p></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text"  name="n6" value="{{n6}}" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="a6" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="b6" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="c6" class="pedaço"></td>
+                        <td> <p  type="number" class="pedaço">{{ d6 }}</p></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text"  name="n7" value="{{n7}}" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="a7" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="b7" class="pedaço"></td>
+                        <td> <input type="number" max="10" min="0" value="0" name="c7" class="pedaço"></td>
+                        <td> <p  type="number" class="pedaço">{{ d7 }}</p></td>
+                    </tr>
+                </table>
+                <input type="submit" class="botenviar" value="Calcular">
+            </form>
         </div>
 
         <hr>
@@ -32,8 +85,8 @@
 
         <div class="container">
             
-            <div class="left"> 
-                <p>A avaliação é dividida em processo, produto e conhecimento.</p>
+            <div class="left" style="padding: 0px 30px;"> 
+                <h2>A avaliação é dividida em processo, produto e conhecimento.</h2>
 
                 <div>
                     <h2> Processo</h2>
@@ -64,72 +117,14 @@
             </div>  
             
         </div>
-
-
-        <!--  Tabela  -->
-
-        <div class="container">
-            <form method="post">
-                <table>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Processo</th>
-                        <th>Produto</th>
-                        <th>Conhecimento</th>
-                        <th>Nota Final</th>
-                    </tr>
-                    <tr>
-                        <td> <input type="text"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="a1"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="b1"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="c1"></td>
-                        <td> <p class="resultado" type="number">{{ d1 }}</p></td>          
-                    </tr>
-                    <tr>
-                        <td> <input type="text"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="a2"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="b2"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="c2"></td>
-                        <td> <p class="resultado" type="number">{{ d2 }}</p></td>
-                    </tr>
-                    <tr>
-                        <td> <input type="text"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="a3"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="b3"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="c3"></td>
-                        <td> <p class="resultado" type="number">{{ d3 }}</p></td>
-                    </tr>
-                    <tr>
-                        <td> <input type="text"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="a4"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="b4"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="c4"></td>
-                        <td> <p class="resultado" type="number">{{ d4 }}</p></td>
-                    </tr>
-                    <tr>
-                        <td> <input type="text"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="a5"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="b5"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="c5"></td>
-                        <td> <p class="resultado" type="number">{{ d5 }}</p></td>
-                    </tr>
-                    <tr>
-                        <td> <input type="text"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="a6"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="b6"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="c6"></td>
-                        <td> <p class="resultado" type="number">{{ d6 }}</p></td>
-                    </tr>
-                    <tr>
-                        <td> <input type="text"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="a7"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="b7"></td>
-                        <td> <input type="number" max="10" min="0" value="0" name="c7"></td>
-                        <td> <p class="resultado" type="number">{{ d7 }}</p></td>
-                    </tr>
-                </table>
-                <input type="submit" class="botenviar" value="Enviar">
-            </form>
+        <div class="container" style="padding-top: 0px;">  
+            <img class="img-introducao" src="../static/img/imagem-lupa.png" alt="">
+            <div class="left">
+                <h1>Não se esqueça:</h1>
+                <p>Por mais completo e funcional que seja, o metódo Scrum não fornece padrões de como uma equipe deve se avaliar.
+                Como o Scrum preza pela colaboração, empenho e honestidade entre os membros de uma equipe, um dos meios de avaliação mais indicados são aqueles em que 
+                cada membro da equipe fornece sua visão sobre si mesmo e os demais. </p>
+            </div>
         </div>
 
         <hr>
