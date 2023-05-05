@@ -102,10 +102,6 @@ h4{
 }
 
 /*FORMATAÇÃO DAS POSIÇÕES DOS PEQUENOS TEXTOS E IMAGENS*/
-.container {
-    display: flex;
-    justify-content: space-between;
-}
 
 .elemento {
     text-align: justify;
