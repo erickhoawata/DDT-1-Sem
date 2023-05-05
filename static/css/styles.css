@@ -199,15 +199,35 @@ h4{
 }
 
 /* TABELA */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+   
+}
+input{
+    background-color: #e1e1e1;
+    border: none;
+    text-align: center;
+}
+p[type=number]{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
 .pedaço{
-    margin-left: 5%;
-    margin-right: 5%;
     background-color: #E1E1E1;
     border-radius: 10px;
     border: none;
     box-sizing: border-box;
     box-shadow: 0px 4px 0px 0px #00000035;
-    padding: 1% 2%;
+    margin: 5%;
+    width: 17%;
+    height: 0.2%;
+    text-align: center;
 }
 .botenviar{
     background-color: #18a0fb;
