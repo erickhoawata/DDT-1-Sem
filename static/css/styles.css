@@ -1,5 +1,5 @@
 body{
-    font-family: montserrat;
+    font-family: 'Montserrat';
     text-align: justify;
     line-height: 1.5;
 }
@@ -29,7 +29,7 @@ hr{
 
 /*PARA TÍTULO*/
 h1{
-    font-family: montserrat;
+    font-family: 'Montserrat';
 }
 
 /*PARA SUBTÍTULO*/
@@ -97,6 +97,7 @@ h4{
     display: block;
 }
 .corpo{
+    padding-top: 5%;
     margin-left: 8%;
     margin-right: 8%;
 }
@@ -149,9 +150,14 @@ h4{
     background-color: rgba(125, 232, 246, 0.531);
 }
 
+nav{
+    background-color: #18a0fb !important;
+    height: 60px;
+}
+
 .dropdown-menu {
     display: none;
-    background-color: #2ca5f6;
+    background-color: #2ca5f6 !important;
     position: relative;
 }
 

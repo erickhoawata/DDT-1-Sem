@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Equipe</title>
-    
+
     <!-- formatação -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- responsividade no celular -->
     <link rel="stylesheet" href="../static/css/styles.css">
@@ -26,29 +26,62 @@
 
 </head>
 <body>
-    {% block conteudo %}
-    <h1>Headers examples</h1>
-    
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-            <span class="fs-4">Simple header</span>
-        </a>
-    
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    <!-- header ddt-->
+    <!-- <div class="navtop">
+        <div class="ddt"><h1>DDT</h1></div>
+        <ul class="links">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="/trilha">Aprenda Conosco</a>
+
+                <div class="dropdown-menu">
+                        <a href="/pilares">Três Pilares</a>
+                        <a href="/artefatos">Artefatos</a>
+                        <a href="/equipe">Equipe</a>
+                        <a href="/avaliacao">Avaliações</a>
+                        <a href="/eventos">Eventos</a>
+                </div>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
         </ul>
-        </header>
-    </div>
+    </div> -->
+    <!-- header bootstrap -->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+            <a class="navbar-brand text-black" href="/">
+                <div class="ddt"><h2>DDT</h2></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                    <a class="nav-link text-black" aria-current="page" href="#"><b>Home</b></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="/trilha" data-bs-toggle="dropdown" aria-expanded="false"><b>Aprenda Conosco</b></a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Três Pilares</a></li>
+                    <li><a class="dropdown-item" href="#">Artefatos</a></li>
+                    <li><a class="dropdown-item" href="#">Equipe</a></li>
+                    <li><a class="dropdown-item" href="#">Avaliações</a></li>
+                    <li><a class="dropdown-item" href="#">Eventos</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     <!-- corpo -->
     <div class="corpo">
         <h1>Equipe Scrum</h1>
-        
+
         <!-- equipe -->
         <div class="container">
             <div class="left">
@@ -87,7 +120,7 @@
             </div>
             <div class="right">
                 <p>Responsável por definir e priorizar as funcionalidades do produto, trabalhando em estreita colaboração com os stakeholders para garantir que as necessidades dos usuários finais sejam atendidas. O Product Owner é responsável por manter o Product Backlog atualizado, de forma que a equipe possa trabalhar nas tarefas mais importantes em cada Sprint. É aquele que mais entra em contato direto com o cliente.</p>
-            </div> 
+            </div>
         </div>
 
         <!-- Time de desenvolvimento -->
@@ -99,7 +132,7 @@
             <div>
                 <img src="../static/img/devteams.svg">
             </div>
-        </div> 
+        </div>
 
         <hr>
 
