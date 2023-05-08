@@ -97,7 +97,28 @@ def avaliacao():
             d7 = a7*0.3+b7*0.3+c7*0.4
             d7 = int(d7)
             # devolvendo o d para seu lugar
-            return render_template("Avaliações.html", d7 = d7, d1 = d1, d2 = d2, d3 = d3, d4 = d4, d5 = d5, d6 = d6, n1=n1, n2=n2, n3=n3, n4=n4, n5=n5, n6=n6, n7=n7)
+            if d1>0:
+                if d2>0:
+                    if d3>0:
+                        if d4>0:
+                            if d5>0:
+                                if d6>0:
+                                    if d7>0:
+                                        return render_template("Avaliações.html",d1 = d1, d2=d2, d3=d3, d4=d4, d5=d5, d6=d6, d7=d7, n1=n1, n2=n2, n3=n3, n4=n4, n5=n5, n6=n6, n7=n7)
+                                    else:
+                                        return render_template("Avaliações.html",d1 = d1, d2=d2, d3=d3, d4=d4, d5=d5, d6=d6, n1=n1, n2=n2, n3=n3, n4=n4, n5=n5, n6=n6, n7=n7)
+                                else:
+                                    return render_template("Avaliações.html",d1 = d1, d2=d2, d3=d3, d4=d4, d5=d5, n1=n1, n2=n2, n3=n3, n4=n4, n5=n5, n6=n6, n7=n7)
+                            else:
+                                return render_template("Avaliações.html",d1 = d1, d2=d2, d3=d3, d4=d4, n1=n1, n2=n2, n3=n3, n4=n4, n5=n5, n6=n6, n7=n7)
+                        else:
+                            return render_template("Avaliações.html",d1 = d1, d2=d2, d3=d3, n1=n1, n2=n2, n3=n3, n4=n4, n5=n5, n6=n6, n7=n7)
+                    else:
+                        return render_template("Avaliações.html",d1 = d1, d2=d2, n1=n1, n2=n2, n3=n3, n4=n4, n5=n5, n6=n6, n7=n7)
+                else:
+                    return render_template("Avaliações.html",d1 = d1, n1=n1, n2=n2, n3=n3, n4=n4, n5=n5, n6=n6, n7=n7)
+            else:
+                return render_template("Avaliações.html", n1=n1, n2=n2, n3=n3, n4=n4, n5=n5, n6=n6, n7=n7)
         except ValueError:
             return render_template("Avaliações.html")
     else:

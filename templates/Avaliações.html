@@ -14,8 +14,14 @@
     
     <div class="corpo">
         <!--  Introdução da página de Avaliações  -->
-        <h1>Como avaliar sua equipe?</h1>
+        <div class="container">
+            <h1>Como avaliar sua equipe?</h1>
+            <div class="dialogo">
+                <img class="imgev2" src="../static/img/img-mulherdialogo.png" alt="">
+            </div>
             <form method="post">
+        </div>
+            
                 <table>
                     <tr>
                         <th >Nome</th>
@@ -55,8 +61,8 @@
                     <tr>
                         <td class="pedaço"> <input type="text"  name="n5" value="{{n5}}" class="nome"></td>
                         <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="a5"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="b5" ></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="c5" ></td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="b5"></td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="c5"></td>
                         <td class="pedaço"> <p  type="number" >{{ d5 }}</p></td>
                     </tr>
                     <tr>
@@ -95,21 +101,16 @@
                     <h2>Produto</h2>
                     <p>Qualidade do produto, eficiência, criatividade, originalidade e coerência.</p>
                 </div>
-
-                <div>
-                    <h2>Conhecimento</h2>
-                    <p>Capacidade de interpretação do que foi passado, desenvolvimento dos conceitos, e conhecimento teórico.</p>
-                </div>
-
             </div> 
 
             <div class="conteudod">
                 <div>
+                    <h2>Conhecimento</h2>
+                    <p>Capacidade de interpretação do que foi passado, desenvolvimento dos conceitos, e conhecimento teórico.</p>
+                </div>
+                <div>
                     <h2>Formula Utilizada</h2>
                     <p>Nota final = (Processo * 0,3) + (Produto * 0,4) + (Conhecimento * 0,3)</p>
-                </div>
-                <div class="dialogo">
-                    <img class="imgev2" src="../static/img/img-mulherdialogo.png" alt="">
                 </div>
             </div>  
             
@@ -133,7 +134,7 @@
             Agora você já sabe como avaliar seu time Scrum!<br>
             Retorne a trilha para o próximo aprendizado!<br>
             <br>
-            <button type="button" class="bottrilha"><a href="trilha.html">Retornar à trilha</a></button>
+            <button type="button" class="bottrilha"><a href="/trilha">Retornar à trilha</a></button>
         </div>
     </div>
 
