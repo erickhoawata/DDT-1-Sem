@@ -30,53 +30,58 @@
                         <th >Conhecimento</th>
                         <th >Nota Final</th>
                     </tr>
+                    
                     <tr style="padding: 0%;">
                         <td class="pedaço"> <input type="text"  name="n1" value="{{n1}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="a1" ></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="b1" ></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="c1" ></td>
-                        <td class="pedaço"> <p type="number">{{ d1 }}</p></td>          
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a1" >{{a1}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b1" >{{b1}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c1" >{{c1}}</td>
+                        <td class="pedaço"> 
+                        {%if d1:%}
+                        <p type="number">{{ d1 }}</p>  
+                        {%endif%}
+                        </td>
                     </tr>
                     <tr>
                         <td class="pedaço"> <input type="text"  name="n2" value="{{n2}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="a2" ></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="b2" ></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="c2" ></td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a2" value='{{a2}}'></td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b2" {{b2}}></td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c2" >{{c2}}</td>
                         <td class="pedaço"> <p  type="number" >{{ d2 }}</p></td>
                     </tr>
                     <tr>
                         <td class="pedaço"> <input type="text"  name="n3" value="{{n3}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="a3" ></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="b3" ></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="c3" ></td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a3" >{{a3}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b3" >{{b3}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c3" >{{c3}}</td>
                         <td class="pedaço"> <p  type="number">{{ d3 }}</p></td>
                     </tr>
                     <tr>
                         <td class="pedaço"> <input type="text"  name="n4" value="{{n4}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="a4" ></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="b4" ></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="c4" ></td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a4" >{{a4}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b4" >{{b4}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c4" >{{c4}}</td>
                         <td class="pedaço"> <p  type="number">{{ d4 }}</p></td>
                     </tr>
                     <tr>
                         <td class="pedaço"> <input type="text"  name="n5" value="{{n5}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="a5"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="b5"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="c5"></td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a5">{{a5}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b5">{{b5}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c5">{{c5}}</td>
                         <td class="pedaço"> <p  type="number" >{{ d5 }}</p></td>
                     </tr>
                     <tr>
                         <td class="pedaço"> <input type="text"  name="n6" value="{{n6}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="a6"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="b6"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="c6"></td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a6">{{a6}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b6">{{b6}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c6">{{c6}}</td>
                         <td class="pedaço"> <p type="number" >{{ d6 }}</p></td>
                     </tr>
                     <tr>
                         <td class="pedaço"> <input type="text"  name="n7" value="{{n7}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="a7"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="b7"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" value="0" name="c7"></td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a7">{{a7}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b7">{{b7}}</td>
+                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c7">{{c7}}</td>
                         <td class="pedaço"> <p type="number" >{{ d7 }}</p></td>
                     </tr>
                 </table>
