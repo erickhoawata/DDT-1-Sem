@@ -26,64 +26,48 @@
 
 </head>
 <body>
-    <!-- header ddt-->
-    <!-- <div class="navtop">
-        <div class="ddt"><h1>DDT</h1></div>
-        <ul class="links">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li class="dropdown">
-                <a href="/trilha">Aprenda Conosco</a>
-
-                <div class="dropdown-menu">
-                        <a href="/pilares">Três Pilares</a>
-                        <a href="/artefatos">Artefatos</a>
-                        <a href="/equipe">Equipe</a>
-                        <a href="/avaliacao">Avaliações</a>
-                        <a href="/eventos">Eventos</a>
-                </div>
-            </li>
-            <li>
-                <a href="contato.html">Contato</a>
-            </li>
-        </ul>
-    </div> -->
     <!-- header bootstrap -->
-        <nav class="navbar navbar-expand-sm">
-            <div class="container-fluid">
-            <a class="navbar-brand text-black" href="/">
-                <div class="ddt"><h2>DDT</h2></div>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarsExample03">
-                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                <li class="nav-item">
-                    <a class="nav-link text-black" aria-current="page" href="#"><b>Home</b></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-black" href="/trilha" data-bs-toggle="dropdown" aria-expanded="false"><b>Aprenda Conosco</b></a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Três Pilares</a></li>
-                    <li><a class="dropdown-item" href="#">Artefatos</a></li>
-                    <li><a class="dropdown-item" href="#">Equipe</a></li>
-                    <li><a class="dropdown-item" href="#">Avaliações</a></li>
-                    <li><a class="dropdown-item" href="#">Eventos</a></li>
-                    </ul>
-                </li>
+    <nav class="navbar navbar-expand-lg py-1" style="background-color: #18a0fb">
+        <div class="container-fluid">
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-lg-none d-block"></span>
+                <a class="navbar-brand" href="#">
+                    <h2><b><i>DDT</i></b></h2>
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar7">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link active"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-black" href="/trilha" data-bs-toggle="dropdown" aria-expanded="false"><b>Aprenda Conosco</b></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-center" href="/pilares"><b>Três Pilares</b></a></li>
+                                <li><a class="dropdown-item text-center" href="/artefatos"><b>Artefatos</b></a></li>
+                                <li><a class="dropdown-item text-center" href="/equipe"><b>Equipe</b></a></li>
+                                <li><a class="dropdown-item text-center" href="/avaliacao"><b>Avaliações</b></a></li>
+                                <li><a class="dropdown-item text-center" href="/eventos"><b>Eventos</b></a></li>
+                            </ul>
+                        </li>
+                    </li>
                 </ul>
             </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
+
     <!-- corpo -->
     <div class="corpo">
         <h1>Equipe Scrum</h1>
 
         <!-- equipe -->
-        <div class="container">
+        <div class="container1">
             <div class="left">
                 <p>
                     Embora todos os membros tenham importância, existem funções diferentes dentro de uma equipe Scrum:
@@ -103,7 +87,7 @@
 
         <!-- scrum master -->
         <h1>Scrum Master (SM)</h1>
-        <div class="container">
+        <div class="container1">
             <div class="left">
                 <p>Responsável por garantir que a equipe esteja seguindo as práticas ágeis e as regras do Scrum, além de facilitar o processo de desenvolvimento, removendo obstáculos e ajudando a equipe a se tornar cada vez mais autogerenciável. É aquele que mais deve conhecer sobre a metodologia Scrum.</p>
             </div>
@@ -114,7 +98,7 @@
 
         <!-- product owner -->
         <h1>Product Owner (PO)</h1>
-        <div class="container">
+        <div class="container1">
             <div>
                 <img src="../static/img/productowner.svg">
             </div>
@@ -125,7 +109,7 @@
 
         <!-- Time de desenvolvimento -->
         <h1>Time de Desenvolvimento (Dev Team)</h1>
-        <div class="container">
+        <div class="container1">
             <div class="left">
                 Responsável por criar o produto, transformando as funcionalidades definidas pelo Product Owner em software funcional. O Time de Desenvolvimento é uma equipe multifuncional e auto-organizável, que trabalha em conjunto para completar as tarefas do Sprint.
             </div>
@@ -144,7 +128,7 @@
             Agora você já sabe como avaliar seu time Scrum!<br>
             Retorne a trilha para o próximo aprendizado!<br>
             <br>
-            <button type="button" class="bottrilha"><a href="trilha.html">Retornar à trilha</a></button>
+            <button type="button" class="btn btn-primary" style="background-color:#18a0fb"><a class="text-white" href="/trilha">Retornar à trilha</a></button>
         </div>
     </div>
 

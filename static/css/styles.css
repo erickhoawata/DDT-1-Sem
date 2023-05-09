@@ -1,7 +1,7 @@
 body{
-    font-family: 'Montserrat';
-    text-align: justify;
-    line-height: 1.5;
+    font-family: 'Montserrat' !important;
+    text-align: justify !important;
+    line-height: 1.5 !important;
 }
 hr{
     margin-left: 1%;
@@ -29,24 +29,26 @@ hr{
 
 /*PARA TÍTULO*/
 h1{
-    font-family: 'Montserrat';
+    font-family: montserrat !important;
+    font-size: 35px !important;
+    font-weight: bold !important;
 }
 
 /*PARA SUBTÍTULO*/
 h2{
-    font-family: montserrat;
-    font-weight: bold
+    font-family: montserrat !important;
+    font-weight: bold !important;
 }
 /*SLOGAN*/
 h3{
-    font-family: montserrat;
-    font-size: 56px;
+    font-family: montserrat !important;
+    font-size: 56px !important;
 }
 
 /*Texto tela home*/
 h4{
-    font-family: montserrat;
-    font-size: 30px;
+    font-family: montserrat !important;
+    font-size: 30px !important;
 }
 /*Azul home*/
 .azul {
@@ -85,25 +87,17 @@ h4{
     padding: 70px 30px;
 }
 
-.botcontato{
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    margin-top: -15px;
-    padding: 15px 15px;
-}
-.botcontato:hover{
-    background-color: rgba(255, 255, 255, 3);
-    display: block;
-}
 .corpo{
-    padding-top: 5%;
-    margin-left: 8%;
-    margin-right: 8%;
+    padding-top: 50px !important;
+    margin-left: 8% !important;
+    margin-right: 8% !important;
 }
 
 /*FORMATAÇÃO DAS POSIÇÕES DOS PEQUENOS TEXTOS E IMAGENS*/
-
+.container1 {
+    display: flex;
+    justify-content: space-between;
+}
 .elemento {
     text-align: justify;
     width: 572px;
@@ -119,10 +113,12 @@ h4{
     height: 100%;
     width: 100%;
 }
+a{
+    text-decoration: none !important;
+}
 
-.bottrilha{
-    text-decoration: none;
-    color: #18a0fb;
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #3478df !important;
 }
 
 /*BARRA DE MENU*/
@@ -141,6 +137,26 @@ h4{
     text-align: center;
 }
 
+
+/* navbar bootstrap */
+.dropdown{
+    color: #fff !important;
+    border: none;
+}
+
+.dropdown-menu {
+    background-color: #18a0fb ;
+    position: relative;
+}
+
+.dropdown:hover > .dropdown-menu{
+    opacity:1 !important;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(125, 232, 246, 0.531) !important;
+}
+
 /* navbar */
 .navtop ul {
     list-style: none;
@@ -148,17 +164,6 @@ h4{
 
 .navtop li a:hover{
     background-color: rgba(125, 232, 246, 0.531);
-}
-
-nav{
-    background-color: #18a0fb !important;
-    height: 60px;
-}
-
-.dropdown-menu {
-    display: none;
-    background-color: #2ca5f6 !important;
-    position: relative;
 }
 
 .dropdown-menu a{
