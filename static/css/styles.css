@@ -37,7 +37,7 @@ h1{
 /*PARA SUBTÍTULO*/
 h2{
     font-family: montserrat !important;
-    font-weight: bold !important;
+    font-size: 25px !important;
 }
 /*SLOGAN*/
 h3{
@@ -100,6 +100,12 @@ h4{
 }
 .elemento {
     text-align: justify;
+    width: 572px;
+    font-family: 'Montserrat', sans-serif;
+}
+.elemento1 {
+    text-align: justify;
+    margin-right: 0px; 
     width: 572px;
     font-family: 'Montserrat', sans-serif;
 }
