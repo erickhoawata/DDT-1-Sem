@@ -30,60 +30,29 @@
                         <th >Conhecimento</th>
                         <th >Nota Final</th>
                     </tr>
+                    {%if metodo=="GET":%}
+                        {% for c in range(1,8): %}
+                        <tr style="padding: 0%;">
+                            <td class="pedaço"> <input type="text"  name="n{{c}}" class="nome"></td>
+                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" value="0" name="a{{c}}"></td>
+                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" value="0" name="b{{c}}"></td>
+                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" value="0" name="c{{c}}"></td>
+                            <td class="pedaço"> <p type="number"></p></td>
+                        </tr>
+                        {%endfor %}
                     
-                    <tr style="padding: 0%;">
-                        <td class="pedaço"> <input type="text"  name="n1" value="{{n1}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a1" >{{a1}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b1" >{{b1}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c1" >{{c1}}</td>
-                        <td class="pedaço"> 
-                        {%if d1:%}
-                        <p type="number">{{ d1 }}</p>  
-                        {%endif%}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="pedaço"> <input type="text"  name="n2" value="{{n2}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a2" value='{{a2}}'></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b2" {{b2}}></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c2" >{{c2}}</td>
-                        <td class="pedaço"> <p  type="number" >{{ d2 }}</p></td>
-                    </tr>
-                    <tr>
-                        <td class="pedaço"> <input type="text"  name="n3" value="{{n3}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a3" >{{a3}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b3" >{{b3}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c3" >{{c3}}</td>
-                        <td class="pedaço"> <p  type="number">{{ d3 }}</p></td>
-                    </tr>
-                    <tr>
-                        <td class="pedaço"> <input type="text"  name="n4" value="{{n4}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a4" >{{a4}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b4" >{{b4}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c4" >{{c4}}</td>
-                        <td class="pedaço"> <p  type="number">{{ d4 }}</p></td>
-                    </tr>
-                    <tr>
-                        <td class="pedaço"> <input type="text"  name="n5" value="{{n5}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a5">{{a5}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b5">{{b5}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c5">{{c5}}</td>
-                        <td class="pedaço"> <p  type="number" >{{ d5 }}</p></td>
-                    </tr>
-                    <tr>
-                        <td class="pedaço"> <input type="text"  name="n6" value="{{n6}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a6">{{a6}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b6">{{b6}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c6">{{c6}}</td>
-                        <td class="pedaço"> <p type="number" >{{ d6 }}</p></td>
-                    </tr>
-                    <tr>
-                        <td class="pedaço"> <input type="text"  name="n7" value="{{n7}}" class="nome"></td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="a7">{{a7}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="b7">{{b7}}</td>
-                        <td class="pedaço"> <input type="number" max="10" min="0" required name="c7">{{c7}}</td>
-                        <td class="pedaço"> <p type="number" >{{ d7 }}</p></td>
-                    </tr>
+                    {%else:%}
+                        {%for pessoa in pessoas:%}
+                        <tr>
+                            <td class="pedaço"> <input type="text"  name="n{{loop.index0+1}}" value="{{pessoa[0]}}" class="nome"></td>
+                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" name="a{{loop.index0+1}}" value="{{pessoa[1]}}"></td>
+                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" name="b{{loop.index0+1}}" value="{{pessoa[2]}}"></td>
+                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" name="c{{loop.index0+1}}" value="{{pessoa[3]}}"></td>
+                            <td class="pedaço"> <p type="number" >{{pessoa[4]}}</p></td>
+                        </tr>
+                        {%endfor%}
+                    {%endif%}
+
                 </table>
                 <input type="submit" class="botenviar" value="Calcular">
             </form>
