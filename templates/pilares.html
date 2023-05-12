@@ -21,6 +21,31 @@
                 <img class="imgev1" src="../static/img/pilares1.png" alt="pilares1">
             </div>
         </div>
+        <!--Botao do colaspe-->
+        <div>
+            <button type="button" class="collapsible">Clique para acessar o vídeo!</button>
+            <div class="content">
+                <iframe class="center" src="https://www.youtube.com/embed/jf9q5hBY7CE" frameborder="0" width="800" height="500"></iframe>
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                
+            </script>
+            </div>
         <hr>
         <!--pt1-->
         <div class="container1">

@@ -30,9 +30,33 @@
                 <img class="elemento" src="../static/img/event5.png" alt="event5">
             </div>
         </div>
-        <hr>
+        <!--Botao do colaspe-->
         <div>
-
+            <button type="button" class="collapsible">Clique para acessar o vídeo!</button>
+            <div class="content">
+                <iframe class="center" src="https://www.youtube.com/embed/jf9q5hBY7CE" frameborder="0" width="800" height="500"></iframe>
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                
+            </script>
+            </div>
+        <div>
+            <br><br>
             <!--Sprint-->
             <h1>Sprint</h1>
             <div class="container1">
@@ -124,8 +148,8 @@
             </div>
             <hr>
             <!--pt3-->
-            <div class="container">
-                <div class="left1">
+            <div class="container1">
+                <div class="left">
                     <br><br>
                     <b>Sprint Review Meeting</b>
                     <br><br>
@@ -135,7 +159,7 @@
                     Com base no que foi mostrado, o feedback do Product Owner e/ou das partes interessadas é essencial
                     para saber se aquilo será utilizado, aprimorado ou descartado.
                 </div>
-                <div class="elemento"><img class="imgev1" src="../static/img/event4.png" alt="event4"></div>
+                <div class="left"><img class="imgev1" src="../static/img/event4.png" alt="event4"></div>
             </div>
             <div class="esp">
                 <b>Como fazer a Sprint Review Meeting?</b>
@@ -153,9 +177,9 @@
             </div>
             <hr>
             <!-- pt4 -->
-            <div class="container">
-                <div class="elemento"><img class="imgev1" src="../static/img/event6.png" alt="event6"></div>
-                <div class="left1">
+            <div class="container1">
+                <div class="left"><img class="imgev1" src="../static/img/event6.png" alt="event6"></div>
+                <div class="left">
                     <br><br><br><br>
                     <b>Sprint Retrospective</b>
                     <br><br>
@@ -182,10 +206,10 @@
 
     <div class="center">
         <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
-        Agora você conhece quais são os eventos do Scrum!<br>
+        Agora você já sabe como avaliar seu time Scrum!<br>
         Retorne a trilha para o próximo aprendizado!<br>
         <br>
-        <button type="button" class="bottrilha"><a href="/trilha">Retornar à trilha</a></button>
+        <button type="button" class="btn btn-primary" style="background-color:#18a0fb"><a class="text-white" href="/trilha">Retornar à trilha</a></button>
     </div>
     </div>
 
