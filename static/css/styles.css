@@ -262,12 +262,296 @@ a{
     padding: 1% 2%;
 }
 .tabela{
+
+    margin-left: 8% !important;
     margin-left: 8% !important;
     margin-right: 8% !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+}
+.botenviar{
+    background-color: #18a0fb;
+    border: none;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 1% 2%;
+}
+/* -------  AVALIAÇÔES ---------*/ 
+
+.introdução{
+    display: flex;
+}
+
+.conteudo-introducao{
+    max-width: 50%;
+    margin: 5%;
+}
+
+.img-introducao{
+    max-width: 50%;
+    margin: 2%;
+}
+
+.conteudo{
+    display: flex;
+}
+
+.conteudoe{
+    max-width: 40%;
+    margin: 5%;
+}
+
+.conteudod{
+    margin: 0% 5%;
+    justify-content: right;
+}
+
+.imgev2{
+    text-align: justify;
+    width: 400px;
+    padding: 0px 30px 0px;
+    margin-top: 20%;
+}
+body{
+    font-family: montserrat;
+    text-align: justify;
+    line-height: 1.5;
+}
+hr{
+    margin-left: 1%;
+    margin-right: 1%;
+    min-width: 600px;
+}
+
+.navtop{
+    display:flex;
+    height: 60px;
+    background-color: #18a0fb;
+    font-weight: bold;
+}
+
+.titulo{
+    margin-left: 77px;
+    align-self: center;
+}
+.links{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-right:77px;
+}
+
+/*PARA TÍTULO*/
+h1{
+    font-family: montserrat;
+}
+
+/*PARA SUBTÍTULO*/
+h2{
+    font-family: montserrat;
+    font-weight: bold
+}
+/*SLOGAN*/
+h3{
+    font-family: montserrat;
+    font-size: 56px;
+}
+
+/*Texto tela home*/
+h4{
+    font-family: montserrat;
+    font-size: 30px;
+}
+/*Azul home*/
+.azul {
+    color: #31DAFF;
+}
+.scrum {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 80px;
+}
+
+.ddt {
+    font-family: 'Montserrat';
+    font-style: italic; 
+    margin-left: 77px;
+    align-self: center;
+}
+
+.center{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left{
+    width: 600px;
+    padding: 70px 30px;
+}
+
+.right{
+    text-align: justify;
+    width: 600px;
+    padding: 70px 30px;
+}
+
+.botcontato{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-top: -15px;
+    padding: 15px 15px;
+}
+.botcontato:hover{
+    background-color: rgba(255, 255, 255, 3);
+    display: block;
+}
+.corpo{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+/*FORMATAÇÃO DAS POSIÇÕES DOS PEQUENOS TEXTOS E IMAGENS*/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elemento {
+    text-align: justify;
+    width: 572px;
+    font-family: 'Montserrat', sans-serif;
+}
+.espaco {
+    width: 144px;
+}
+.imghome {
+    background-image: url("../img/fundo\ home.png");
+    display:flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.bottrilha{
+    background-color: #18a0fb;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 0px 0px #00000035;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+/*BARRA DE MENU*/
+.navtop li {
+    display: inline-block;
+    margin-top: -15px;
+}
+.navtop li a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    display: inline-block;
+    padding: 15px 15px;
+    background-color: #18a0fb;
+    display: block;
+    text-align: center;
+}
+
+/* navbar */
+.navtop ul {
+    list-style: none;
+}
+
+.navtop li a:hover{
+    background-color: rgba(125, 232, 246, 0.531);
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #2ca5f6;
+    position: relative;
+}
+
+.dropdown-menu a{
+    display: block;
+    box-shadow: 0 0 2px white;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.trilha a {
+    text-decoration: none;
+}
+
+/* Rodapé */
+.navbot{
+    display:flex;
+    height: 60px;
+    background-color: #dadada;
+}
+.navbot2{
+    display:flex;
+    height: 50px;
+    background-color: #6C6C6C;
+    color: #FFFFFF;
+}
+.navbot li {
+    display: inline-block;
+    margin-top: -15px;
+}
+.navbot li a {
+    text-decoration:none;
+    font-weight: bolder;
+    display: inline-block;
+    color: black;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+}
+
+/* TABELA */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+   width: 95%;
+}
+input[type=text]{
+    background-color: #e1e1e1;
+}
+input{
+    background-color: #e1e1e1;
+    border: none;
+    text-align: center;
+}
+p[type=number]{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+.pedaço{
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 0px 0px #00000035;
+    margin: 5%;
+    width: 17%;
+    height: 0.2%;
     text-align: center;
 }
 .botenviar{
@@ -311,6 +595,25 @@ a{
     width: 400px;
     padding: 0px 30px 0px;
     margin-top: 20%;
+}
+
+/*------css para imagens------*/
+.imgev1{
+    text-align: justify;
+    width: 400px;
+    padding: 0px 30px 0px;
+}
+
+.left1{
+    margin-top: 20px;
+    width: 600px;
+    padding: 0px 30px 0px;
+}
+
+.right1{
+    text-align: justify;
+    width: 600px;
+    padding: 10px 10px;
 }
 
 /*------css para imagens------*/
