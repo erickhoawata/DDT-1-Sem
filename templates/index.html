@@ -18,6 +18,33 @@
         <img src="../static/img/fundo home (2).png" class="imghome">
     </div>
     <div class="corpo">
+             <!--Botao do colaspe-->
+     <br>
+     <div class="center">
+        <button type="button" class="collapsible">Clique aqui para acessar o vídeo!</button>
+        <div class="content">
+            <iframe class="center1" src="https://www.youtube.com/embed/ZPuRcOg6lTM" frameborder="o" width="1080" height="600"></iframe>
+        </div>
+        <br>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("desactive");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            
+        </script>
+        </div>
 
         
    <!-- metodo scrum -->     
