@@ -13,7 +13,7 @@
     <div  class="corpo">
         <!--Introdução-->
         <h1>Pilares do Scrum</h1>
-        <div class="container">
+        <div class="container1">
             <div class="left">
                 O Scrum realmente é difícil de dominar, pois ele implica numa mudança de mindset e cultura. Mais do que os papéis e as práticas, são os pilares e valores do Scrum que trazem essa mudança na forma de pensar. Os pilares são a base de tudo e podem inclusive trazer um grande crescimento pessoal se for aplicado no dia-a-dia. Os três pilares do Scrum são a transparência, inspeção e adaptação.
             </div>
@@ -22,10 +22,10 @@
             </div>
         </div>
         <!--Botao do colaspe-->
-          <div class="center">
-            <button type="button" class="collapsible">Clique aqui para acessar o vídeo!</button>
+        <div>
+            <button type="button" class="collapsible">Clique para acessar o vídeo!</button>
             <div class="content">
-                <iframe class="center" src="https://www.youtube.com/embed/L0KBoY8Vscw" frameborder="o" width="1080" height="600"></iframe>
+                <iframe class="center" src="https://www.youtube.com/embed/L0KBoY8Vscw" frameborder="0" width="800" height="500"></iframe>
             </div>
             <script>
                 var coll = document.getElementsByClassName("collapsible");
@@ -34,7 +34,7 @@
                 
                 for (i = 0; i < coll.length; i++) {
                   coll[i].addEventListener("click", function() {
-                    this.classList.toggle("desactive");
+                    this.classList.toggle("active");
                     var content = this.nextElementSibling;
                     if (content.style.display === "block") {
                       content.style.display = "none";
@@ -46,9 +46,9 @@
                 
             </script>
             </div>
-        <hr>
+    
         <!--pt1-->
-        <div class="container">
+        <div class="container1">
             <div class="left">
                 <b>Transparência</b>
                 <br><br>
@@ -60,12 +60,11 @@
         </div>
 
         <!--pt2-->
-        <div class="container">
+        <div class="container1">
             <div>
                 <img class="imgev1" src="../static/img/pilares3.png" alt="pilares3">
             </div>
             <div class="left">
-                <br><br>
                 <b>Inspeção</b>
                 <br><br>
                 O segundo pilar do Scrum é a Inspeção, que envolve a análise regular e sistemática do progresso do projeto e do produto resultante. Esse pilar permite que a equipe identifique rapidamente quaisquer desvios do plano original e possa tomar medidas corretivas para garantir que o projeto seja entregue dentro do prazo e do orçamento garantido.
@@ -73,9 +72,8 @@
         </div>
 
         <!--pt3-->
-        <div class="container">
+        <div class="container1">
             <div class="left">
-                <br><br>
                 <b>Adaptação</b>
                 <br><br>
                 O terceiro pilar do Scrum é a adaptação, o que significa que a equipe está sempre pronta para ajustar e melhorar o processo e o produto, com base nas inspeções regulares. A equipe deve estar aberta a mudanças e disposta a se adaptar às necessidades do projeto e do cliente.
@@ -92,10 +90,10 @@
 
         <div class="center">
             <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
-            Agora você já sabe quais são os pilares do Scrum!<br>
+            Agora você já sabe quais são os pilares do Srum!<br>
             Retorne a trilha para o próximo aprendizado!<br>
             <br>
-            <button type="button" class="bottrilha"><a href="/trilha">Retornar à trilha</a></button>
+            <button type="button" class="btn btn-primary" style="background-color:#18a0fb"><a class="text-white" href="/trilha">Retornar à trilha</a></button>
         </div>
     </div>
 
