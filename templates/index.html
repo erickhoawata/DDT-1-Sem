@@ -18,39 +18,41 @@
         <img src="../static/img/fundo home (2).png" class="imghome">
     </div>
     <div class="corpo">
-             <!--Botao do colaspe-->
-     <br>
-     <div class="center">
-        <button type="button" class="collapsible">Clique aqui para acessar o vídeo!</button>
-        <div class="content">
-            <iframe class="center1" src="https://www.youtube.com/embed/ZPuRcOg6lTM" frameborder="o" width="1080" height="600"></iframe>
-        </div>
-        <br>
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-            
-            
-            for (i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                this.classList.toggle("desactive");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                  content.style.display = "none";
-                } else {
-                  content.style.display = "block";
-                }
-              });
-            }
-            
-        </script>
-        </div>
+
+        <!--Botao do colaspe-->
+        <div>
+                <button type="button" class="collapsible">Clique para acessar o vídeo de introdução!</button>
+                <div class="content">
+                    <iframe class="center" src="https://www.youtube.com/embed/ZPuRcOg6lTM" frameborder="0" width="800"
+                        height="500"></iframe>
+    
+                </div>
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+    
+    
+                    for (i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.display === "block") {
+                                content.style.display = "none";
+                            } else {
+                                content.style.display = "block";
+                            }
+                        });
+                    }
+    
+                </script>
+            </div>
+            <br>
 
         
    <!-- metodo scrum -->     
         <h1>Método Scrum</h1>
         <h2>Introdução</h2>
-        <div class="container">
+        <div class="container1">
             <p class="elemento">
                 Scrum é uma metodologia empregada no <b>gerenciamento de projetos</b> complexos, para facilitar a vizualização
                 dos processos de maneira mais <b>simples</b> e <b>clara</b>, mantendo registros visíveis do andamento das etapas.
@@ -79,7 +81,7 @@
         <hr>
         <!-- historia-->
         <h2>História</h2>
-        <div class="container">
+        <div class="container1">
             <p class="elemento">
                 O scrum foi idealizado em 1993, por três programadores que
                 formularam o <b>Manifesto Ágil</b>: Mike Beedle, Ken Schwaber, e Jeff 
@@ -110,20 +112,12 @@
                     passos</b>.
             </div>
         </div>
-        <br>
+        <hr>
+        <br><br><br>
 
         <!-- retornar a trilha -->
-
         <div class="center">
-<<<<<<< Updated upstream
-            <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
-            Para aprender ainda mais sobre o Método Scrum, clique no botão abaixo!<br>
-            <br>
-            <button type="button" class="bottrilha"><a href="/trilha">Iniciar a trilha</a></button>
-
-=======
-            <button type="button" class="btn btn-primary" style="background-color:#18a0fb"><a class="text-white" href="/trilha">Clique para acessar a nossa trilha!</a></button>
->>>>>>> Stashed changes
+            <button type="button" class="btn btn-primary" style="background-color:#18a0fb"><a class="text-white" href="/trilha">Clique para acessar a trilha!</a></button>
         </div>
     </div>
     <br>
