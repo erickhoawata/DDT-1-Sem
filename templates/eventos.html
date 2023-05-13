@@ -15,25 +15,25 @@
     <div class="corpo">
         <!-- introdução -->
         <h1>Eventos do Método Scrum</h1>
-        <div class="container">
+        <div class="container1">
             <div class="left">
                 Eventos são usados no Scrum para criar uma regularidade e minimizar a necessidade de reuniões não
                 definidas no Scrum. Os eventos restantes podem terminar sempre que o propósito do evento é alcançado,
-                garantindo que uma quantidade adequada de tempo seja gasta não permitindo desperdícios no processo.
-                <br><br> Além da Sprint, que é um container para outros eventos, cada evento no Scrum é uma oportunidade de
+                garantindo que uma quantidade adequada de tempo seja gasta não permitindo desperdícios no processo. <br><br> Além
+                da Sprint, que é um container para outros eventos, cada evento no Scrum é uma oportunidade de
                 inspecionar e adaptar alguma coisa. Estes eventos são especificamente projetados para permitir uma
                 transparência e inspeção criteriosa.
             </div>
+            <div class="espaco"></div>
             <div>
                 <img class="imgev1" src="../static/img/event5.png" alt="event5">
             </div>
         </div>
+        <!--Botao do colaspe-->
         <div>
-             <!--Botao do colaspe-->
-        <div class="center">
-            <button type="button" class="collapsible">Clique aqui para acessar o vídeo!</button>
+            <button type="button" class="collapsible">Clique para acessar o vídeo!</button>
             <div class="content">
-                <iframe class="center" src="https://www.youtube.com/embed/jf9q5hBY7CE" frameborder="o" width="1080" height="600"></iframe>
+                <iframe class="center" src="https://www.youtube.com/embed/jf9q5hBY7CE" frameborder="0" width="800" height="500"></iframe>
             </div>
             <script>
                 var coll = document.getElementsByClassName("collapsible");
@@ -42,7 +42,7 @@
                 
                 for (i = 0; i < coll.length; i++) {
                   coll[i].addEventListener("click", function() {
-                    this.classList.toggle("desactive");
+                    this.classList.toggle("active");
                     var content = this.nextElementSibling;
                     if (content.style.display === "block") {
                       content.style.display = "none";
@@ -54,62 +54,66 @@
                 
             </script>
             </div>
-            <hr>
-
+        <div>
+            <br><br>
             <!--Sprint-->
             <h1>Sprint</h1>
-            <div class="container">
-                <div class="left">
+            <div class="container1">
+                <div>
+                    <img class="imgev1" src="../static/img/event1.png" alt="event1">
+                </div>
+                <div>
+                    <br><br>
                     É o principal evento do Framework Scrum, pode ser exemplificada como um “container” dos outros
                     eventos. Uma sprint pode durar de 1 semana a 1 mês, com uma média de duração de 2 semanas.
                     Normalmente tem duração fixa, mas pode ser alterada com base em reuniões da equipe. <br><br> Ao final de cada
                     sprint, um novo incremento do projeto é concluído e pode ser adicionado ao projeto do cliente, e uma
-                    sprint só pode ser iniciada ao término da anterior.Uma sprint tem a participação de toda a equipe
+                    sprint só pode ser iniciada ao término da anterior. <br><br> Uma sprint tem a participação de toda a equipe
                     (Product Owner, Scrum Master e Time de Desenvolvimento.), e possuí uma meta, que se perder o sentido
                     deve ser cancelada.
                 </div>
-                <div>
-                    <img class="imgev1" src="../static/img/event1.png" alt="event1">
-                </div>
+                <div class="espaco"></div>
+                
             </div>
             <hr>
 
             <!--pt1-->
-            <h2>A Sprint é composta por:</h2>
-            <div class="container">
-                <div class="left1">
-                    <br><br><br>
+            <h1>A Sprint é composta por:</h1>
+            <div class="container1">
+                <div class="left">
+
                     <b>Sprint Planning</b>
                     <br><br>
-                    Tem que durar no máximo 8 horas, podendo ser fragmentada em duas reuniões de 4 horas. O objetivo da
+                    Tem que durar no máximo 8 horas, podendo ser fragmentada em duas reuniões de 4 horas. <br><br> O objetivo da
                     sprint planning é criar o sprint backlog, para isso o Product Owner apresenta o Product Backlog, com
                     as metas e prioridades, e a equipe apresenta suas opiniões e se compromete com a entrega discutida.
                 </div>
+                <div class="espaco"></div>
                 <div><img class="imgev1" src="../static/img/event3.png" alt="event2"></div>
             </div>
-            <div class="container">
-                <div class="posicao">
-                    <b>Como fazer o Sprint Planning?</b>
-                    <br><br>
-                    O sprint planning ou planejamento do projeto é considerada
-                    a principal etapa do método scrum, pois nesse evento o time 
-                    scrum se reúne e têm uma visão geral do produto e das tarefas
-                    a serem executadas.
-                    Para o sprint planning recomendamos um site chamado Trello, 
-                    essa ferramenta possibilita a criação de quadros organizacionais e 
-                    auxilia no planejamento da equipe e na transparência. <br><br>
-                    O quadro organizacional deve ser composto por 3 colunas:
-                    To do (tarefas a serem feitas), Doind (tarefas que estão sendo
-                    executadas) e Done(tarefas já realizadas).
-                </div>
+            <div class="esp">
+                <b>Como fazer a Sprint Planning?</b>
+                <br><br>
+                O sprint planning ou planejamento do projeto é considerada
+                a principal etapa do método scrum, pois nesse evento o time 
+                scrum se reúne e têm uma visão geral do produto e das tarefas
+                a serem executadas.
+            
+                Para o sprint planning recomendamos um site chamado Trello, 
+                essa ferramenta possibilita a criação de quadros organizacionais e 
+                auxilia no planejamento da equipe e na transparência.
+            
+                O quadro organizacional deve ser composto por 3 colunas:
+                To do (tarefas a serem feitas), Doing (tarefas que estão sendo
+                executadas) e Done(tarefas já realizadas).
             </div>
-            <br><br><hr>
+            <hr>
 
             <!--pt2-->
-            <div class="container">
-                <div class="elemento"><img class="imgev1" src="../static/img/event2.png" alt="event3"></div>
-                <div class="left1">
-                     <br><br>
+            <div class="container1">
+                <div class="left"><img class="imgev1" src="../static/img/event2.png" alt="event3"></div>
+                <div class="left">
+                    <br><br>
                     <b>Daily Scrum Meeting</b>
                     <br><br>
                     Tem uma duração máxima de 15 min, ou seja, é uma reunião curta que deve ser feita com todos em pé
@@ -118,61 +122,65 @@
                         <li>O que pretendo fazer até a próxima daily scrum meeting?</li>
                         <li>O que me impede de fazer isso?</li>
                     </ul>
-                    *O Scrum Master modera e anota os impedimentos, e o Product Owner se mantém informado.
+                    O Scrum Master modera e anota os impedimentos, e o Product Owner se mantém informado.
                 </div>
             </div>
-            <div class="container">
-                <div class="posicao">
-                    <b>Como fazer a Daily Scrum?</b>
-                    <br><br>
-                    A daily scrum é uma reunião entre a equipe que deve ser efetuada
-                    no mínimo 4x na semana e deve ter uma duração máxima de 15
-                    minutos.
-                
-                    Nessa reunião são levantadas as seguintes perguntas:
-                    "O que eu fiz ontem?", "O que eu vou fazer hoje?" e 
-                    "Tem algo que me impede de efetuar as tarefas de hoje?"
-                    <br><br>
-                    O scrum master da equipe deve anotar essas respostas e auxiliar
-                    a equipe assim que possível.
-                </div>
+            <div class="espaco"></div>
+            <div class="esp">
+                <b>Como fazer a Daily Scrum?</b>
+                <br><br>
+                A daily scrum é uma reunião entre a equipe que deve ser efetuada
+                no mínimo 4x na semana e deve ter uma duração máxima de 15
+                minutos.
+
+                Nessa reunião são levantadas as seguintes perguntas:
+                <br><br>
+                <ul>
+                    <li>O que eu fiz ontem?</li>
+                    <li>O que eu vou fazer hoje?</li>
+                    <li>Tem algo que me impede de efetuar as tarefas de hoje?</li>
+
+                </ul>
+                <br>
+                O scrum master da equipe deve anotar essas respostas e auxiliar
+                a equipe assim que possível.
             </div>
+            <hr>
             <!--pt3-->
-            <br><br><hr>
-            <div class="container">
-                <div class="left1">
-                    <br>
-                    <b>Sprint Review Meeting</b>
+            <div class="container1">
+                    <div class="left">
+    
+                        <b>Sprint Review Meeting</b>
+                        <br><br>
+                        Sua duração total deve ser de 4 horas com no máximo 1 hora de apresentação por pessoa.
+                        O time apresenta ao Product Owner o que foi realizado na sprint, e para isso nada de maquetes ou
+                        power points, a funcionalidade do produto deve ser mostrada em pleno funcionamento. <br><br>
+                        Com base no que foi mostrado, o feedback do Product Owner e/ou das partes interessadas é essencial
+                        para saber se aquilo será utilizado, aprimorado ou descartado.
+                    </div>
+                    <div class="espaco"></div>
                     <br><br>
-                    Sua duração total deve ser de 4 horas com no máximo 1 hora de apresentação por pessoa.
-                    O time apresenta ao Product Owner o que foi realizado na sprint, e para isso nada de maquetes ou
-                    power points, a funcionalidade do produto deve ser mostrada em pleno funcionamento.
-                    Com base no que foi mostrado, o feedback do Product Owner e/ou das partes interessadas é essencial
-                    para saber se aquilo será utilizado, aprimorado ou descartado.
+                    <div><img class="imgev1" src="../static/img/event4.png" alt="event2"></div>
                 </div>
-                <div class="elemento"><img class="imgev1" src="../static/img/event4.png" alt="event4"></div>
+            <div class="esp">
+                <b>Como fazer a Sprint Review Meeting?</b>
+                <br><br>
+                A sprint review é basicamente uma apresentação do desempenho 
+                da equipe na sprint. Essa apresentação deve ser feita pelo Product
+                Owner do time scrum, que mostrará o produto com as principais
+                funcionalidades, algumas alterações que devem ser previamente
+                combinadas com o cliente.
+            
+                Essa apresentação deve ser bem curta e direta, com o objetivo
+                de 'vender' o produto para o cliente em poucos minutos, o famoso
+                Pitch. Após essa apresentação, o cliente dará o feedback e caso
+                seja necessário, apontará algumas mudanças que mais lhe agradam.
             </div>
-            <div class="container">
-                <div class="posicao">
-                    <b>Como fazer a Sprint Review?</b>
-                    <br><br>
-                    A sprint review é basicamente uma apresentação do desempenho 
-                    da equipe na sprint. Essa apresentação deve ser feita pelo Product
-                    Owner do time scrum, que mostrará o produto com as principais
-                    funcionalidades, algumas alterações que devem ser previamente
-                    combinadas com o cliente.
-                    <br><br>
-                    Essa apresentação deve ser bem curta e direta, com o objetivo
-                    de 'vender' o produto para o cliente em poucos minutos, o famoso
-                    Pitch. Após essa apresentação, o cliente dará o feedback e caso
-                    seja necessário, apontará algumas mudanças que mais lhe agradam.
-                </div>
-            </div>
-            <br><br><hr>
+            <hr>
             <!-- pt4 -->
-            <div class="container">
-                <div class="elemento"><img class="imgev1" src="../static/img/event6.png" alt="event6"></div>
-                <div class="left1">
+            <div class="container1">
+                <div class="left"><img class="imgev1" src="../static/img/event6.png" alt="event6"></div>
+                <div class="left">
                     <br><br><br><br>
                     <b>Sprint Retrospective</b>
                     <br><br>
@@ -181,36 +189,28 @@
                     eficiente ou até divertida.
                 </div>
             </div>
-            <div class="container">
-                <div class="posicao">
-                    <b>Como fazer a Sprint Retrospective?</b>
-                    <br><br>
-                    A sprint retrospective é uma reunião que é feita após o término 
-                    da sprint, nela devem ser apontadas ideias para melhorar o desempenho
-                    da equipe, os pontos positivos e negativos da sprint e o destaque 
-                    da equipe.       
-                    <br><br>Essa reunião pode ser feita pessoalmente em quadros organizacionais ou pode-se utilizar alguns templates do Trello.       
-                </div>
-            </div>
-
-
-            <br><br><br>
-
-
         </div>
+        <div class="esp">
+            <b>Como fazer a Sprint Retrospective?</b>
+            <br><br>
+            A sprint retrospective é uma reunião que é feita após o término 
+            da sprint, nela devem ser apontadas ideias para melhorar o desempenho
+            da equipe, os pontos positivos e negativos da sprint e o destaque 
+            da equipe.
+        </div>
+        <hr>
     </div>
 
 
 
     <!-- retornar a trilha -->
-    <br>
 
     <div class="center">
         <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
-        Agora você conhece quais são os eventos do Scrum!<br>
+        Agora você já sabe como avaliar seu time Scrum!<br>
         Retorne a trilha para o próximo aprendizado!<br>
         <br>
-        <button type="button" class="bottrilha"><a href="/trilha">Retornar à trilha</a></button>
+        <button type="button" class="btn btn-primary" style="background-color:#18a0fb"><a class="text-white" href="/trilha">Retornar à trilha</a></button>
     </div>
     </div>
 
