@@ -15,7 +15,7 @@
         <h1>Equipe Scrum</h1>
         
         <!-- equipe -->
-        <div class="container">
+        <div class="container1">
             <div class="left">
                 <p>
                     Embora todos os membros tenham importância, existem funções diferentes dentro de uma equipe Scrum:
@@ -30,13 +30,38 @@
                 <img src="../static/img/equipe.svg" alt="equipe">
             </div>
         </div>
-
-        <hr>
+        <!--Botao do colaspe-->
+        <div>
+                <button type="button" class="collapsible">Clique para acessar o vídeo!</button>
+                <div class="content">
+                    <iframe class="center" src="https://www.youtube.com/embed/ODgwO5FVzKE" frameborder="0" width="800" height="500"></iframe>
+                </div>
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+                    
+                    
+                    for (i = 0; i < coll.length; i++) {
+                      coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                          content.style.display = "none";
+                        } else {
+                          content.style.display = "block";
+                        }
+                      });
+                    }
+                    
+                </script>
+                </div>
+            <div><br><br>
 
         <!-- scrum master -->
         <h1>Scrum Master (SM)</h1>
-        <div class="container">
+        <div class="container1">
             <div class="left">
+                <br><br>
                 <p>Responsável por garantir que a equipe esteja seguindo as práticas ágeis e as regras do Scrum, além de facilitar o processo de desenvolvimento, removendo obstáculos e ajudando a equipe a se tornar cada vez mais autogerenciável. É aquele que mais deve conhecer sobre a metodologia Scrum.</p>
             </div>
             <div>
@@ -46,20 +71,23 @@
 
         <!-- product owner -->
         <h1>Product Owner (PO)</h1>
-        <div class="container">
+        <div class="container1">
             <div>
                 <img src="../static/img/productowner.svg">
             </div>
             <div class="right">
-                <p>Responsável por definir e priorizar as funcionalidades do produto, trabalhando em estreita colaboração com os stakeholders para garantir que as necessidades dos usuários finais sejam atendidas. O Product Owner é responsável por manter o Product Backlog atualizado, de forma que a equipe possa trabalhar nas tarefas mais importantes em cada Sprint. É aquele que mais entra em contato direto com o cliente.</p>
+                <br>
+                <p>Responsável por definir e priorizar as funcionalidades do produto, trabalhando em estreita colaboração com os stakeholders para garantir que as necessidades dos usuários finais sejam atendidas.
+                    <br><br> O Product Owner é responsável por manter o Product Backlog atualizado, de forma que a equipe possa trabalhar nas tarefas mais importantes em cada Sprint. É aquele que mais entra em contato direto com o cliente.</p>
             </div> 
         </div>
 
         <!-- Time de desenvolvimento -->
         <h1>Time de Desenvolvimento (Dev Team)</h1>
-        <div class="container">
+        <div class="container1">
             <div class="left">
-                Responsável por criar o produto, transformando as funcionalidades definidas pelo Product Owner em software funcional. O Time de Desenvolvimento é uma equipe multifuncional e auto-organizável, que trabalha em conjunto para completar as tarefas do Sprint.
+                <br><br><br>
+                Responsável por criar o produto, transformando as funcionalidades definidas pelo Product Owner em software funcional. <br><br> O Time de Desenvolvimento é uma equipe multifuncional e auto-organizável, que trabalha em conjunto para completar as tarefas do Sprint.
             </div>
             <div>
                 <img src="../static/img/devteams.svg">
@@ -68,19 +96,20 @@
 
         <hr>
 
-
+    </div>
         <!-- retornar a trilha -->
 
         <div class="center">
-            <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
-            Agora você já sabe como avaliar seu time Scrum!<br>
-            Retorne a trilha para o próximo aprendizado!<br>
-            <br>
-            <button type="button" class="bottrilha"><a href="/trilha">Retornar à trilha</a></button>
+                <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
+                Agora você já sabe como quais são os artefatos Scrum!<br>
+                Retorne a trilha para o próximo aprendizado!<br>
+                <br>
+                <button type="button" class="btn btn-primary" style="background-color:#18a0fb"><a class="text-white"
+                        href="/trilha">Retornar à trilha</a></button>
+            </div>
         </div>
-    </div>
-
-    <br>
+    
+        <br>
 
 {%endblock%}
 </body>
