@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% extends 'base.html' %}
 
@@ -7,65 +8,168 @@
     <title>Artefatos</title>
     {% endblock %}
 </head>
+
 <body>
     {% block conteudo %}
 
     <div class="corpo">
         <!-- introdução -->
         <h1>Artefatos</h1>
-        <div class="container">
+        <div class="container1">
             <div class="left">
-            O Scrum possui alguns artefatos que dão uma visão do andamento do projeto e das Sprints, facilitando o entendimento, a organização e a divisão do projeto. Os artefatos são informações que a equipe e as partes interessadas usam para detalhar o produto que está sendo desenvolvido, as ações para a produção dele e as ações realizadas durante o projeto. Os artefatos  de Scrum são: Product Backlog, Sprint Backlog, Product Increment, Definition of Done e Burndown Charts.
+                O Scrum possui alguns artefatos que dão uma visão do andamento do projeto e das Sprints, facilitando o
+                entendimento, a organização e a divisão do projeto. Os artefatos são informações que a equipe e as
+                partes interessadas usam para detalhar o produto que está sendo desenvolvido, as ações para a produção
+                dele e as ações realizadas durante o projeto. <br><br> Os artefatos de Scrum são: Product Backlog, Sprint
+                Backlog, Product Increment, Definition of Done e Burndown Charts.
             </div>
             <div>
                 <img src="../static/img/artefatos.png" alt="artefatos">
             </div>
         </div>
-        
-        <hr>
+
+        <!--Botao do colaspe-->
+        <div>
+            <button type="button" class="collapsible">Clique para acessar o vídeo!</button>
+            <div class="content">
+                <iframe class="center" src="https://www.youtube.com/embed/qs-8yOT5xjY" frameborder="0" width="800"
+                    height="500"></iframe>
+
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+
+            </script>
+        </div>
+        <br>
 
         <!-- corpo -->
         <h1>Introdução aos artefatos</h1>
-        <div class="container">
+        <div class="container1">
             <div class="left">
-                <b>Product Backlog</b>:<br>
-                <p>O Product Backlog é uma lista ordenada criada pelo Time Scrum, mas onde somente o Product Owner pode inserir, remover ou reordenar os itens. geralmente itens mais importantes ficam no topo, e serão implementados antes. Em geral, os itens de maior importância são os itens que se têm maior conhecimento, e por isso possuem um detalhamento maior. Itens que precisem de maior refinamento geralmente têm uma importância menor e ficam mais abaixo no Product Backlog.</p>
+                <b>Product Backlog</b><br>
+                <p>O Product Backlog é uma lista ordenada criada pelo Time Scrum, mas onde somente o Product Owner pode
+                    inserir, remover ou reordenar os itens. geralmente itens mais importantes ficam no topo, e serão
+                    implementados antes. <br><br> Em geral, os itens de maior importância são os itens que se têm maior
+                    conhecimento, e por isso possuem um detalhamento maior. Itens que precisem de maior refinamento
+                    geralmente têm uma importância menor e ficam mais abaixo no Product Backlog.</p>
                 <img src="../static/img/backlog.png" class="center">
             </div>
             <div class="right">
                 <b>Sprint Backlog</b><br>
-                <p>SprintBacklog é o conjunto de itens selecionados para serem implementados durante a Sprint mais o plano para transforma-los em um Incremento. Normalmente, o plano é composto das tarefas técnicas necessárias para transformar o item em um incremento do produto. O objetivo do Sprint Backlog é tornar visível o trabalho necessário para que a equipe atinja a meta da Sprint.</p>
+                <p>SprintBacklog é o conjunto de itens selecionados para serem implementados durante a Sprint mais o
+                    plano para transforma-los em um Incremento. <br><br> Normalmente, o plano é composto das tarefas técnicas
+                    necessárias para transformar o item em um incremento do produto. O objetivo do Sprint Backlog é
+                    tornar visível o trabalho necessário para que a equipe atinja a meta da Sprint.</p>
                 <img src="../static/img/sprint backlog.png" class="center">
             </div>
         </div>
 
-        <div class="container">
+        <div class="container1">
             <div class="left">
                 <b>Product Increment</b><br>
-                <p>Product Increment é a soma dos Itens do Backlog do Produto entregues no final de cada Sprint. Entregar o incremento a cada Sprint é fundamental para o Scrum, porque quando o trabalho é dividido em partes simples, ele pode ser finalizado em iterações curtas. Para a equipe é importante entender que o Incremento deve ser algo potencialmente entregável – o cliente pode optar por colocar imediatamente em produção.</p>
+                <p>Product Increment é a soma dos Itens do Backlog do Produto entregues no final de cada Sprint.
+                    Entregar o incremento a cada Sprint é fundamental para o Scrum, porque quando o trabalho é dividido
+                    em partes simples, ele pode ser finalizado em iterações curtas. <br><br> Para a equipe é importante entender
+                    que o Incremento deve ser algo potencialmente entregável – o cliente pode optar por colocar
+                    imediatamente em produção.</p>
                 <img src="../static/img/increment.png" class="center">
             </div>
             <div class="right">
                 <b>Definition of Done</b><br>
-                <p>Como o próprio nome indica, o Definition Of Done (DoD), estabelece os critérios para que uma tarefa seja considerada “finalizada” dentro de um modelo de trabalho Scrum.  Uma    funcionalidade    somente    é    considerada    “pronta”    se    tiver    passado por todas as etapas definidas pela equipe para se garantir a qualidade do que se esteja produzindo durante a Sprint.</p>
+                <p>Como o próprio nome indica, o Definition Of Done (DoD), estabelece os critérios para que uma tarefa
+                    seja considerada “finalizada” dentro de um modelo de trabalho Scrum. <br><br> Uma funcionalidade somente é
+                    considerada “pronta” se tiver passado por todas as etapas definidas pela equipe para se garantir a
+                    qualidade do que se esteja produzindo durante a Sprint.</p>
                 <img src="../static/img/definition of done.png" class="center">
             </div>
         </div>
 
-        <div class="container">
-            <div class="left">
+        <div class="container1">
+            <div class="center">
                 <b>Burndown Charts</b><br>
-               <p>Burndown Chart é o gráfico utilizado pelas equipes Scrum para representar diariamente o progresso do trabalho em desenvolvimento. Ele torna visível a evolução diária do trabalho da equipe, pois mostra a comparação entre o trabalho estimado inicialmente com a quantidade restante estimada de trabalho. Normalmente, as unidades utilizadas são de esforço (em horas) planejado pelo tempo decorrido. Além de ajudar o time a se autogerenciar, o Burndown Chart também permite que o restante da organização também possa acompanhar o andamento da Sprint.</p>
-               <img src="../static/img/burndown.png" class="center">
+                <p>Burndown Chart é o gráfico utilizado pelas equipes Scrum para representar diariamente o progresso do
+                    trabalho em desenvolvimento. Ele torna visível a evolução diária do trabalho da equipe, pois mostra
+                    a comparação entre o trabalho estimado inicialmente com a quantidade restante estimada de trabalho.
+                    Normalmente, as unidades utilizadas são de esforço (em horas) planejado pelo tempo decorrido. Além
+                    de ajudar o time a se autogerenciar, o Burndown Chart também permite que o restante da organização
+                    também possa acompanhar o andamento da Sprint.</p>
+                <img src="../static/img/burndown.png" class="center">
             </div>
-            <div class="right">
-            <!-- exemplos -->
-            <button type="button">Exemplo 1</button><br>
-            <button type="button">Exemplo 2</button><br>
-            <button type="button">Exemplo 3</button><br>
-            <button type="button">Exemplo 4</button>
-            </div> 
+            <!--<div class="right">
+                exemplos 
+                <button type="button">Exemplo 1</button><br>
+                <button type="button">Exemplo 2</button><br>
+                <button type="button">Exemplo 3</button><br>
+                <button type="button">Exemplo 4</button>
+            </div>-->
         </div>
+        <!--Botao do colaspe-->
+        <br><br>
+        <div>
+                <button type="button" class="collapsible1">Clique para ver mais!</button>
+                <div class="content1">
+                        <br><br>
+                        <b>Como fazer o Product Backlog?</b>
+                        <br><br>
+                        Para fazer um Product Backlog de sucesso, as duas principais coisas são: Validar e testar hipóteses. O product backlog nada mais é que a lista de desejos a serem
+                        alcançados, ou seja, hipóteses. Dessa forma, o primeiro passo para fazer um Product Backlog é montar uma lista de hipóteses a serem realizadas para serem 
+                        possivelmente adicionadas ao trabalho. 
+                        <br><br> O segundo passo é organizar essa lista em prioridades, ou seja, definir as hipóteses em diferentes importâncias e a ordem em que serão validadas. E por fim,
+                        validar e testar cada item para assim o grupo decidir se será adicionado ou não ao trabalho.
+                        O segredo então acaba girando em torno da validação das hipóteses, pois após testar um item de sua lista de possibilidades, você terá novas informações, podendo
+                        invalidar as próximas hipóteses ou gerar novas. Com isso, o feedback de cada item acaba sendo a principal fonte para um Product Backlog de sucesso.
+    
+                        <br><br>
+                        <b>Como fazer o a Sprint Backlog?</b>
+                        <br><br>
+                        Para fazer uma Sprint Backlog, o primeiro passo é conversar com a equipe e anotar os principais objetivos e espectativas a serem concluídos
+                        durante cada Sprint, indicando o que irão fazer e como. Com isso o próximo passo é dividir as tarefas entre os integrantes
+                        da equipe e definir um tempo estimado para cada tarefa a ser concluída em cada sprint. Dessa forma a equipe evita o acúmulo
+                        e atraso de tarefas e consegue organizar o que será feito.
+                        <br><br> A Sprint Backlog pode sofrer alterações durante o decorrer das sprints,
+                        a variação ocorre através da validação e invalidação de tarefas que irão se modelando de acordo com a orientação do trabalho.
+
+                        <br><br>
+                        <b>Definition of Done</b>
+                        <br><br>
+                        Para fazer um "Definition of Done", primeiro a equipe deve se reunir e organizar para definirem o que será considerado um trabalho/item completo, ou seja, quais requisitos o item deverá cumprir para ser considerado apresentável.
+                        O segundo passo ocorre no final de cada sprint, deve se fazer um checklist para verificar se os itens atenderam aos critérios estabelecidos e assim poderem ser considerados "prontos", evitando que trabalhos incompletos ou mau feitos passem para frente.
+                        <br><br>
+                </div>
+                <script>
+                    var coll = document.getElementsByClassName("collapsible1");
+                    var ii;
+    
+    
+                    for (ii = 0; ii < coll.length; ii++) {
+                        coll[ii].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var content1 = this.nextElementSibling;
+                            if (content1.style.display === "block") {
+                                content1.style.display = "none";
+                            } else {
+                                content1.style.display = "block";
+                            }
+                        });
+                    }
+    
+                </script>
+            </div>
 
         <hr>
 
@@ -74,10 +178,11 @@
 
         <div class="center">
             <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
-            Agora você já sabe quais são os artefatos Scrum!<br>
+            Agora você já sabe como quais são os artefatos Scrum!<br>
             Retorne a trilha para o próximo aprendizado!<br>
             <br>
-            <button type="button" class="bottrilha"><a href="/trilha">Retornar à trilha</a></button>
+            <button type="button" class="btn btn-primary" style="background-color:#18a0fb"><a class="text-white"
+                    href="/trilha">Retornar à trilha</a></button>
         </div>
     </div>
 
@@ -86,11 +191,12 @@
     {% endblock %}
 
 </body>
+
 </html>
 
 <!-- Product Backlog
 
-Para elaborar um Product Backlog de sucesso, as duas principais coisas são: Validar e testar hipóteses. O product backlog nada mais é que a lista de desejos a serem
+Para fazer um Product Backlog de sucesso, as duas principais coisas são: Validar e testar hipóteses. O product backlog nada mais é que a lista de desejos a serem
 alcançados, ou seja, hipóteses. Dessa forma, o primeiro passo para fazer um Product Backlog é montar uma lista de hipóteses a serem realizadas para serem 
 possivelmente adicionadas ao trabalho. O segundo passo é organizar essa lista em prioridades, ou seja, definir as hipóteses em diferentes importâncias e a ordem em que serão validadas. E por fim,
 validar e testar cada item para assim o grupo decidir se será adicionado ou não ao trabalho.
@@ -103,7 +209,7 @@ invalidar as próximas hipóteses ou gerar novas. Com isso, o feedback de cada i
 
 <!-- Sprint Backlog
 
-Para elaborar uma Sprint Backlog, o primeiro passo é conversar com a equipe e anotar os principais objetivos e espectativas a serem concluídos
+Para fazer uma Sprint Backlog, o primeiro passo é conversar com a equipe e anotar os principais objetivos e espectativas a serem concluídos
 durante cada Sprint, indicando o que irão fazer e como. Com isso o próximo passo é dividir as tarefas entre os integrantes
 da equipe e definir um tempo estimado para cada tarefa a ser concluída em cada sprint. Dessa forma a equipe evita o acúmulo
 e atraso de tarefas e consegue organizar o que será feito. A Sprint Backlog pode sofrer alterações durante o decorrer das sprints,
@@ -113,20 +219,10 @@ a variação ocorre através da validação e invalidação de tarefas que irão
 -->
 
 
-<!-- Definition of Done
+<!--
+    Definition of Done
 
-Para elaborar um "Definition of Done", primeiro a equipe deve se reunir e organizar para definirem o que será considerado um trabalho/item completo, ou seja, quais requisitos o item     deverá cumprir para ser considerado apresentável.
+Para fazer um "Definition of Done", primeiro a equipe deve se reunir e organizar para definirem o que será considerado um trabalho/item completo, ou seja, quais requisitos o item deverá cumprir para ser considerado apresentável.
 O segundo passo ocorre no final de cada sprint, deve se fazer um checklist para verificar se os itens atenderam aos critérios estabelecidos e assim poderem ser considerados "prontos", evitando que trabalhos incompletos ou mau feitos passem para frente.
 # https://youtu.be/kWvpXyLYPvk
-
--->
-
-<!-- Burn Down Charts
-
-O gráfico burndown é muito útil para qualquer tipo de projeto, com ele a equipe pode
-acompanhar o andamento do porjeto através das linhas do gráfico que demonstram uma relação entre o tempo
-estimado e o tempo real. O gráfico pode ser feito no Exel e temos disponibilizado um vídeo de como fazer:
-
-# https://youtu.be/cFD84jcIjEw
-
 -->
