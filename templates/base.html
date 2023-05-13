@@ -8,8 +8,13 @@
 
     {% endblock titulo %}
     <!-- formatação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- responsividade no celular -->
     <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="../static/css/normalize.css">
+
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- fonte -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap">
@@ -21,27 +26,6 @@
 </head>
 <body>
     <!-- cabeçalho -->
-<<<<<<< Updated upstream
-    <div class="navtop">
-        <div class="ddt"><h1>DDT</h1></div>
-        <ul class="links">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li class="dropdown">
-                <a href="/trilha">Aprenda Conosco</a>
-
-                <div class="dropdown-menu">
-                        <a href="/pilares">Três Pilares</a>
-                        <a href="/artefatos">Artefatos</a>
-                        <a href="/equipe">Equipe</a>
-                        <a href="/avaliacao">Avaliações</a>
-                        <a href="/eventos">Eventos</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-=======
     <nav class="navbar navbar-expand-lg py-1" style="background-color: #18a0fb">
         <div class="container-fluid">
             <div class="d-flex flex-grow-1">
@@ -58,11 +42,11 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
                 <ul class="navbar-nav ms-auto flex-nowrap">
                     <li class="nav-item">
-                        <a href="/" class="nav-link active"><b>Home</b></a>
+                        <a href="/" class="nav-link active text-black"><b>Home</b></a>
                     </li>
-                    <div class="links">
                     <li class="nav-item">
                         <li class="nav-item dropdown">
+                            <div class="aprenda">
                             <a class="nav-link dropdown-toggle text-black" href="/trilha" data-bs-toggle="dropdown" aria-expanded="false"><b>Aprenda Conosco</b></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item text-center" href="/pilares"><b>Três Pilares</b></a></li>
@@ -70,15 +54,14 @@
                                 <li><a class="dropdown-item text-center" href="/equipe"><b>Equipe</b></a></li>
                                 <li><a class="dropdown-item text-center" href="/avaliacao"><b>Avaliações</b></a></li>
                                 <li><a class="dropdown-item text-center" href="/eventos"><b>Eventos</b></a></li>
+                            </div>
                             </ul>
                         </li>
                     </li>
-                </div>
                 </ul>
             </div>
         </div>
     </nav>
->>>>>>> Stashed changes
     <!-- corpo -->
     {% block conteudo %}
 
@@ -92,11 +75,14 @@
             <li>
                 <a href="/">Home</a>
             </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
             © DDT. 2023. Método Scrum
         </ul>
     </div>
     <div class="navbot2">
-        <p class="center1">“Scrum: gere valor, supere expectativas, entregue resultados.”</p>
+        <p class="center">“Scrum: gere valor, supere expectativas, entregue resultados.”</p>
     </div>
 </body>
 </html>
