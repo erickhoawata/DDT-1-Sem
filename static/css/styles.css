@@ -278,6 +278,10 @@ input{
     border: none;
     text-align: center;
 }
+.linha{
+    padding: 0%;
+    margin: 1%;
+}
 p[type=number]{
     padding: 0%;
     margin: 0%;

@@ -32,7 +32,7 @@
                     </tr>
                     {%if metodo=="GET":%}
                         {% for c in range(1,8): %}
-                        <tr style="padding: 0%;">
+                        <tr class="linha">
                             <td class="pedaço"> <input type="text"  name="n{{c}}" class="nome"></td>
                             <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" value="0" name="a{{c}}"></td>
                             <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" value="0" name="b{{c}}"></td>
@@ -43,7 +43,7 @@
                     
                     {%else:%}
                         {%for pessoa in pessoas:%}
-                        <tr>
+                        <tr class="linha">
                             <td class="pedaço"> <input type="text"  name="n{{loop.index0+1}}" value="{{pessoa[0]}}" class="nome"></td>
                             <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" name="a{{loop.index0+1}}" value="{{pessoa[1]}}"></td>
                             <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" name="b{{loop.index0+1}}" value="{{pessoa[2]}}"></td>
