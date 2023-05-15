@@ -91,22 +91,6 @@
                 <div class="espaco"></div>
                 <div><img class="imgev1" src="../static/img/event3.png" alt="event2"></div>
             </div>
-            <div class="esp">
-                <b>Como fazer a Sprint Planning?</b>
-                <br><br>
-                O sprint planning ou planejamento do projeto é considerada
-                a principal etapa do método scrum, pois nesse evento o time 
-                scrum se reúne e têm uma visão geral do produto e das tarefas
-                a serem executadas.
-            
-                Para o sprint planning recomendamos um site chamado Trello, 
-                essa ferramenta possibilita a criação de quadros organizacionais e 
-                auxilia no planejamento da equipe e na transparência.
-            
-                O quadro organizacional deve ser composto por 3 colunas:
-                To do (tarefas a serem feitas), Doing (tarefas que estão sendo
-                executadas) e Done(tarefas já realizadas).
-            </div>
             <hr>
 
             <!--pt2-->
@@ -126,25 +110,6 @@
                 </div>
             </div>
             <div class="espaco"></div>
-            <div class="esp">
-                <b>Como fazer a Daily Scrum?</b>
-                <br><br>
-                A daily scrum é uma reunião entre a equipe que deve ser efetuada
-                no mínimo 4x na semana e deve ter uma duração máxima de 15
-                minutos.
-
-                Nessa reunião são levantadas as seguintes perguntas:
-                <br><br>
-                <ul>
-                    <li>O que eu fiz ontem?</li>
-                    <li>O que eu vou fazer hoje?</li>
-                    <li>Tem algo que me impede de efetuar as tarefas de hoje?</li>
-
-                </ul>
-                <br>
-                O scrum master da equipe deve anotar essas respostas e auxiliar
-                a equipe assim que possível.
-            </div>
             <hr>
             <!--pt3-->
             <div class="container1">
@@ -162,20 +127,6 @@
                     <br><br>
                     <div><img class="imgev1" src="../static/img/event4.png" alt="event2"></div>
                 </div>
-            <div class="esp">
-                <b>Como fazer a Sprint Review Meeting?</b>
-                <br><br>
-                A sprint review é basicamente uma apresentação do desempenho 
-                da equipe na sprint. Essa apresentação deve ser feita pelo Product
-                Owner do time scrum, que mostrará o produto com as principais
-                funcionalidades, algumas alterações que devem ser previamente
-                combinadas com o cliente.
-            
-                Essa apresentação deve ser bem curta e direta, com o objetivo
-                de 'vender' o produto para o cliente em poucos minutos, o famoso
-                Pitch. Após essa apresentação, o cliente dará o feedback e caso
-                seja necessário, apontará algumas mudanças que mais lhe agradam.
-            </div>
             <hr>
             <!-- pt4 -->
             <div class="container1">
@@ -190,18 +141,91 @@
                 </div>
             </div>
         </div>
-        <div class="esp">
-            <b>Como fazer a Sprint Retrospective?</b>
-            <br><br>
-            A sprint retrospective é uma reunião que é feita após o término 
-            da sprint, nela devem ser apontadas ideias para melhorar o desempenho
-            da equipe, os pontos positivos e negativos da sprint e o destaque 
-            da equipe.
-        </div>
-        <hr>
+        <br>
+    
+        <div>
+            <button type="button" class="collapsible1">Clique para ver mais!</button>
+            <div class="content1">
+                <ul>
+                    <li><b>Como fazer a Sprint Planning?</b></li>
+                    <br><br>
+                    O sprint planning ou planejamento do projeto é considerada
+                    a principal etapa do método scrum, pois nesse evento o time 
+                    scrum se reúne e têm uma visão geral do produto e das tarefas
+                    a serem executadas.
+                    
+                    Para o sprint planning recomendamos um site chamado Trello, 
+                    essa ferramenta possibilita a criação de quadros organizacionais e 
+                    auxilia no planejamento da equipe e na transparência.
+                    
+                    O quadro organizacional deve ser composto por 3 colunas:
+                    To do (tarefas a serem feitas), Doing (tarefas que estão sendo
+                    executadas) e Done(tarefas já realizadas).
+
+                    <br><br>
+                    <li><b>Como fazer a Daily Scrum?</b></li>
+                    <br><br>
+                    A daily scrum é uma reunião entre a equipe que deve ser efetuada
+                    no mínimo 4x na semana e deve ter uma duração máxima de 15
+                    minutos.
+
+                    Nessa reunião são levantadas as seguintes perguntas:
+                    <br><br>
+                    <ul>
+                        <li>O que eu fiz ontem?</li>
+                        <li>O que eu vou fazer hoje?</li>
+                        <li>Tem algo que me impede de efetuar as tarefas de hoje?</li>
+
+                    </ul>
+                    <br>
+                    O scrum master da equipe deve anotar essas respostas e auxiliar
+                    a equipe assim que possível.
+
+                    <br><br>
+                    <li><b>Como fazer a Sprint Review Meeting?</b></li>
+                    <br><br>
+                    A sprint review é basicamente uma apresentação do desempenho 
+                    da equipe na sprint. Essa apresentação deve ser feita pelo Product
+                    Owner do time scrum, que mostrará o produto com as principais
+                    funcionalidades, algumas alterações que devem ser previamente
+                    combinadas com o cliente.
+                    
+                    Essa apresentação deve ser bem curta e direta, com o objetivo
+                    de 'vender' o produto para o cliente em poucos minutos, o famoso
+                    Pitch. Após essa apresentação, o cliente dará o feedback e caso
+                    seja necessário, apontará algumas mudanças que mais lhe agradam.
+
+                    <br><br>
+                    <li><b>Como fazer a Sprint Retrospective?</b></li>
+                    <br><br>
+                    A sprint retrospective é uma reunião que é feita após o término 
+                    da sprint, nela devem ser apontadas ideias para melhorar o desempenho
+                    da equipe, os pontos positivos e negativos da sprint e o destaque 
+                    da equipe.   
+                </ul>             
+                        <br><br>
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible1");
+                var ii;
+
+
+                for (ii = 0; ii < coll.length; ii++) {
+                    coll[ii].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content1 = this.nextElementSibling;
+                        if (content1.style.display === "block") {
+                            content1.style.display = "none";
+                        } else {
+                            content1.style.display = "block";
+                        }
+                    });
+                }
+
+            </script>
+            <hr>
     </div>
-
-
+<br><br>
 
     <!-- retornar a trilha -->
 
