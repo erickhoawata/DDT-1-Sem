@@ -46,7 +46,8 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 
 <div align="center">
 
-![mvp](src/mvp.png)
+
+![mvp](src/mpv.png)
 
 </div>
 

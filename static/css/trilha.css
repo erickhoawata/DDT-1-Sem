@@ -58,6 +58,9 @@ h1{
     justify-content: end;
     margin-right:77px;
 }
+.txtbalao{
+    font-size: 20px;
+}
 .balao{
     background-color: #18A0FB;
     height: 125px;
