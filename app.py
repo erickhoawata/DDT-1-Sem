@@ -16,14 +16,13 @@ def avaliacao():
         
         try:
             pessoas = []
-            for c in range(1,8):
-                n = str(request.form.get(f"n{c}"))
-                a = float(request.form.get(f"a{c}"))
-                b = float(request.form.get(f"b{c}"))
-                c = float(request.form.get(f"c{c}"))
-                # achando o d da linha 1
-                d = a*0.3+b*0.3+c*0.4
-                d = float(d)
+            for linha in range(1,8):
+                n = str(request.form.get(f"n{linha}"))
+                a = float(request.form.get(f"a{linha}"))
+                b = float(request.form.get(f"b{linha}"))
+                c = float(request.form.get(f"c{linha}"))
+                d = float(request.form.get(f"c{linha}"))
+                
                 pessoas.append([n, a, b, c, d])
 
             # devolvendo o d para seu lugar               

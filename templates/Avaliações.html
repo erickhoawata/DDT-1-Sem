@@ -19,42 +19,47 @@
             <div class="dialogo">
                 <img class="imgev2" src="../static/img/img-mulherdialogo.png" alt="">
             </div>
-            <form method="post">
-        </div>
             
-                <table clas="Tabela">
+        </div>
+            <form method="post">
+                <table class="tabela">
                     <tr>
                         <th >Nome</th>
-                        <th >Processo</th>
+                        <th >Proatividade</th>
+                        <th >Autonomia</th>
+                        <th >Colaboração</th>
                         <th >Produto</th>
-                        <th >Conhecimento</th>
-                        <th >Nota Final</th>
                     </tr>
                     {%if metodo=="GET":%}
                         {% for c in range(1,8): %}
                         <tr class="linha">
-                            <td class="pedaço"> <input type="text"  name="n{{c}}" class="nome"></td>
-                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" value="0" name="a{{c}}"></td>
-                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" value="0" name="b{{c}}"></td>
-                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" value="0" name="c{{c}}"></td>
-                            <td class="pedaço"> <p type="number"></p></td>
+                            <td class="pedaço"><input type="text"  name="n{{c}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" value="0" name="a{{c}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" value="0" name="b{{c}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" value="0" name="c{{c}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" value="0" name="d{{c}}"></td>
                         </tr>
                         {%endfor %}
                     
                     {%else:%}
                         {%for pessoa in pessoas:%}
                         <tr class="linha">
-                            <td class="pedaço"> <input type="text"  name="n{{loop.index0+1}}" value="{{pessoa[0]}}" class="nome"></td>
-                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" name="a{{loop.index0+1}}" value="{{pessoa[1]}}"></td>
-                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" name="b{{loop.index0+1}}" value="{{pessoa[2]}}"></td>
-                            <td class="pedaço"> <input type="number" step="0.01" max="10" min="0" name="c{{loop.index0+1}}" value="{{pessoa[3]}}"></td>
-                            <td class="pedaço"> <p type="number" >{{pessoa[4]}}</p></td>
+                            <td class="pedaço"><input type="text"  name="n{{loop.index0+1}}" value="{{pessoa[0]}}" class="nome"></td>
+                            <td class="pedaço"><input type="number"  max="3" min="0" name="a{{loop.index0+1}}" value="{{pessoa[1]}}"></td>
+                            <td class="pedaço"><input type="number"  max="3" min="0" name="b{{loop.index0+1}}" value="{{pessoa[2]}}"></td>
+                            <td class="pedaço"><input type="number"  max="3" min="0" name="c{{loop.index0+1}}" value="{{pessoa[3]}}"></td>
+                            <td class="pedaço"><input type="number"  max="3" min="0" name="d{{loop.index0+1}}" value="{{pessoa[4]}}"></td>
                         </tr>
                         {%endfor%}
                     {%endif%}
 
                 </table>
-                <input type="submit" class="botenviar" value="Calcular">
+                <div class="container">
+                    <input type="submit" class="botenviar" value="Calcular">
+                    <!-- <input type="number" class="notprof"> -->
+                    <!-- <input type="number" class="notprof"> -->
+                </div>
+                
             </form>
         <hr>
 

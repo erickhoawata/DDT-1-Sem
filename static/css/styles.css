@@ -261,6 +261,10 @@ a{
 }
 
 /* TABELA */
+.tabela{
+    width: auto;
+    height: auto;
+}
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
     
