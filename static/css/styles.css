@@ -262,8 +262,23 @@ a{
 
 /* TABELA */
 .tabela{
-    width: auto;
+    width: 100%;
     height: auto;
+    background-color: #18a0fb;
+    border: 5px solid #18a0fb;
+    border-radius: 5px;
+}
+.baixotable{
+    width: 50%;
+    border: 5px solid #18a0fb;
+    border-radius: 5px;
+    background-color: #18a0fb;
+    margin-top: 2.5%;
+    min-width: 240px;
+}
+.partdebaixo{ 
+    width: 30%;
+    min-width: 92px;
 }
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
@@ -313,6 +328,7 @@ input{
 }
 .linha{
     padding: 0%;
+    background-color: #18a0fb;
 }
 p[type=number]{
     padding: 0%;
@@ -327,11 +343,12 @@ p[type=number]{
     text-align: center;
     height:10%;
     width: 0.2%;
-    border:10px solid white;
+    border:10px solid #18a0fb;
+    padding: 0%;
 }
 
 .botenviar{
-    background-color: #18a0fb;
+    background-color: rgb(102, 102, 255);
     border: none;
     border-radius: 10px;
     padding: 0% 2%;

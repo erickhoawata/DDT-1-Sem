@@ -9,7 +9,6 @@
 </head>
 
 <body>
-     <!--  Tabela  -->
     {% block conteudo %}
     
     <div class="corpo">
@@ -19,6 +18,7 @@
 
             
         </div>
+        <!-- Tabela -->
             <form method="post">
                 <table class="tabela">
                     <tr>
@@ -52,25 +52,34 @@
                     {%endif%}
 
                 </table>
-                <div class="container" style="min-width: 50%; width: 60%;">
-                    <input type="submit" class="botenviar" value="Calcular">
-                    <div style="margin:0%;">
-                        <p>Nota utilizada:</p>
-                        <input type="number" placeholder="Nota utilizada" readonly class="notprof" value="{{nota_usada}}">
-                    </div>
-                    <div class="reta inclinada"></div>
 
-                    {%if metodo=="GET":%}
-                    <div style="margin:0%;">
-                        <div style="min-width: 200px"><p>Coloque a nota do professor:</p></div>
-                        <input onclick="this.select();" type="number" value="0" min="0" max="84" class="notprof" name="nota_prof">
-                    </div>
-                    {%else:%}
-                    <div style="margin:0%;">
-                        <div style="min-width: 200px"><p>Coloque a nota do professor:</p></div>
-                        <input onclick="this.select();" type="number" value="{{nota_prof}}" min="0" max="84" class="notprof" name="nota_prof">
-                    </div>
-                    {%endif%}
+                <!-- abaixo da tabela -->
+                <div class="container" style="min-width: 50%; width: 60%;">
+
+                <!-- botão para calcular -->
+                    <input type="submit" class="botenviar" value="Calcular">
+                
+                <!-- Espaço para nota utilizada -->
+                        <div class="container baixotable">
+                            <div class="partdebaixo">
+                                <p>Nota utilizada:</p>
+                                <input type="number" placeholder="Nota utilizada" readonly class="notprof" value="{{nota_usada}}">
+                            </div>
+                            <div class="reta inclinada"></div>
+
+                <!-- Espaço para nota do professor -->
+                            {%if metodo=="GET":%}
+                            <div class="partdebaixo">
+                                <div ><p>Nota do professor:</p></div>
+                                <input onclick="this.select();" type="number" value="0" min="0" max="84" class="notprof" name="nota_prof">
+                            </div>
+                            {%else:%}
+                            <div class="partdebaixo">
+                                <div><p>Nota do professor:</p></div>
+                                <input onclick="this.select();" type="number" value="{{nota_prof}}" min="0" max="84" class="notprof" name="nota_prof">
+                            </div>
+                            {%endif%}
+                        </div>
                 </div>
                 
             </form>
