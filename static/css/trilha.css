@@ -45,14 +45,13 @@ h1{
 }
 .img-mulhertrilha{
     height: 100px;
-    margin-top:20%;
+    margin-top:3%;
 }
 
 .intro{
     display: flex;
     margin-top: 3%;
     margin-bottom: 5%;
-
 }
 
 .explicacao{
@@ -70,30 +69,32 @@ h1{
 }
 
 .ptrilha{
-    margin-top: 3%;
+   margin-top: 4%;
 }
 
 .txtbalao{
-    margin-top:3%;
+    margin: auto;
     font-size: 16px;
+
 }
 .balao{
     background-color: #18A0FB;
-    height: 80px;
-    width: 400px;
+    height: 90px;
+    width: 450px;
     border-radius: 20px;
     display: flex;
-    margin-top: 5%;
     margin-right: 1%;
     align-self: flex-start;
+    padding: 3%;
 }
-p{
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
 .seta{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 45px;
+    
 }
 
 .titulotrilha{
