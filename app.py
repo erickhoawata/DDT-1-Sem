@@ -43,9 +43,9 @@ def equipe():
 def eventos():
     return render_template("eventos.html")
 
-@app.route("/pilares")
+@app.route("/teste")
 def pilares():
-    return render_template("pilares.html")
+    return render_template("Teste.html")
 
 @app.route("/trilha")
 def trilha():
