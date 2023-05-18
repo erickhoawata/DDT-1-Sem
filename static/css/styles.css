@@ -393,4 +393,42 @@ p[type=number]{
 .esp{
     padding: 70px 30px;   
 }
-
+.cards{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    margin:0.5%;
+    box-shadow: 2px 2px 5px rgb(98, 98, 98);
+}
+.introdução{
+    margin-top:2.5%;
+    margin-left:2.5%
+}
+.introdução2{
+    margin-bottom:2.5%;
+    margin-left:2.5%;
+}
+.enquete{
+    height:10px;
+    width: 100%;
+    background-color: #3478df;
+}
+select{
+    height:50px;
+    width: 100%;
+    background-color:#18a0fb;
+    text-align: center;
+    border:none;
+    box-shadow: 1px 1px 4px #6C6C6C;
+    
+}
+.nextpage{
+    width: 80%;
+    display:flex;
+    justify-content:end ;
+    margin-top:2.5%;
+    margin-bottom:2.5%;
+}
