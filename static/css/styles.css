@@ -269,6 +269,30 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     
 }
+/* divisor de notas */
+.reta {
+    margin: 0.75% 0.5%;
+    width: 3px;
+    height: 70px;
+    background: black;
+    -webkit-transform: skew(0deg); 
+        -ms-transform: skew(0deg); 
+            transform: skew(0deg); 
+}
+.inclinada {
+    -webkit-transform: skew(-10deg);
+    -ms-transform: skew(-10deg);
+    transform: skew(-10deg); 
+}
+
+.notprof{
+    background-color: #E1E1E1;
+    border: none;
+    border-radius: 10px;
+    padding: 1% 2%;
+    margin: 0.5% 1%;
+    font-size: 130%;
+}
 input[type=number] { 
    -moz-appearance: textfield;
    appearance: textfield;
@@ -305,7 +329,7 @@ p[type=number]{
     background-color: #18a0fb;
     border: none;
     border-radius: 10px;
-    padding: 1% 2%;
+    padding: 0% 2%;
 }
 /* -------  AVALIAÇÔES ---------*/ 
 

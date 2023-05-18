@@ -31,33 +31,48 @@
                         <th >Produto</th>
                     </tr>
                     {%if metodo=="GET":%}
-                        {% for c in range(1,8): %}
+                        {% for linha in range(1,8): %}
                         <tr class="linha">
-                            <td class="pedaço"><input type="text"  name="n{{c}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" value="0" name="a{{c}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" value="0" name="b{{c}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" value="0" name="c{{c}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" value="0" name="d{{c}}"></td>
+                            <td class="pedaço"><input type="text"  name="nome{{linha}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_proat{{linha}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_auto{{linha}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_colab{{linha}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_prod{{linha}}"></td>
                         </tr>
                         {%endfor %}
                     
                     {%else:%}
                         {%for pessoa in pessoas:%}
                         <tr class="linha">
-                            <td class="pedaço"><input type="text"  name="n{{loop.index0+1}}" value="{{pessoa[0]}}" class="nome"></td>
-                            <td class="pedaço"><input type="number"  max="3" min="0" name="a{{loop.index0+1}}" value="{{pessoa[1]}}"></td>
-                            <td class="pedaço"><input type="number"  max="3" min="0" name="b{{loop.index0+1}}" value="{{pessoa[2]}}"></td>
-                            <td class="pedaço"><input type="number"  max="3" min="0" name="c{{loop.index0+1}}" value="{{pessoa[3]}}"></td>
-                            <td class="pedaço"><input type="number"  max="3" min="0" name="d{{loop.index0+1}}" value="{{pessoa[4]}}"></td>
+                            <td class="pedaço"><input type="text"  name="nome{{loop.index0+1}}" value="{{pessoa[0]}}" class="nome"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_proat{{loop.index0+1}}" value="{{pessoa[1]}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_auto{{loop.index0+1}}" value="{{pessoa[2]}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_colab{{loop.index0+1}}" value="{{pessoa[3]}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_prod{{loop.index0+1}}" value="{{pessoa[4]}}"></td>
                         </tr>
                         {%endfor%}
                     {%endif%}
 
                 </table>
-                <div class="container">
+                <div class="container" style="width: 50%;">
                     <input type="submit" class="botenviar" value="Calcular">
-                    <!-- <input type="number" class="notprof"> -->
-                    <!-- <input type="number" class="notprof"> -->
+                    <div style="margin:0%;">
+                        <p>Nota utilizada:</p>
+                        <input type="number" placeholder="Nota utilizada" readonly class="notprof" value="{{nota_usada}}">
+                    </div>
+                    <div class="reta inclinada"></div>
+
+                    {%if metodo=="GET":%}
+                    <div style="margin:0%;">
+                        <p>Coloque a nota do professor:</p>
+                        <input type="number" value="0" min="0" max="84" class="notprof" name="nota_prof">
+                    </div>
+                    {%else:%}
+                    <div style="margin:0%;">
+                        <p>Coloque a nota do professor:</p>
+                        <input type="number" value="{{nota_prof}}" min="0" max="84" class="notprof" name="nota_prof">
+                    </div>
+                    {%endif%}
                 </div>
                 
             </form>
