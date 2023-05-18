@@ -31,28 +31,28 @@
                     {%if metodo=="GET":%}
                         {% for linha in range(1,8): %}
                         <tr class="linha">
-                            <td class="pedaço"><input type="text"  name="nome{{linha}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_proat{{linha}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_auto{{linha}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_colab{{linha}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_entreg{{linha}}"></td>
+                            <td class="pedaço"><input onclick="this.select();" class="innota" type="text"  name="nome{{linha}}"></td>
+                            <td class="pedaço"><input onclick="this.select();" class="innota" type="number" max="3" min="0" step="0.1" required value="0" name="nota_proat{{linha}}"></td>
+                            <td class="pedaço"><input onclick="this.select();" class="innota" type="number" max="3" min="0" step="0.1" required value="0" name="nota_auto{{linha}}"></td>
+                            <td class="pedaço"><input onclick="this.select();" class="innota" type="number" max="3" min="0" step="0.1" required value="0" name="nota_colab{{linha}}"></td>
+                            <td class="pedaço"><input onclick="this.select();" class="innota" type="number" max="3" min="0" step="0.1" required value="0" name="nota_entreg{{linha}}"></td>
                         </tr>
                         {%endfor %}
                     
                     {%else:%}
                         {%for pessoa in pessoas:%}
                         <tr class="linha">
-                            <td class="pedaço"><input type="text"  name="nome{{loop.index0+1}}" value="{{pessoa[0]}}" class="nome"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_proat{{loop.index0+1}}" value="{{pessoa[1]}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_auto{{loop.index0+1}}" value="{{pessoa[2]}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_colab{{loop.index0+1}}" value="{{pessoa[3]}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_entreg{{loop.index0+1}}" value="{{pessoa[4]}}"></td>
+                            <td class="pedaço"><input onclick="this.select();" class="innota" type="text"  name="nome{{loop.index0+1}}" value="{{pessoa[0]}}" class="nome"></td>
+                            <td class="pedaço"><input onclick="this.select();" class="innota" type="number" max="3" min="0" step="0.1" required name="nota_proat{{loop.index0+1}}" value="{{pessoa[1]}}"></td>
+                            <td class="pedaço"><input onclick="this.select();" class="innota" type="number" max="3" min="0" step="0.1" required name="nota_auto{{loop.index0+1}}" value="{{pessoa[2]}}"></td>
+                            <td class="pedaço"><input onclick="this.select();" class="innota" type="number" max="3" min="0" step="0.1" required name="nota_colab{{loop.index0+1}}" value="{{pessoa[3]}}"></td>
+                            <td class="pedaço"><input onclick="this.select();" class="innota" type="number" max="3" min="0" step="0.1" required name="nota_entreg{{loop.index0+1}}" value="{{pessoa[4]}}"></td>
                         </tr>
                         {%endfor%}
                     {%endif%}
 
                 </table>
-                <div class="container" style="width: 50%;">
+                <div class="container" style="min-width: 50%; width: 60%;">
                     <input type="submit" class="botenviar" value="Calcular">
                     <div style="margin:0%;">
                         <p>Nota utilizada:</p>
@@ -62,13 +62,13 @@
 
                     {%if metodo=="GET":%}
                     <div style="margin:0%;">
-                        <p>Coloque a nota do professor:</p>
-                        <input type="number" value="0" min="0" max="84" class="notprof" name="nota_prof">
+                        <div style="min-width: 200px"><p>Coloque a nota do professor:</p></div>
+                        <input onclick="this.select();" type="number" value="0" min="0" max="84" class="notprof" name="nota_prof">
                     </div>
                     {%else:%}
                     <div style="margin:0%;">
-                        <p>Coloque a nota do professor:</p>
-                        <input type="number" value="{{nota_prof}}" min="0" max="84" class="notprof" name="nota_prof">
+                        <div style="min-width: 200px"><p>Coloque a nota do professor:</p></div>
+                        <input onclick="this.select();" type="number" value="{{nota_prof}}" min="0" max="84" class="notprof" name="nota_prof">
                     </div>
                     {%endif%}
                 </div>
