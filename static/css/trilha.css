@@ -1,6 +1,4 @@
-
 /*--------- CSS DA TRILHA ------------*/
-
 .body{
     height: 100%;
     width: 100%;
@@ -37,7 +35,6 @@ h1{
     justify-self: center;
     align-self: center;
 }
-
 .image2{
     margin-top: 6%;
     align-self: flex-start;
@@ -47,13 +44,11 @@ h1{
     height: 130px;
     margin-top:3%;
 }
-
 .intro{
     display: flex;
     margin-top: 3%;
     margin-bottom: 5%;
 }
-
 .explicacao{
     display: flex;
     max-width: 50%;
@@ -61,21 +56,17 @@ h1{
     justify-content: end;
     margin-left: auto;
 }
-
 .intro-trilha{
     max-width: 50%;
     margin-left: 7%;
     text-align: center;
 }
-
 .ptrilha{
    margin-top: 4%;
 }
-
 .txtbalao{
     margin: auto;
     font-size: 16px;
-
 }
 .balao{
     background-color: #18A0FB;
@@ -87,7 +78,6 @@ h1{
     align-self: flex-start;
     padding: 3%;
 }
-
 .seta{
     margin-top: auto;
     margin-bottom: auto;
@@ -96,29 +86,23 @@ h1{
     width: 45px;
     
 }
-
 .titulotrilha{
     margin-left:20%;
 }
-
 .titulotrilhaA{
     margin-left:8%;
 }
-
 .cards{
     background-color: #F0F8FF;
     padding: 2%;
     border-radius: 5%;
-
     
     transition: all 0.5s;
     cursor: pointer;
 }
-
 .cards:hover{
     -webkit-filter: drop-shadow(2px 2px 2px  rgba(0,0,0,.5));
     filter: drop-shadow(2px 2px 2px  rgba(0,0,0,.5));
-
     box-shadow:
                 1px 1px #F0F8FF,
                 2px 2px #F0F8FF,
@@ -126,15 +110,7 @@ h1{
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
-
-
-
-
-
 /* ---------- EFEITOS VISUAIS TRILHA ------------ */
-
-
-
 .circulo1:hover{
     -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
