@@ -101,7 +101,7 @@ h1{
     border-radius: 5%;
     width: 15%;
     transition: all 0.5s;
-    cursor: pointer;
+    cursor: default;
     padding: 2%;
 }
 .cards:hover{
