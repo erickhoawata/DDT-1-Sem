@@ -58,9 +58,11 @@ h1{
     margin-left: auto;
 }
 .intro-trilha{
+    display: flex;
     max-width: 40%;
     margin-left: 5%;
     text-align: center;
+    margin: auto;
 }
 .ptrilha{
    margin-top: 4%;
