@@ -206,11 +206,12 @@ h4{
 }
 
 /*FORMATAÇÃO DAS POSIÇÕES DOS PEQUENOS TEXTOS E IMAGENS*/
-.container1 {
+
+.container {
     display: flex;
     justify-content: space-between;
 }
-.container {
+.container1 {
     display: flex;
     justify-content: space-between;
 }
@@ -335,7 +336,7 @@ a{
     display: block;
     text-align: center;
 }
-
+/* TABELA */
 .tabela{
     width: 100%;
     height: auto;
@@ -343,39 +344,26 @@ a{
     border: 5px solid #18a0fb;
     border-radius: 5px;
 }
+.container-debaixo-table {
+    display: flex;
+    align-content: flex-start;
+    width: max-content;
+    height: 50px;
+
+}
 .baixotable{
-    width: 50%;
+    width: 70%;
+    height: 50%;
     border: 5px solid #18a0fb;
     border-radius: 5px;
     background-color: #18a0fb;
-    margin-top: 2.5%;
-    min-width: 240px;
 }
 .partdebaixo{ 
-    width: 30%;
-    min-width: 92px;
-}
-input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-    
-}
-/* divisor de notas */
-.reta {
-    margin: 0.75% 5%;
-    min-width: 3px;
+    width: 190px;
     height: 70px;
-    background: black;
-    -webkit-transform: skew(0deg); 
-        -ms-transform: skew(0deg); 
-            transform: skew(0deg); 
+    margin: 0% 2%;
+    text-align: left;
 }
-.inclinada {
-    -webkit-transform: skew(-10deg);
-    -ms-transform: skew(-10deg);
-    transform: skew(-10deg); 
-}
-/*___________________________________*/
-
 .notprof{
     background-color: #E1E1E1;
     border: none;
@@ -383,6 +371,10 @@ input[type=number]::-webkit-inner-spin-button {
     padding: 1% 2%;
     margin: 0.5% 1%;
     font-size: 130%;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
 }
 input[type=number] { 
    -moz-appearance: textfield;
@@ -423,12 +415,12 @@ p[type=number]{
 }
 
 .botenviar{
-    background-color: rgb(102, 102, 255);
-    border: none;
+    background-color: rgb(129, 184, 255);
+    border: 1px solid black;
     border-radius: 10px;
     padding: 0% 2%;
-    height: 50%;
-    margin: 5% 0%;
+    height: 80%;
+    margin: 2% 0%;
     margin-right: 1%;
 }
 /* -------  AVALIAÇÔES ---------*/ 

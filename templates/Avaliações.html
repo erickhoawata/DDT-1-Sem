@@ -21,7 +21,7 @@
             
         </div>
         <!-- Tabela -->
-        <form method="post">
+        <form method="post" style="background-color: #18a0fb; border-radius: 10px;">
             <table class="tabela">
                 <tr>
                     <th >Nome</th>
@@ -56,19 +56,17 @@
                 </table>
 
                 <!-- abaixo da tabela -->
-                <div class="container"  style="text-align: left; width: 400px; height: 100px;">
+                <div class="container baixotable">
 
                 <!-- botão para calcular -->
                     <input type="submit" class="botenviar" value="Calcular">
                 
                 <!-- Espaço para nota utilizada -->
-                        <div class="container baixotable">
+                        <div class="container-debaixo-table">
                             <div class="partdebaixo">
                                 <th>Nota utilizada:</th>
                                 <input type="number" readonly class="notprof" value="{{nota_usada}}">
                             </div>
-                            <div class="reta inclinada"></div>
-
                 <!-- Espaço para nota do professor -->
                             {%if metodo=="GET":%}
                             <div class="partdebaixo">
