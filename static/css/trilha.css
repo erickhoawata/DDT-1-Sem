@@ -1,9 +1,8 @@
-
+/*--------- CSS DA TRILHA ------------*/
 .body{
     height: 100%;
     width: 100%;
 }
-
 .titulo{
     font-family:montserrat;
     font-style: italic;
@@ -11,14 +10,15 @@
     font-size: large;
 }
 .container1{
-    width:100%;
+    height: 350px;
     display: flex;
-
+    margin-bottom: 10%;
 }
 .trilha{
-    width:100%;
-    display:flex;
-    margin-left: 77px;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     }
 .centrotrilha{
     background-color: #18A0FB;
@@ -36,7 +36,129 @@ h1{
     justify-self: center;
     align-self: center;
 }
-.circulo1, .circulo2, .circulo3, .circulo4,.circulo5{
+.image2{
+    margin-top: 63;
+    align-self: flex-start;
+    margin-right: 5%;
+}
+.img-mulhertrilha{
+    height: 130px;
+    margin-top:1%;
+}
+.intro{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.explicacao{
+    display: flex;
+    max-width: 50%;
+    margin-right: 4%;
+    justify-content: end;
+    margin-left: auto;
+}
+.intro-trilha{
+    max-width: 40%;
+    margin-left: 5%;
+    text-align: center;
+}
+.ptrilha{
+   margin-top: 4%;
+}
+.txtbalao{
+    margin-bottom: 1%;
+    font-size: 16px;
+    margin: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.balao{
+    background-color: #18A0FB;
+    height: 50%;
+    width: 60%;
+    border-radius: 20px;
+    display: flex;
+    margin-right: 1%;
+    align-self: flex-start;
+}
+.seta{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.seta-trilha{
+    width: 80%;
+    margin-left: 10%;
+}
+.titulotrilha{
+    margin: auto;
+}
+
+.cards{
+    background-color: #F0F8FF;
+    border-radius: 5%;
+    width: 15%;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 2%;
+}
+.cards:hover{
+    -webkit-filter: drop-shadow(2px 2px 2px  rgba(0,0,0,.5));
+    filter: drop-shadow(2px 2px 2px  rgba(0,0,0,.5));
+    box-shadow:
+                1px 1px #F0F8FF,
+                2px 2px #F0F8FF,
+                3px 3px #F0F8FF;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+/* ---------- EFEITOS VISUAIS TRILHA ------------ */
+.circulo1:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 7px solid #32affd;
+    border-radius: 50%;
+}
+.circulo2:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 7px solid #32affd;
+    border-radius: 50%;
+}
+.circulo3:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 7px solid #32affd;
+    border-radius: 50%;
+}
+.circulo4:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 7px solid #32affd;
+    border-radius: 50%;
+}
+.circulo5:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 7px solid #32affd;
+    border-radius: 50%;
+}
+.circulo1,.circulo2,.circulo3,.circulo4,.circulo5{
     border-radius: 100%;
     border:none;
     height: 120px;
@@ -45,37 +167,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-.image2{
-    margin-top: 5%;
-    align-self: flex-start;
-}
-.explicacao{
-    display: flex;
-    width: 100%;
-    justify-content: end;
-    margin-right:77px;
-}
-.txtbalao{
-    font-size: 20px;
-}
-.balao{
-    background-color: #18A0FB;
-    height: 125px;
-    width: 400px;
-    border-radius: 20px;
-    display: flex;
-    margin-top: 5%;
-    margin-right: 1%;
-    align-self: flex-start;
-}
-p{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.seta{
-    margin-left: 5px;
-    margin-right: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    transition: all .5s;
+    border: 10px solid transparent;
 }
