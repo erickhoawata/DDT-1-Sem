@@ -15,14 +15,15 @@
     <div class="corpo">
         <!--  Introdução da página de Avaliações  -->
         <div class="container">
-            <h1>Como avaliar sua equipe?</h1>
-            <div class="dialogo">
-                <img class="imgev2" src="../static/img/img-mulherdialogo.png" alt="">
-            </div>
-            <form method="post">
-        </div>
+
+            <div><h1>Como avaliar sua equipe?</h1><p>Para avaliar sua equipe, a Fatec-São José dos Campos, utiliza o metódo PACER:</p></div>
+
             
-                <table clas="Tabela">
+        </div>
+        <!-- Tabela -->
+            <form method="post" style="background-color: #18a0fb; border-radius: 10px;">
+                <table class="tabela">
+
                     <tr>
                         <th >Nome</th>
                         <th >Processo</th>
@@ -54,7 +55,36 @@
                     {%endif%}
 
                 </table>
-                <input type="submit" class="botenviar" value="Calcular">
+
+                <!-- abaixo da tabela -->
+                <div class="container"  style="text-align: left; width: 700px; height: 100px;">
+
+                <!-- botão para calcular -->
+                    <input type="submit" class="botenviar" value="Calcular">
+                
+                <!-- Espaço para nota utilizada -->
+                        <div class="container baixotable">
+                            <div class="partdebaixo">
+                                <th>Nota utilizada:</th>
+                                <input type="number" readonly class="notprof" value="{{nota_usada}}">
+                            </div>
+                            <div class="reta inclinada"></div>
+
+                <!-- Espaço para nota do professor -->
+                            {%if metodo=="GET":%}
+                            <div class="partdebaixo">
+                                <div ><th>Nota do professor:</th></div>
+                                <input onclick="this.select();" type="number" value="0" min="0" max="84" class="notprof" name="nota_prof">
+                            </div>
+                            {%else:%}
+                            <div class="partdebaixo">
+                                <div><th>Nota do professor:</th></div>
+                                <input onclick="this.select();" type="number" value="{{nota_prof}}" min="0" max="84" class="notprof" name="nota_prof">
+                            </div>
+                            {%endif%}
+                        </div>
+                </div>
+                
             </form>
         <hr>
 
@@ -110,10 +140,12 @@
 
         <div class="center">
             <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
-            Agora você já sabe quais são os pilares do Srum!<br>
+            Agora você já sabe como pode avaliar sua equipe no metódo Scrum!<br>
             Retorne a trilha para o próximo aprendizado!<br>
             <br>
-            <button type="button" class="btn btn-primary" style="background-color:#18a0fb"><a class="text-white" href="/trilha">Retornar à trilha</a></button>
+        </div>
+        <div class="frame">
+            <button class="custom-btn btn-5"><a href="/trilha">Retornar a Trilha!</a></button>
         </div>
     </div>
 
