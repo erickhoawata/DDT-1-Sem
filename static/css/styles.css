@@ -141,7 +141,7 @@ h4{
 .aprenda {
     font-family: 'Montserrat';
     font-style: italic; 
-    margin-right: 77px;
+    margin-right: 5%;
     align-self: center;
 }
 .center{
@@ -349,6 +349,11 @@ input{
 .linha{
     padding: 0%;
 }
+.baixotable{
+    width: 300px;
+    height: 60px;
+    margin-top: 5%;
+}
 p[type=number]{
     padding: 0%;
     margin: 0%;
@@ -362,14 +367,22 @@ p[type=number]{
     text-align: center;
     height:10%;
     width: 0.2%;
-    border:10px solid white;
+    border:10px solid #18a0fb;
+}
+.partdebaixo{
+    background-color: #18a0fb;
+    width: 150px;
+    height: 50px;
 }
 
 .botenviar{
-    background-color: #18a0fb;
+    background-color: #146ca6;
     border: none;
     border-radius: 10px;
     padding: 1% 2%;
+    width: 100px;
+    height: 40px;
+    margin-top: 5%;
 }
 /* -------  AVALIAÇÔES ---------*/ 
 
