@@ -27,15 +27,15 @@ def avaliacao():
                 nota_proat = float(request.form.get(f"nota_proat{linha}"))
                 nota_auto = float(request.form.get(f"nota_auto{linha}"))
                 nota_colab = float(request.form.get(f"nota_colab{linha}"))
-                nota_prod = float(request.form.get(f"nota_prod{linha}"))
+                nota_entreg = float(request.form.get(f"nota_entreg{linha}"))
 
                 #somando as notas utilizadas
-                soma_notas = nota_proat + nota_auto + nota_colab + nota_prod
+                soma_notas = nota_proat + nota_auto + nota_colab + nota_entreg
                 nota_usada =  nota_usada + soma_notas
                 
 
                 #lista para criar tabela:
-                pessoas.append([nome, int(nota_proat), int(nota_auto), int(nota_colab), int(nota_prod)])
+                pessoas.append([nome, int(nota_proat), int(nota_auto), int(nota_colab), int(nota_entreg)])
 
 
             

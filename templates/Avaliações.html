@@ -15,10 +15,8 @@
     <div class="corpo">
         <!--  Introdução da página de Avaliações  -->
         <div class="container">
-            <h1>Como avaliar sua equipe?</h1>
-            <div class="dialogo">
-                <img class="imgev2" src="../static/img/img-mulherdialogo.png" alt="">
-            </div>
+            <div><h1>Como avaliar sua equipe?</h1><p>Para avaliar sua equipe, a Fatec-São José dos Campos, utiliza o metódo PACER:</p></div>
+
             
         </div>
             <form method="post">
@@ -28,7 +26,7 @@
                         <th >Proatividade</th>
                         <th >Autonomia</th>
                         <th >Colaboração</th>
-                        <th >Produto</th>
+                        <th >Entrega</th>
                     </tr>
                     {%if metodo=="GET":%}
                         {% for linha in range(1,8): %}
@@ -37,7 +35,7 @@
                             <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_proat{{linha}}"></td>
                             <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_auto{{linha}}"></td>
                             <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_colab{{linha}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_prod{{linha}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required value="0" name="nota_entreg{{linha}}"></td>
                         </tr>
                         {%endfor %}
                     
@@ -48,7 +46,7 @@
                             <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_proat{{loop.index0+1}}" value="{{pessoa[1]}}"></td>
                             <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_auto{{loop.index0+1}}" value="{{pessoa[2]}}"></td>
                             <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_colab{{loop.index0+1}}" value="{{pessoa[3]}}"></td>
-                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_prod{{loop.index0+1}}" value="{{pessoa[4]}}"></td>
+                            <td class="pedaço"><input type="number" max="3" min="0" step="0.1" required name="nota_entreg{{loop.index0+1}}" value="{{pessoa[4]}}"></td>
                         </tr>
                         {%endfor%}
                     {%endif%}
