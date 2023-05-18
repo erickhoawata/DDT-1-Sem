@@ -425,10 +425,25 @@ select{
     box-shadow: 1px 1px 4px #6C6C6C;
     
 }
+select:hover{
+    background-color:#1681c8;
+    color:#ffffff;
+}
 .nextpage{
     width: 80%;
     display:flex;
     justify-content:end ;
     margin-top:2.5%;
     margin-bottom:2.5%;
+}
+.nextpagebut{
+    background-color:#18a0fb;
+    border-radius: 10px;
+    border:none;
+    height:60px;
+    width:10%;
+}
+.nextpagebut:hover{
+    background-color:#146ca6;
+    color:#ffffff;
 }
