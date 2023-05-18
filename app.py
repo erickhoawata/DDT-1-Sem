@@ -6,6 +6,7 @@ app = Flask("__name__")
 def index():
     return render_template("index.html")
 
+
 @app.route("/artefatos")
 def artefatos():
     return render_template("artefatos.html")
@@ -43,10 +44,14 @@ def equipe():
 def eventos():
     return render_template("eventos.html")
 
-@app.route("/teste")
-def pilares():
-    return render_template("Teste.html")
-
 @app.route("/trilha")
 def trilha():
     return render_template("trilha.html")
+
+@app.route("/pilares")
+def pilares():
+    return render_template("pilares.html")
+
+@app.route("/teste")
+def teste():
+    return render_template("teste.html")
