@@ -338,17 +338,34 @@ a{
 }
 /* TABELA */
 .tabela{
+    margin-top: 2%;
     width: 100%;
     height: auto;
     background-color: #18a0fb;
     border: 5px solid #18a0fb;
     border-radius: 5px;
 }
+.ped-ret{
+    background-color: #E1E1E1;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    height:45%;
+    width: 174px;
+    border:1px solid #18a0fb;
+    padding: 0%;
+    margin: 0%;
+}
+.retangulo{
+    width: 90%;
+    height: 80%;
+    margin: 0%;
+}
 .container-debaixo-table {
     display: flex;
     align-content: flex-start;
     width: max-content;
-    height: 50px;
+    height: 30px;
 
 }
 .baixotable{
@@ -370,7 +387,7 @@ a{
     border-radius: 10px;
     padding: 1% 2%;
     margin: 0.5% 1%;
-    font-size: 130%;
+    font-size: 100%;
 }
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
