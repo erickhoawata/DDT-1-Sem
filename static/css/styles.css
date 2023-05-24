@@ -152,8 +152,15 @@ h4{
 }
 
 .left{
-    width: 600px;
-    padding: 70px 30px;
+    max-width: 50%;
+    margin-right: 20%;
+    margin-top: 7%;
+}
+
+.right{
+    
+    max-width: 50%;
+    margin-left: 30%;
 }
 
 .collapsible {
@@ -212,8 +219,10 @@ h4{
     justify-content: space-between;
 }
 .container1 {
+    
     display: flex;
-    justify-content: space-between;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 .elemento {
     text-align: justify;
@@ -477,11 +486,39 @@ p[type=number]{
     margin-top: 20%;
 }
 
+.imgev6{
+    margin-right: 30%;
+    margin-top: 10%;
+    height: 270px;
+    width: 300px;
+}
+
+.imgev7{
+    height: 300px;
+    width: 350px;
+    margin-left: 30%;
+}
+
+.imgev8{
+    margin-right: 30%;
+    margin-top: 15%;
+    height: 300px;
+    width: 300px;
+}
+
+.imgev5{
+    height: 250px;
+    width: 350px;
+    
+   
+}
+
+
 /*------css para imagens------*/
 .imgev1{
-    text-align: justify;
-    width: 400px;
-    padding: 0px 30px 0px;
+    height: 290px;
+    width: 200px;
+    padding-bottom: 15%;
 }
 
 .left1{
