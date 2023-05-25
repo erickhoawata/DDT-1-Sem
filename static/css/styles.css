@@ -198,11 +198,7 @@ button {
     overflow: hidden;
     background-color: #fafafa;
 }
-.right{
-    text-align: justify;
-    width: 600px;
-    padding: 70px 30px;
-}
+
 
 .corpo{
     padding-top: 50px !important;
@@ -224,24 +220,25 @@ button {
 }
 
 .container1 {
-    background-color: #6C6C6C;
     justify-content: space-between;
     max-width: 100%;
     display: flex;
     margin-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 .left{
-    background-color: rgb(212, 69, 69);
-    max-width: 50%;
+    
+    max-width: 46%;
     padding-top: 5%;
 }
 
 .right{
-    background-color: #31DAFF;
-    max-width: 50%;
+
+    max-width: 46%;
+    padding-top: 5%;
 }
+
 
 
 
@@ -471,6 +468,13 @@ p[type=number]{
     margin-right: 1%;
 }
 
+/*--- Pilares --- */
+
+.cont-img-pil{
+    margin: auto;
+}
+
+
 /*--- Equipe ---*/
 
 .img-equi{
@@ -574,7 +578,6 @@ p[type=number]{
 .imgev1{
     height: 290px;
     width: 200px;
-    padding-bottom: 15%;
 }
 
 .left1{
