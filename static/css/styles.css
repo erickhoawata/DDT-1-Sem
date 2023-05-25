@@ -58,11 +58,19 @@ h4{
     margin: 40px auto;
     text-align: center;
   }
-  button {
+
+button {
     margin: 10px;
+}
+
+.custom-btn svg {
+      color: #18a0fb;
   }
+
+
+
   .custom-btn {
-    width: 190px;
+    width: 240px;
     height: 40px;
     color: #fff;
     border-radius: 5px;
@@ -79,13 +87,14 @@ h4{
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
   }
+
 .btn-5 {
-    width: 190px;
+    width: 240px;
     height: 40px;
     line-height: 42px;
     padding: 0;
     border: none;
-    background: #18a0fb;
+    background: #9ec1d8;
   background: linear-gradient(0deg, #18a0fb 0%, #18a0fb 100%);
   }
   .btn-5:hover {
