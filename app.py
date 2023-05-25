@@ -16,6 +16,20 @@ def avaliacao():
     if request.method == "POST":
         
         try:
+            #pegando notas da tabela menor:
+            nota_proc = float(request.form.get('nota_proc'))
+            nota_proc = int(nota_proc)
+
+            nota_prodt = float(request.form.get('nota_prodt'))
+            nota_prodt = int(nota_prodt)
+
+            nota_compt = float(request.form.get('nota_compt'))
+            nota_compt = int(nota_compt)
+            if nota_compt*nota_proc*nota_prodt==1:
+                nota_total1 = 25
+            else: 
+                nota_total1 = 0
+
             pessoas = []
             nota_usada = 0
             nota_prof = float(request.form.get('nota_prof'))
@@ -41,9 +55,9 @@ def avaliacao():
 
             
                 
-            # devolvendo o d para seu lugar   
+            # devolvendo tudo para seu lugar   
             nota_usada = int(nota_usada)
-            return render_template("Avaliações.html", pessoas=pessoas, metodo=metodo, nota_usada=nota_usada, nota_prof=nota_prof)
+            return render_template("Avaliações.html", pessoas=pessoas, metodo=metodo, nota_usada=nota_usada, nota_prof=nota_prof, nota_total1=nota_total1, nota_prodt=nota_prodt, nota_proc=nota_proc, nota_compt=nota_compt)
         except ValueError:
             return render_template("Avaliações.html", metodo=metodo)
     else:

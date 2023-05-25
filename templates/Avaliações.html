@@ -22,16 +22,19 @@
         </div>
         <!-- Tabela -->
         <form method="post" style="background-color: #18a0fb; border-radius: 10px;">
+            <div style="width: 20%;">
+                <p style="margin:0% 2%;">Número de integrantes:<input type="number" min="1" max="7" required name="qtd_pessoas" value="{{qtd_pessoas}}" class="ped-ret" id="qtd_pessoas"></p>
+            </div>
             <div class="container">
                 <table class="quadrado-menor">
                     <tr><th>Processo</th></tr>
-                    <tr><td><input type="number" min="0" max="1" required class="pedaço-menor"></td></tr>
+                    <tr><td><input type="number" min="0" max="1" required name="nota_proc" value="{{nota_proc}}" class="ped-ret"></td></tr>
                     <tr><th>Produto</th></tr>
-                    <tr><td><input type="number" min="0" max="1" required class="pedaço-menor"></td></tr>
+                    <tr><td><input type="number" min="0" max="1" required name="nota_prodt" value="{{nota_prodt}}" class="ped-ret"></td></tr>
                     <tr><th>Competência disc.</th></tr>
-                    <tr><td><input type="number" min="0" max="1" required class="pedaço-menor"></td></tr>
-                    <tr><th>Total</th></tr>
-                    <tr><td><input type="number" min="0" max="1" readonly class="pedaço-menor"></td></tr>
+                    <tr><td><input type="number" min="0" max="1" required name="nota_compt" value="{{nota_compt}}" class="ped-ret"></td></tr>
+                    <tr><th>Total(%)</th></tr>
+                    <tr><td><input type="number" min="0" max="1" readonly value="{{nota_total1}}" class="ped-ret"></td></tr>
                 </table>
                 
                 <div style="width: 600px;">
@@ -60,18 +63,18 @@
                     <div class="container-debaixo-table">
                             <div class="partdebaixo">
                                 <th>Nota utilizada:</th>
-                                <input type="number" readonly class="notprof" value="{{nota_usada}}">
+                                <input type="number" readonly class="ped-ret" value="{{nota_usada}}">
                             </div>
                          <!-- Espaço para nota do professor -->
                                 {%if metodo=="GET":%}
                             <div class="partdebaixo">
                                     <div ><th>Nota do professor:</th></div>
-                                    <input onclick="this.select();" type="number" value="0" min="0" max="84" class="notprof" name="nota_prof">
+                                    <input onclick="this.select();" type="number" value="0" min="0" max="84" class="ped-ret" name="nota_prof">
                             </div>
                                 {%else:%}
                             <div class="partdebaixo">
                                 <div><th>Nota do professor:</th></div>
-                                <input onclick="this.select();" type="number" value="{{nota_prof}}" min="0" max="84" class="notprof" name="nota_prof">
+                                <input onclick="this.select();" type="number" value="{{nota_prof}}" min="0" max="84" class="ped-ret" name="nota_prof">
                             </div>
                             {%endif%}
                         </div>
