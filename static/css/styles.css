@@ -221,6 +221,12 @@ button {
     margin-right: 8% !important;
 }
 
+.container-art{
+    max-width: 100%;
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 10%;
+}
 /*FORMATAÇÃO DAS POSIÇÕES DOS PEQUENOS TEXTOS E IMAGENS*/
 
 .container {
@@ -228,7 +234,7 @@ button {
     justify-content: space-between;
 }
 .container1 {
-    
+    max-width: 100%;
     display: flex;
     margin-top: 1%;
     margin-bottom: 2%;
@@ -522,6 +528,36 @@ p[type=number]{
    
 }
 
+/*---- Artefatos -----*/
+
+.lefta{
+    max-width: 50%;
+    padding-right: 5%;
+}
+
+.righta{
+    max-width: 50%;
+    padding-left: 5%;
+}
+
+.img-art{
+    
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.int-art{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.mvp-art{
+    margin-top: 5%;
+}
+
+.burn-art{
+    margin-top: 5%;
+}
 
 /*------css para imagens------*/
 .imgev1{
