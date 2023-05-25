@@ -1,11 +1,12 @@
 # DDT-1ºBim
 
-**<h2>📊 O que é a DDT?</h2>**
+## 📊 O que é a DDT?
+
 DDT (Development Dream Team), é um time de desenvolvimento web do 1°Bimestre de Análise e Desenvolvimento da FATEC São José dos Campos - Prof. Jessen Vidal. A equipe possui como objetivo principal desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  da  metodologia  ágil (Scrum), com foco em deixar a aplicação fácil e intuitiva, proporcionando maior experiência para o usuário para que o mesmo possa aplicar as informações adiquiridas nos seus projetos futuros.
 
 <br>
 
-**<h2>🎯 Desafio</h2>**
+## 🎯 Desafio
 Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  da  metodologia  ágil (Scrum),  todos os processos deverão  ter conceitos  e  fundamentos  com  referências,  bem  como  a aplicação com exemplos práticos para aplena compreensão do usuário do sistema.
 
 <br>
@@ -19,8 +20,7 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 |**Ryan Seiji Wakugawa**|Product Owner|[@GitHub](https://github.com/ryan-wakugawaa)|[@Linkedin]()
 |**Maria Eduarda Peleteiro Leite**|Desenvolvedor|[@GitHub](https://github.com/Dudaleite08">)|[@Linkedin]()
 |**Pedro Santos Kajiya**|Desenvolvedor|[@GitHub](https://github.com/kajiyap)|[@Linkedin](https://www.linkedin.com/in/pedro-santos-kajiya-65763b260/)
-|**Cauã Nascimento Coelho Sbruzi Dezidera**|Desenvolvedor|[@GitHub](https://github.com/CauaDezidera)|[@Linkedin]()
-  
+|**Cauã Nascimento Coelho Sbruzi Dezidera**|Desenvolvedor|[@GitHub](https://github.com/CauaDezidera)|[@Linkedin]() 
 <br>  
   
 </div>
@@ -35,17 +35,31 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
   <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" title="trello" alt="trello"/>&nbsp;
   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" title="trello" alt="trello"/>&nbsp;
   <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" title="trello" alt="trello"/>&nbsp;
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" title="trello" alt="trello"/>&nbsp;
-
-  
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" title="trello" alt="trello"/>&nbsp;  
 </div>
+
+<br>
+
+## 📋 Requisitos funcionais
+  - Linguagem Python (Requisito Fatec)
+  - Linguagem HTML e CSS (Requisito Fatec)
+  - Uso do framework Bootstrap
+  - Sistema Web intuitivo, simples e prático para facilitar a absorção do conteúdo
+  - Criar um sistema de avaliação (Processo, Produto e Conhecimento em disciplina, Scrum Master, Product Owner, Time de Desenvolvimento)
+  - Incluir os pilares, artefatos, equipe e eventos
+
+<br>
+
+## 🔗 Requisitos não funcionais
+ - Documentação via Github
+ - Linguagem de programação Python, framework Flask.
+ - Linguagem de marcação HTML e CSS.
 
 <br>
 
 **<h2>🗂 Planejamento de Entregas e MVP</h2>**
 
 <div align="center">
-
 
 ![mvp](src/mpv.png)
 
@@ -63,15 +77,9 @@ O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cl
 
 </div>
 
-
 <div align="center">
-
-
 
 https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/da5ee34f-5867-4ed7-9f38-a1de1a88547b
 
-
-
 </div >
-
 
