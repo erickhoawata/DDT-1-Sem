@@ -224,6 +224,7 @@ button {
 }
 
 .container1 {
+    background-color: #6C6C6C;
     justify-content: space-between;
     max-width: 100%;
     display: flex;
@@ -232,11 +233,13 @@ button {
 }
 
 .left{
+    background-color: rgb(212, 69, 69);
     max-width: 50%;
     padding-top: 5%;
 }
 
 .right{
+    background-color: #31DAFF;
     max-width: 50%;
 }
 
@@ -546,20 +549,12 @@ p[type=number]{
 
 /*---- Artefatos -----*/
 
-.lefta{
-    max-width: 50%;
-    padding-right: 5%;
+.cont-img-art1{
+    margin: auto;
 }
 
-.righta{
-    max-width: 50%;
-    padding-left: 5%;
-}
-
-.img-art{
-    
+.cont-img-art{
     margin-top: 15%;
-    margin-left: 15%;
 }
 
 .int-art{
