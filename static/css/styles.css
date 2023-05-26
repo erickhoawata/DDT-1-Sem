@@ -367,6 +367,9 @@ a{
     color: white !important;
 }
 
+.dropdown-menu a:hover{
+    color: rgb(0, 0, 0) !important;
+}
 /* Rodapé */
 .navbot{
     display:flex;
