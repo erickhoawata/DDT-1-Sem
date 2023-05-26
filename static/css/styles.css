@@ -278,9 +278,7 @@ button {
     width: 572px;
     font-family: 'Montserrat', sans-serif;
 }
-.espaco {
-    width: 144px;
-}
+
 .imghome {
     background-image: url("../img/fundo\ home.png");
     display:flex;
