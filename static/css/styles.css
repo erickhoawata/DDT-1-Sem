@@ -663,6 +663,8 @@ p[type=number]{
     height: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    width:100%;
+
 }
 .card{
     margin:0.5%;
