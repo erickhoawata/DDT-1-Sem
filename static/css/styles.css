@@ -255,13 +255,11 @@ button {
 }
 
 .left{
-    
     max-width: 46%;
     padding-top: 5%;
 }
 
 .right{
-
     max-width: 46%;
     padding-top: 5%;
 }
@@ -280,9 +278,7 @@ button {
     width: 572px;
     font-family: 'Montserrat', sans-serif;
 }
-.espaco {
-    width: 144px;
-}
+
 .imghome {
     background-image: url("../img/fundo\ home.png");
     display:flex;
@@ -369,6 +365,9 @@ a{
     color: white !important;
 }
 
+.dropdown-menu a:hover{
+    color: rgb(0, 0, 0) !important;
+}
 /* Rodapé */
 .navbot{
     display:flex;
@@ -517,7 +516,17 @@ p[type=number]{
     margin: auto;
 }
 
+/*-----Eventos---- */
 
+.botao-eve{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.left-eve{
+    max-width: 46%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
 
 /* -------  AVALIAÇÔES ---------*/ 
 
@@ -572,7 +581,6 @@ p[type=number]{
 .imgev8{
     margin-right: 30%;
     margin-top: 15%;
-    height: 300px;
     width: 300px;
 }
 
