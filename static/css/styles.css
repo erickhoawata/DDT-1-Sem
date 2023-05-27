@@ -396,18 +396,18 @@ a{
 }
 /* TABELA */
 .tabelacompleta{
-    background-color: #18a0fb; 
-    border-radius: 10px;
+    background-color: rgba(235, 235, 235, 0.473); 
     min-width: min-content;
     width: 80%;
     margin: 0% 10%;
+    border: 3px rgba(235, 235, 235, 0.473);
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.329);
 }
 .tabela{
     margin-top: 2%;
     width: 100%;
     height: auto;
-    border: 5px solid #18a0fb;
-    border-radius: 5px;
 }
 .ped-ret{
     background-color: #E1E1E1;
@@ -416,7 +416,6 @@ a{
     text-align: center;
     height: 80%;
     width: 90%;
-    border:1px solid #18a0fb;
     padding: 0%;
     margin: 0%;
 }
@@ -473,7 +472,6 @@ input{
 
 .linha{
     padding: 0%;
-    background-color: #18a0fb;
 }
 p[type=number]{
     padding: 0%;
@@ -485,7 +483,6 @@ p[type=number]{
     box-sizing: border-box;
     text-align: center;
     height:10%;
-    width: 120px;
 }
 .innota{
     width: 100%;
