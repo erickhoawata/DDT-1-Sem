@@ -16,6 +16,9 @@ def avaliacao():
     if request.method == "POST":
         
         try:
+            #pegando quantidade de integrantes:
+            qtd_pessoas = float(request.form.get('qtd_pessoas'))
+            qtd_pessoas = int(qtd_pessoas)
             #pegando notas da tabela menor:
             nota_proc = float(request.form.get('nota_proc'))
             nota_proc = int(nota_proc)
@@ -29,12 +32,46 @@ def avaliacao():
                 nota_total1 = 25
             else: 
                 nota_total1 = 0
+            #encerrando tabela menor
 
+            #tabela retangular
+            nota_PO = float(request.form.get('nota_PO'))
+            nota_PO=int(nota_PO)
+            if nota_PO == 3: porcent_PO=25
+            elif nota_PO == 2: porcent_PO=15
+            elif nota_PO == 1: porcent_PO=5
+            else: porcent_PO=0
+
+            nota_SM = float(request.form.get('nota_SM'))
+            nota_SM=int(nota_SM)
+            if nota_SM == 3: porcent_SM=25
+            elif nota_SM == 2: porcent_SM=15
+            elif nota_SM == 1: porcent_SM=5
+            else: porcent_SM=0
+
+            nota_DT = float(request.form.get('nota_DT'))
+            nota_DT=int(nota_DT)
+            if nota_DT == 3: porcent_DT=25
+            elif nota_DT == 2: porcent_DT=15
+            elif nota_DT == 1: porcent_DT=5
+            else: porcent_DT=0
+
+            soma_porcent = porcent_DT+porcent_PO+porcent_SM+nota_total1
+            if 75< soma_porcent <=100:
+                nota_ind=12
+            elif 50 < soma_porcent <= 75:
+                nota_ind=8
+            elif 25 < soma_porcent <= 50:
+                nota_ind=4
+            else:
+                nota_ind=0
+
+            nota_grupo = nota_ind*qtd_pessoas
+            nota_grupo = int(nota_grupo)
+            #tabela maior e nota utlizada
             pessoas = []
             nota_usada = 0
-            nota_prof = float(request.form.get('nota_prof'))
-            nota_prof = int(nota_prof)
-            for linha in range(1,8):
+            for linha in range(1,11):
                 #pegando nome:
                 nome = str(request.form.get(f"nome{linha}"))
 
@@ -57,7 +94,7 @@ def avaliacao():
                 
             # devolvendo tudo para seu lugar   
             nota_usada = int(nota_usada)
-            return render_template("Avaliações.html", pessoas=pessoas, metodo=metodo, nota_usada=nota_usada, nota_prof=nota_prof, nota_total1=nota_total1, nota_prodt=nota_prodt, nota_proc=nota_proc, nota_compt=nota_compt)
+            return render_template("Avaliações.html", pessoas=pessoas, metodo=metodo, nota_usada=nota_usada, nota_total1=nota_total1, nota_prodt=nota_prodt, nota_proc=nota_proc, nota_compt=nota_compt, porcent_PO=porcent_PO, porcent_DT=porcent_DT, porcent_SM=porcent_SM, nota_DT=nota_DT, nota_PO=nota_PO, nota_SM=nota_SM, soma_porcent=soma_porcent, nota_grupo=nota_grupo, qtd_pessoas=qtd_pessoas)
         except ValueError:
             return render_template("Avaliações.html", metodo=metodo)
     else:

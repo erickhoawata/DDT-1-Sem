@@ -395,11 +395,17 @@ a{
     text-align: center;
 }
 /* TABELA */
+.tabelacompleta{
+    background-color: #18a0fb; 
+    border-radius: 10px;
+    min-width: min-content;
+    width: 80%;
+    margin: 0% 10%;
+}
 .tabela{
     margin-top: 2%;
     width: 100%;
     height: auto;
-    background-color: #18a0fb;
     border: 5px solid #18a0fb;
     border-radius: 5px;
 }
@@ -408,14 +414,14 @@ a{
     border-radius: 10px;
     box-sizing: border-box;
     text-align: center;
-    height:45%;
+    height: 80%;
     width: 90%;
     border:1px solid #18a0fb;
     padding: 0%;
     margin: 0%;
 }
 #qtd_pessoas{
-    width: min-content;
+    width: 20%;
     margin: 0% 2%;
 }
 .retangulo{
@@ -464,10 +470,7 @@ input{
     border: none;
     text-align: center;
 }
-.innota{
-    width: 100%;
-    height: max-content;
-}
+
 .linha{
     padding: 0%;
     background-color: #18a0fb;
@@ -478,17 +481,17 @@ p[type=number]{
     text-align: center;
 }
 .pedaço{
-    background-color: #E1E1E1;
     border-radius: 10px;
     box-sizing: border-box;
-    box-shadow: 0px 4px 0px 0px #00000035;
     text-align: center;
     height:10%;
-    width: 0.2%;
-    border:10px solid #18a0fb;
-    padding: 0%;
+    width: 120px;
 }
-
+.innota{
+    width: 100%;
+    height: max-content;
+    border-radius: 5px;
+}
 .botenviar{
     background-color: #88cfff;
     border: 1px solid black;
