@@ -10,6 +10,11 @@ def index():
 @app.route("/artefatos")
 def artefatos():
     return render_template("artefatos.html")
+
+@app.route("/teste2")
+def Teste2():
+    return render_template("teste2.html")
+
 @app.route("/avaliacao", methods=["GET","POST"])
 def avaliacao():
     metodo = request.method
@@ -118,6 +123,16 @@ def trilha():
 def pilares():
     return render_template("pilares.html")
 
-@app.route("/teste")
+@app.route("/teste"methods=["GET","POST"])
+def avaliacao():
+    metodo = request.method
+    if request.method == "POST":
+        
+        try:
+            fun_carlos=str(request.form.get('fun_carlos'))
+            fun_roberta=str(request.form.get('fun_roberta'))
+            fun_everton=str(request.form.get('fun_everton'))
+            fun_fabricio=str(request.form.get('fun_fabricio'))
+            fun_sara=str(request.form.get('fun_sara'))
 def teste():
     return render_template("teste.html")

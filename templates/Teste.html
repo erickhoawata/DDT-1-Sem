@@ -4,6 +4,7 @@
     {% extends 'base.html' %}
     {% block titulo %}
     <title>Teste de aprendizagem</title>
+    <link rel="stylesheet" href="teste.css">
     {% endblock %}
 </head>
 <body>
@@ -11,10 +12,10 @@
 <!-- fim cabeçalho -->
 <!-- corpo -->
 <div class="introdução">
-    <h3>Olá, seja bem vindo ao seu projeto!</h3>
+    <h1>Olá, seja bem vindo ao seu projeto!</h1>
   </div>
   <div class="introdução2">
-    <h3>Vamos começar montando o Seu time Scrum. <br>Pelo curriculo, selecione a função que mais se encaixa com o personagem<br></h3>
+    <h2>Vamos começar montando o Seu time Scrum. <br>Pelo curriculo, selecione a função que mais se encaixa com o personagem<br></h2>
   </div>
     <div class="cards">
       <div class="card" style="width: 18rem;">
@@ -22,7 +23,8 @@
           <div class="card-body">
             <h4 class="card-title">Carlos</h4>
             <p class="card-text">Experiente<br>Organizado<br> Flexível</p>
-            <form method="post" action="cadastrar-enquete.php">
+            {%if metodo=="GET":%}
+            <form method="get">
               <select name="time">
               <option value="scr"><h4>Scrum Master</h4></option>
               <option value="po"><h4>Product Owner</h4></option>
@@ -35,7 +37,7 @@
           <div class="card-body">
             <h4 class="card-title">Roberta</h4>
             <p class="card-text">Trabalha bem em equipe<br>Tímida<br>Experiente</p>
-            <form method="post" action="cadastrar-enquete.php">
+            <form method="get">
               <select name="time">
               <option value="scr"><h4>Scrum Master</h4></option>
               <option value="po"><h4>Product Owner</h4></option>
@@ -48,7 +50,7 @@
           <div class="card-body">
             <h4 class="card-title">Everton</h4>
             <p class="card-text">Trabalha bem em equipe<br>Bastante habilidade técnica<br>Independente</p>
-            <form method="post" action="cadastrar-enquete.php">
+            <form method="get" action="">
               <select name="time">
               <option value="scr"><h4>Scrum Master</h4></option>
               <option value="po"><h4>Product Owner</h4></option>
@@ -61,7 +63,7 @@
           <div class="card-body">
             <h4 class="card-title">Fabrício</h4>
             <p class="card-text">Experiente<br>Atento<br>Comunicativo</p>
-            <form method="post" action="cadastrar-enquete.php">
+            <form method="get">
               <select name="time">
               <option value="scr"><h4>Scrum Master</h4></option>
               <option value="po"><h4>Product Owner</h4></option>
@@ -74,7 +76,7 @@
           <div class="card-body">
             <h4 class="card-title">Sara</h4>
             <p class="card-text">Sabe administrar pessoas<br>Comunicativo<br>Experiente em SCRUM</p>
-            <form method="post" action="">
+            <form method="get">
               <select name="Cargo">
               <option value="scr"><h4>Scrum Master</h4></option>
               <option value="po"><h4>Product Owner</h4></option>
@@ -84,7 +86,7 @@
         </div>
       </div>
       <div class="nextpage">
-        <button class="nextpagebut">Próximo</button>
+        <button class="nextpagebut"><a href="/teste2"></a>Próximo</button>
       </div>
       {% endblock %}
 </body>
