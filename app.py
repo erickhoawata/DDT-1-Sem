@@ -30,8 +30,10 @@ def avaliacao():
             nota_compt = int(nota_compt)
             if nota_compt*nota_proc*nota_prodt==1:
                 nota_total1 = 25
+                vali_sprint = 1
             else: 
                 nota_total1 = 0
+                vali_sprint = 0
             #encerrando tabela menor
 
             #tabela retangular
@@ -94,12 +96,15 @@ def avaliacao():
                 
             # devolvendo tudo para seu lugar   
             nota_usada = int(nota_usada)
-            return render_template("Avaliações.html", pessoas=pessoas, metodo=metodo, nota_usada=nota_usada, nota_total1=nota_total1, nota_prodt=nota_prodt, nota_proc=nota_proc, nota_compt=nota_compt, porcent_PO=porcent_PO, porcent_DT=porcent_DT, porcent_SM=porcent_SM, nota_DT=nota_DT, nota_PO=nota_PO, nota_SM=nota_SM, soma_porcent=soma_porcent, nota_grupo=nota_grupo, qtd_pessoas=qtd_pessoas)
+            return render_template("Avaliações.html", pessoas=pessoas, metodo=metodo, nota_usada=nota_usada, nota_total1=nota_total1, nota_prodt=nota_prodt, nota_proc=nota_proc, nota_compt=nota_compt, porcent_PO=porcent_PO, porcent_DT=porcent_DT, porcent_SM=porcent_SM, nota_DT=nota_DT, nota_PO=nota_PO, nota_SM=nota_SM, soma_porcent=soma_porcent, nota_grupo=nota_grupo, qtd_pessoas=qtd_pessoas, vali_sprint=vali_sprint)
         except ValueError:
-            return render_template("Avaliações.html", metodo=metodo)
+            nota_usada=0
+            return render_template("Avaliações.html", metodo=metodo, nota_usada=nota_usada)
     else:
         # if no POST method is requested render only the page.
-        return render_template("Avaliações.html", metodo=metodo)
+        nota_usada=0
+        nota_grupo=0
+        return render_template("Avaliações.html", metodo=metodo, nota_usada=nota_usada, nota_grupo=nota_grupo)
 
 
 @app.route("/equipe")
