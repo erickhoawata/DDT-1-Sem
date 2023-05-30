@@ -123,8 +123,10 @@
                 
                 <div style="margin: 5% 0%;"><th><b>Utilizados:</b></th></div>
                 <input type="number" value="{{nota_usada}}" readonly class="ped-ret" style="margin: 5% 2%; width: 80px;" name="nota_prof">
+
                 <div style="margin: 5% 0%;"><th><b>Possíveis:</b></th></div>
                 <input type="number" value="{{nota_grupo}}" readonly class="ped-ret" style="margin: 5% 2%; width: 80px;" name="nota_prof">
+                
                 <input type="submit" class="botenviar" value="Verificar" style="margin-top: 5%;">
 
                 {%if nota_usada>nota_grupo:%}
@@ -196,7 +198,7 @@
             <br>
         </div>
         <div class="frame">
-            <button class="custom-btn btn-5"><a style="color: black;" href="/trilha">Retornar a Trilha!</a></button>
+            <a style="color: black;" href="/trilha"><button class="custom-btn btn-5">Retornar a Trilha!</button></a>
         </div>
     </div>
 
