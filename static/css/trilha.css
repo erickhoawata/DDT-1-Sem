@@ -13,14 +13,20 @@
     height: 350px;
     display: flex;
     margin-bottom: 10%;
+    width: 100%;
+    flex-wrap: nowrap;
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 .trilha{
     height: 80%;
     width: 80%;
     display: flex;
     margin: auto;
-    
     }
+
 .centrotrilha{
     border-radius: 100%;
     height:200px;
@@ -86,11 +92,11 @@ h1{
 .seta{
     margin-top: auto;
     margin-bottom: auto;
+    padding: 0% 1%;
 }
 
 .seta-trilha{
-    width: 80%;
-    margin-left: 10%;
+    width: 50px;
 }
 .titulotrilha{
    max-width: fit-content;
@@ -100,12 +106,13 @@ h1{
 .cards-trilha{
     background-color: #F0F8FF;
     border-radius: 5%;
-    width: 20%;
+    width: 200px;
     transition: all 0.5s;
     cursor: default;
-    height: 80%;
+    height: 100%;
     margin: auto;
 }
+
 .cards-trilha:hover{
     -webkit-filter: drop-shadow(2px 2px 2px  rgba(0,0,0,.5));
     filter: drop-shadow(2px 2px 2px  rgba(0,0,0,.5));
