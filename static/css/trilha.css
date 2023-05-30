@@ -107,6 +107,7 @@ h1{
     background-color: #F0F8FF;
     border-radius: 5%;
     width: 200px;
+    min-width: 170px;
     transition: all 0.5s;
     cursor: default;
     height: 100%;
