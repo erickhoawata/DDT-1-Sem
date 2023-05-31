@@ -16,10 +16,31 @@
     width: 100%;
     flex-wrap: nowrap;
     
+    /* Adiciona uma barra de rolagem para a trilha */
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
+
+.container-trilha:hover{
+    overflow-x: scroll;
+    opacity: 1;
+}
+
+.container-trilha::-webkit-scrollbar {
+    height: 7px;
+}
+  
+.container-trilha::-webkit-scrollbar-track {
+background-color: #ffffff;
+border-radius: 100px;
+}
+
+.container-trilha::-webkit-scrollbar-thumb {
+background-color: #1192e7;
+border-radius: 100px;
+}
+
 .trilha{
     height: 80%;
     width: 80%;

@@ -560,7 +560,7 @@ p[type=number]{
 
 .imgev2{
     text-align: justify;
-    width: 400px;
+    width: 100%;
     padding: 0px 30px 0px;
     margin-top: 20%;
 }
@@ -620,8 +620,8 @@ p[type=number]{
 
 /*------css para imagens------*/
 .imgev1{
-    height: 290px;
-    width: 200px;
+    max-width:100%;
+    height: auto;
 }
 
 .left1{
@@ -639,8 +639,6 @@ p[type=number]{
 /*------css para imagens------*/
 .imgev1{
     text-align: justify;
-    width: 400px;
-    padding: 0px 30px 0px;
 }
 .imgev11{
     text-align: center;
