@@ -682,6 +682,9 @@ p[type=number]{
     margin:0.5%;
     box-shadow: 2px 2px 5px rgb(98, 98, 98);
 }
+.card2{
+    box-shadow: 2px 2px 5px rgb(52, 126, 35);
+}
 .introdução{
     margin-top:2.5%;
     margin-left:2.5%
