@@ -16,49 +16,53 @@
         <!--  Introdução da página de Avaliações  -->
         <div class="container">
 
-            <div><h1>Como avaliar sua equipe?</h1><p>Para avaliar sua equipe, a Fatec-São José dos Campos, utiliza o metódo PACER, onde você preencherá os campos de notas, com as notas dadas pelo professor P2, e terá a nota total que deverá ser destribuída para o grupo.</p></div>
+            <div><h1>Como avaliar sua equipe?</h1><p>Para avaliar sua equipe, a Fatec-São José dos Campos, utiliza o metódo PACER, onde você preencherá os campos de notas, com as notas que os Professores "M2" e "P2" lhe atribuíram conforme o desempenho da sua equipe, e terá a nota total que deverá ser destribuída para o grupo.</p></div>
 
             
         </div>
         <!-- Tabela -->
         <form method="post" class="tabelacompleta">
             <div style="width: 30%;">
-                <b style="margin:0% 1%;">Número de integrantes:<input onclick="this.select();" type="number" min="1" max="10" required name="qtd_pessoas" value="{{qtd_pessoas}}" class="ped-ret" id="qtd_pessoas"></b>
+                <b style="margin:0% 1%;">Número de integrantes(0-10):<input onclick="this.select();" type="number" min="1" max="10" required name="qtd_pessoas" value="{{qtd_pessoas}}" class="ped-ret" id="qtd_pessoas"></b>
             </div>
             <br>
             <div class="container1">
                 <table style="margin-left: 5%;">
-                    <tr><th>Nota processo:</th></tr>
+                    <tr><th>Nota processo(0-1):</th></tr>
                     <tr><td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_proc" value="{{nota_proc}}" class="ped-ret"></td></tr>
-                    <tr><th>Nota produto:</th></tr>
+                    <tr><th>Nota produto(0-1):</th></tr>
                     <tr><td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_prodt" value="{{nota_prodt}}" class="ped-ret"></td></tr>
-                    <tr><th>Nota competência disc.:</th></tr>
+                    <tr><th>Nota competência disc.(0-1):</th></tr>
                     <tr><td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_compt" value="{{nota_compt}}" class="ped-ret"></td></tr>
-                    <tr><th>Total(%):</th></tr>
-                    <tr><td><input type="number" min="0" max="1" readonly value="{{nota_total1}}" class="ped-ret"></td></tr>
+                    <tr><th>Validação da Sprint:</th></tr>
+                    <tr><td><input type="number" min="0" max="1" readonly name="vali_sprint" value="{{vali_sprint}}" class="ped-ret"></td></tr>
                 </table>
                 
-                <div style="width: 600px;">
+                <div style="width: 800px;">
                     <table class="retangulo">
                         <tr style="padding: 0%;">
-                            <th style="padding: 0%;">Nota P.O:</th>
-                            <th style="padding: 0%;">Nota S.M:</th>
-                            <th style="padding: 0%;">Nota D.T:</th>
+                            <th style="padding: 0%;">Nota P2(0-3):</th>
+                            <th style="padding: 0%;">Nota equipe(0-3):</th>
+                            <th style="padding: 0%;">Nota M2(0-3):</th>
+                            <th style="padding: 0%;">Validação da Sprint:</th>
                         </tr>
                         <tr class="linha">
                             <td style="padding: 0%;"><input type="number" min="0" max="3" onclick="this.select();" required name="nota_PO" value='{{nota_PO}}'class="ped-ret"></td>
                             <td style="padding: 0%;"><input type="number" min="0" max="3" onclick="this.select();" required name="nota_SM" value='{{nota_SM}}'class="ped-ret"></td>
                             <td style="padding: 0%;"><input type="number" min="0" max="3" onclick="this.select();" required name="nota_DT" value='{{nota_DT}}'class="ped-ret"></td>
+                            <td style="padding: 0%;"><input type="number" min="0" max="3" readonly name="vali_sprint" value='{{vali_sprint}}'class="ped-ret"></td>
                         </tr>
                         <tr>
                             <th style="padding: 0%;">Porcentagem:</th>
                             <th style="padding: 0%;">Porcentagem:</th>
                             <th style="padding: 0%;">Porcentagem:</th>
+                            <th style="padding: 0%;">Porcentagem:</th>
                         </tr>
                         <tr >
-                            <td style="padding: 0%;"><input type="number" min="0" readonly value="{{porcent_PO}}" class="ped-ret"></td>
-                            <td style="padding: 0%;"><input type="number" min="0" readonly value="{{porcent_SM}}" class="ped-ret"></td>
-                            <td style="padding: 0%;"><input type="number" min="0" readonly value="{{porcent_DT}}" class="ped-ret"></td>
+                            <td style="padding: 0%;"><input type="number" readonly value="{{porcent_PO}}" class="ped-ret"></td>
+                            <td style="padding: 0%;"><input type="number" readonly value="{{porcent_SM}}" class="ped-ret"></td>
+                            <td style="padding: 0%;"><input type="number" readonly value="{{porcent_DT}}" class="ped-ret"></td>
+                            <td style="padding: 0%;"><input type="number" readonly value="{{nota_total1}}" class="ped-ret"></td>
                         </tr>
                     </table>
 
@@ -70,7 +74,7 @@
                             </div>
                          <!-- Espaço para nota do professor -->
                             <div class="partdebaixo">
-                                <div><th><b>Nota do professor:</b></th></div>
+                                <div><th><b>Pontos:</b></th></div>
                                 <input onclick="this.select();" type="number" value="{{nota_grupo}}" readonly class="ped-ret" style="height: 60%;" name="nota_prof">
                             </div>
                                 <!-- botão para calcular -->
@@ -110,12 +114,29 @@
                     </tr>
                     {%endfor%}
                 {%endif%}
-
-                </table>
-
+                
                 <!-- abaixo da tabela -->
 
-            </table>   
+            </table>
+            
+            <div class="container1" style="width: min-content; margin:0%;">
+                
+                <div style="margin: 5% 0%;"><th><b>Utilizados:</b></th></div>
+                <input type="number" value="{{nota_usada}}" readonly class="ped-ret" style="margin: 5% 2%; width: 80px;" name="nota_prof">
+
+                <div style="margin: 5% 0%;"><th><b>Possíveis:</b></th></div>
+                <input type="number" value="{{nota_grupo}}" readonly class="ped-ret" style="margin: 5% 2%; width: 80px;" name="nota_prof">
+                
+                <input type="submit" class="botenviar" value="Verificar" style="margin-top: 5%;">
+
+                {%if nota_usada>nota_grupo:%}
+                <p style="color: red; margin: 5% 2%; width: 502px;">Você tem pontos a mais do que lhe foi dado!</p>
+                {%elif nota_grupo>nota_usada:%}
+                <p style="color: Green; margin: 5% 2%; min-width: 502px;">Você tem pontos sobrando!</p>
+                {%endif%}
+
+            </div>
+            
         </form>
         <hr>
 
@@ -124,37 +145,38 @@
          <div class="container1">
             
             <div class="left"> 
-                <b>A avaliação é dividida em processo, produto e conhecimento.</b><br><br>
+                <b>A avaliação de cada membro é divídida em proatividade, autonomia, colaboração e entrega.</b><br><br>
 
                 <div>
-                    <b> Processo</b>
-                    <p>Interesse no desenvolvimento da atividade, pontualidade na entrega, desenvolvimento harmonico com a equipe, colaboração, postura e atitude.</p>
+                    <b>Proatividade:</b>
+                    <p>Capacidade de assumir responsabilidades e resolver problemas sem precisar que alguém direcione.</p>
                 </div>
                 
                 <div>
-                    <b>Produto</b>
-                    <p>Qualidade do produto, eficiência, criatividade, originalidade e coerência.</p>
+                    <b>Autonomia:</b>
+                    <p>Capacidade de resolver os problemas e ultrapassar dificuldades individualmente.</p>
                 </div>
 
                 <div>
-                    <b>Conhecimento</b>
-                    <p>Capacidade de interpretação do que foi passado, desenvolvimento dos conceitos, e conhecimento teórico.</p>
+                    <b>Colaboração:</b>
+                    <p>Capacidade de ajudar membros do grupo com suas demandas e ensinar sobre o que precisam.</p>
                 </div>
                 
             </div> 
             <div class="left">
                 <div>
-                    <b>Formula Utilizada</b>
-                    <p>Nota = (Processo * 0,3) + (Produto * 0,4) + (Conhecimento * 0,3)</p>
+                    <b>Entrega:</b>
+                    <p>A entrega da tarefa feita, se foi de acordo com os requisitios definidos e se foi de bom uso.</p>
                 </div>
                 
                 <div>
                     <img class="imgev11" src="../static/img/imagem-lupa.png">
                 </div>
+            
             </div>  
 
 
-            
+        
         </div>
         <div class="container">  
             <div>
@@ -176,7 +198,7 @@
             <br>
         </div>
         <div class="frame">
-            <button class="custom-btn btn-5"><a style="color: black;" href="/trilha">Retornar a Trilha!</a></button>
+            <a style="color: black;" href="/trilha"><button class="custom-btn btn-5">Retornar a Trilha!</button></a>
         </div>
     </div>
 
