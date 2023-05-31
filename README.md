@@ -1,16 +1,23 @@
 # DDT 1ºBim
-## 📊 O que é a DDT?
+
+- [O que é a DDT?](#o-que-é-a-ddt)
+- [Desafio](#desafio)
+- [Equipe](#equipe)
+- [teste](#requisitos-funcionais)
+
+## O que é a DDT
 
 DDT (Development Dream Team), é um time de desenvolvimento web do 1°Bimestre de Análise e Desenvolvimento da FATEC São José dos Campos - Prof. Jessen Vidal. A equipe possui como objetivo principal desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  da  metodologia  ágil (Scrum), com foco em deixar a aplicação fácil e intuitiva, proporcionando maior experiência para o usuário para que o mesmo possa aplicar as informações adiquiridas nos seus projetos futuros.
 
 <br>
 
-## ⚙ Desafio
+## Desafio
+
 Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  da  metodologia  ágil (Scrum),  todos os processos deverão  ter conceitos  e  fundamentos  com  referências,  bem  como  a aplicação com exemplos práticos para aplena compreensão do usuário do sistema.
 
 <br>
 
-**<h2>👨‍💻 Equipe </h2>**
+## Equipe
 <div align="center">
   
 |Nome|Função|GitHub|Linkedin|
@@ -24,7 +31,7 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
   
 </div>
 
-## 📋 Requisitos funcionais
+## Requisitos funcionais
   - Linguagem Python (Requisito Fatec)
   - Linguagem HTML e CSS (Requisito Fatec)
   - Uso do framework Bootstrap
@@ -57,6 +64,14 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 </div>
 <br>
 
+**<h2>🛠 Ferramentas utilizadas</h2>**
+<div align="center">
+  
+![ferramentas](https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/d4307582-f758-45c9-bca6-f8c181cd80d9)
+  
+</div>
+<br>
+
 **<h2>🔗 Link para o protótipo desenvolvido no Figma </h2>**
 O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cliente e para a vizualização do projeto sem que todo o código tenha que ser baixado.<br>
 
@@ -81,13 +96,6 @@ https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/da5ee34f-5867-4ed7-9f
 
 <br>
 
-
-**<h2>🛠 Ferramentas utilizadas</h2>**
-<div align="center">
-  
-![ferramentas](https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/d4307582-f758-45c9-bca6-f8c181cd80d9)
-  
-</div>
 
 <br>
 
