@@ -627,8 +627,12 @@ p[type=number]{
 
 /*------css para imagens------*/
 .imgev1{
-    max-width:100%;
-    height: auto;
+    max-width:80%;
+    align-content: end;
+}
+
+.imgev9{
+    max-width:70%;
 }
 
 .left1{
@@ -644,9 +648,6 @@ p[type=number]{
 }
 
 /*------css para imagens------*/
-.imgev1{
-    text-align: justify;
-}
 .imgev11{
     text-align: center;
     align-items: center;
