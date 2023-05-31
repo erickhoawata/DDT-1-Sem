@@ -399,12 +399,10 @@ a{
     color: #ffffff;
     transition: 100ms;
 }
-@media
-
-/* TABELA *rgb(19, 17, 17)
+/* TABELA */
 .tabelacompleta{
     background-color: rgba(235, 235, 235, 0.473); 
-    min-width: min-content;
+    min-width: max-content;
     width: 80%;
     margin: 0% 10%;
     border: 3px rgba(235, 235, 235, 0.473);
@@ -433,14 +431,14 @@ a{
 .retangulo{
     width: 90%;
     height: 80%;
-    margin: 0%;
+    margin: 0% 5%;
 }
 .container-debaixo-table {
     display: flex;
     align-content: flex-start;
     width: max-content;
     height: 30px;
-
+    margin-left: 4%;
 }
 .baixotable{
     width: 70%;
