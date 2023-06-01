@@ -140,6 +140,8 @@ def teste():
         return render_template("teste.html", metodo=metodo, fun_carlos=fun_carlos, fun_everton=fun_everton, fun_fabricio=fun_fabricio, fun_roberta=fun_roberta, fun_sara=fun_sara)
     else:
         return render_template("teste.html")
+    
 @app.route("/teste2")
 def teste2():
     return render_template("teste2.html")
+
