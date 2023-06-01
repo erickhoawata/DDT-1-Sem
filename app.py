@@ -128,20 +128,16 @@ def trilha():
 def pilares():
     return render_template("pilares.html")
 
-@app.route("/teste")
+@app.route("/teste", methods=["GET","POST"])
 def teste():
-    return render_template("teste.html")
+    metodo = request.method
+    if request.method == "POST":
+        fun_carlos = str(request.form.get('fun_carlos'))
+        fun_roberta = str(request.form.get('fun_roberta'))
+        fun_everton = str(request.form.get('fun_everton'))
+        fun_fabricio = str(request.form.get('fun_fabricio'))
+        fun_sara = str(request.form.get('fun_sara'))
 
-# @app.route("/teste", methods=["GET","POST"])
-# def avaliacao():
-#     metodo = request.method
-#     if request.method == "POST":
-    
-#         try:
-#             fun_carlos=str(request.form.get('fun_carlos'))
-#             fun_roberta=str(request.form.get('fun_roberta'))
-#             fun_everton=str(request.form.get('fun_everton'))
-#             fun_fabricio=str(request.form.get('fun_fabricio'))
-#             fun_sara=str(request.form.get('fun_sara'))
-# def teste():
-#     return render_template("teste.html")
+        return render_template("teste.html", metodo=metodo, fun_carlos=fun_carlos, fun_everton=fun_everton, fun_fabricio=fun_fabricio, fun_roberta=fun_roberta, fun_sara=fun_sara)
+    else:
+        return render_template("teste.html")

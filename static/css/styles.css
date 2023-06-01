@@ -403,16 +403,17 @@ a{
 .tabelacompleta{
     background-color: rgba(235, 235, 235, 0.473); 
     min-width: max-content;
-    width: 80%;
     margin: 0% 10%;
-    border: 3px rgba(235, 235, 235, 0.473);
+    border: 10px solid rgba(235, 235, 235, 0);
     border-radius: 5px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.329);
+
 }
 .tabela{
     margin-top: 2%;
     width: 100%;
     height: auto;
+    
 }
 .ped-ret{
     background-color: #E1E1E1;
@@ -490,7 +491,7 @@ p[type=number]{
     height:10%;
 }
 .innota{
-    width: 100%;
+    width: 80%;
     height: max-content;
     border-radius: 5px;
 }

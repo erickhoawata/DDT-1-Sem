@@ -4,7 +4,6 @@
     {% extends 'base.html' %}
     {% block titulo %}
     <title>Teste de aprendizagem</title>
-    <link rel="stylesheet" href="teste.css">
     {% endblock %}
 </head>
 <body>
@@ -17,73 +16,117 @@
   <div class="introdução2">
     <h2>Vamos começar montando o Seu time Scrum. <br>Pelo curriculo, selecione a função que mais se encaixa com o personagem<br></h2>
   </div>
+  <!-- Card 1 -->
     <div class="cards">
-      <div class="card" style="width: 18rem;">
-          <img src="../static/img/drinking coconut-pana.svg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Carlos</h4>
-            <p class="card-text">Experiente<br>Organizado<br> Flexível</p>
-            <form method="">
-              <select name="fun_carlos">
-              <option value="scr"><h4>Scrum Master</h4></option>
-              <option value="po"><h4>Product Owner</h4></option>
-              <option value="dev"><h4>Scrum Team</h4></option>
-              </select>
-          </div>
-        </div>
+      <form method="POST" class="container1">
         <div class="card" style="width: 18rem;">
-          <img src="../static/img/Curly hair-pana (2).svg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Roberta</h4>
-            <p class="card-text">Trabalha bem em equipe<br>Tímida<br>Experiente</p>
-            <form method="">
-              <select name="fun_roberta">
-              <option value="scr"><h4>Scrum Master</h4></option>
-              <option value="po"><h4>Product Owner</h4></option>
-              <option value="dev"><h4>Scrum Team</h4></option>
-              </select>
+            <img src="../static/img/drinking coconut-pana.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Carlos</h4>
+              <p class="card-text">Experiente<br>Organizado<br> Flexível</p>
+              
+                <select name="fun_carlos">
+                <option value="scr"><h4>Scrum Master</h4></option>
+                <option value="po"><h4>Product Owner</h4></option>
+                <option value="dev"><h4>Scrum Team</h4></option>
+                </select>
+            </div>
+            {%if metodo=="POST":%}
+              {%if fun_carlos == "po":%}
+              <p>voce ta certo</p>
+              {%else:%}
+              <p>ta errado</p>
+              {%endif%}
+            {%endif%}
           </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="../static/img/Waist bag-pana (1).svg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Everton</h4>
-            <p class="card-text">Trabalha bem em equipe<br>Bastante habilidade técnica<br>Independente</p>
-            <form method="">
-              <select name="fun_everton">
-              <option value="scr"><h4>Scrum Master</h4></option>
-              <option value="po"><h4>Product Owner</h4></option>
-              <option value="dev"><h4>Scrum Team</h4></option>
-              </select>
+          <!-- Card 2 -->
+          <div class="card" style="width: 18rem;">
+            <img src="../static/img/Curly hair-pana (2).svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Roberta</h4>
+              <p class="card-text">Trabalha bem em equipe<br>Tímida<br>Experiente</p>
+              
+                <select name="fun_roberta">
+                <option value="scr"><h4>Scrum Master</h4></option>
+                <option value="po"><h4>Product Owner</h4></option>
+                <option value="dev"><h4>Scrum Team</h4></option>
+                </select>
+            </div>
+            {%if metodo=="POST":%}
+              {%if fun_roberta == "dev":%}
+              <p>voce ta certo</p>
+              {%else:%}
+              <p>ta errado</p>
+              {%endif%}
+            {%endif%}
           </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="../static/img/Oil lamp-pana.svg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Fabrício</h4>
-            <p class="card-text">Experiente<br>Atento<br>Comunicativo</p>
-            <form method="">
-              <select name="fun_fabricio">
-              <option value="scr"><h4>Scrum Master</h4></option>
-              <option value="po"><h4>Product Owner</h4></option>
-              <option value="dev"><h4>Scrum Team</h4></option>
-              </select>
+          <!-- Card 3 -->
+          <div class="card" style="width: 18rem;">
+            <img src="../static/img/Waist bag-pana (1).svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Everton</h4>
+              <p class="card-text">Trabalha bem em equipe<br>Bastante habilidade técnica<br>Independente</p>
+              
+                <select name="fun_everton">
+                <option value="scr"><h4>Scrum Master</h4></option>
+                <option value="po"><h4>Product Owner</h4></option>
+                <option value="dev"><h4>Scrum Team</h4></option>
+                </select>
+            </div>
+            {%if metodo=="POST":%}
+              {%if fun_everton == "dev":%}
+              <p>voce ta certo</p>
+              {%else:%}
+              <p>ta errado</p>
+              {%endif%}
+            {%endif%}
           </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="../static/img/Curly hair-rafiki (3).svg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">Sara</h4>
-            <p class="card-text">Sabe administrar pessoas<br>Comunicativo<br>Experiente em SCRUM</p>
-            <form method="">
-              <select name="fun_sara">
-              <option value="scr"><h4>Scrum Master</h4></option>
-              <option value="po"><h4>Product Owner</h4></option>
-              <option value="dev"><h4>Scrum Team</h4></option>
-              </select>
+          <!-- Card 4 -->
+          <div class="card" style="width: 18rem;">
+            <img src="../static/img/Oil lamp-pana.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Fabrício</h4>
+              <p class="card-text">Experiente<br>Atento<br>Comunicativo</p>
+              
+                <select name="fun_fabricio">
+                <option value="scr"><h4>Scrum Master</h4></option>
+                <option value="po"><h4>Product Owner</h4></option>
+                <option value="dev"><h4>Scrum Team</h4></option>
+                </select>
+            </div>
+            {%if metodo=="POST":%}
+              {%if fun_fabricio == "dev":%}
+              <p>voce ta certo</p>
+              {%else:%}
+              <p>ta errado</p>
+              {%endif%}
+            {%endif%}
           </div>
+          <!-- Card 5 -->
+          <div class="card" style="width: 18rem;">
+            <img src="../static/img/Curly hair-rafiki (3).svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Sara</h4>
+              <p class="card-text">Sabe administrar pessoas<br>Comunicativo<br>Experiente em SCRUM</p>
+              
+                <select name="fun_sara">
+                <option value="scr"><h4>Scrum Master</h4></option>
+                <option value="po"><h4>Product Owner</h4></option>
+                <option value="dev"><h4>Scrum Team</h4></option>
+                </select>
+            </div>
+            {%if metodo=="POST":%}
+              {%if fun_sara == "scr":%}
+              <p>voce ta certo</p>
+              {%else:%}
+              <p>ta errado</p>
+              {%endif%}
+            {%endif%}
+          </div>
+          
         </div>
-      </div>
+        <input type="submit" value="Verificar">
+      </form>
       <div class="nextpage">
         <button class="nextpagebut"><a href="/teste2"></a>Próximo</button>
       </div>
