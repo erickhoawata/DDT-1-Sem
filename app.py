@@ -136,7 +136,7 @@ def teste():
 # def avaliacao():
 #     metodo = request.method
 #     if request.method == "POST":
-        
+    
 #         try:
 #             fun_carlos=str(request.form.get('fun_carlos'))
 #             fun_roberta=str(request.form.get('fun_roberta'))
