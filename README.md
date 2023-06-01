@@ -1,18 +1,39 @@
 # DDT 1ºBim
+<div align="center">
+
+![githubtela](https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/8f1a2ce3-350c-4938-b6cc-99b42e369806)
+
+</div>
 
 ## Índice
 
 - [O que é a DDT?](#-o-que-é-a-ddt)
-- [Desafio](#-desafio)
-- [Equipe](#-equipe)
+  - [Desafio](#-desafio)
+  - [Equipe](#-equipe)
 - [Requisitos Funcionais](#-requisitos-funcionais)
 - [Requisitos Não Funcionais](#-requisitos-não-funcionais)
-- [MVP](#-mvp)
 - [Planejamento de Entregas](#-planejamento-de-entregas)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Ferramentas Utilizadas](#-ferramentas-utilizadas)
-- [Protótipo](#-link-para-o-protótipo-desenvolvido-no-figma-)
+- [MVP](#-mvp)
+- [Tecnologias](#-tecnologias-utilizadas)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [Bootstrap](#bootstrap)
+  - [Python](#python)
+  - [Flask](#flask)
+  - [GitHub](#github)
+  - [JavaScript](#javascript)
+- [Ferramentas](#-ferramentas-utilizadas)
+  - [Excel](#excel)
+  - [Power Point](#powerpoint)
+  - [Trello](#trello)
+  - [Figma](#figma)
+  - [Visual Studio Code](#visual-studio-code)
+  - [Canva](#canva)
+  - [StorySet](#storyset)
+- [Acesso para o Protótipo](#-link-para-o-protótipo-desenvolvido-no-figma-)
 - [Site em HTML e CSS](#-site-desenvolvido-em-html-e-css-)
+
+<br>
 
 ## 📊 O que é a DDT
 
@@ -41,29 +62,22 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 </div>
 
 ## 🔧 Requisitos funcionais
-  - Linguagem Python (Requisito Fatec)
-  - Linguagem HTML e CSS (Requisito Fatec)
-  - Uso do framework Bootstrap
-  - Sistema Web intuitivo, simples e prático para facilitar a absorção do conteúdo
-  - Criar um sistema de avaliação (Processo, Produto e Conhecimento em disciplina, Scrum Master, Product Owner, Time de Desenvolvimento)
-  - Ensinar o usuário sobre os pilares, artefatos, equipe, eventos e suas ramificações.
+- [x] Linguagem Python (Requisito Fatec)
+- [x] Linguagem HTML e CSS (Requisito Fatec)
+- [x] Uso do framework Bootstrap
+- [x] Sistema Web intuitivo, simples e prático para facilitar a absorção do conteúdo
+- [x] Criar um sistema de avaliação (Processo, Produto e Conhecimento, Scrum Master, Product Owner, Time de Desenvolvimento)
+- [x] Ensinar o usuário sobre os pilares, artefatos, equipe, eventos e suas ramificações.
 
 <br>
 
 ## 🔗 Requisitos não funcionais
- - Documentação via Github
- - Linguagem de programação Python, framework Flask.
- - Linguagem de marcação HTML e CSS.
+- [x] Documentação via Github
+- [x] Linguagem de programação Python, framework Flask.
+- [x] Linguagem de marcação HTML e CSS.
 
 <br>
 
-## 🏆 MVP
-<div align="center">
-
-![MVPP](https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/f1a66a2a-5d61-4aa4-ac8d-f67ed6e7d5bb)
-
-</div>
-<br>
 
 ## 🗂 Planejamento de Entregas
 <div align="center">
@@ -71,25 +85,53 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 ![Entregas](https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/03a5b896-b549-44bc-a818-718181f9e67b)
 
 </div>
+
+<br>
+
+## 🏆 MVP
+<div align="center">
+
+![entregas](https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/fd372dae-0e6e-4607-91e4-c85e903c27d8)
+
+
+</div>
+
 <br>
 
 ## 🛠 Tecnologias utilizadas</h2>
 
-  - HTML
-  - CSS
-  - Bootstrap
-  - Python
-  - Flask 
-  - GitHub
+### HTML
+> Utilizado para o desenvolvimento do Front-End do site, responsável pela inserção dos textos, imagens e tabela.
+### CSS
+> Utilizado para o desenvolvimento do Front-End do site, responsável pelo tamanho da fonte e das imagens, cores, efeitos do site e organização.
+### Bootstrap
+> Uilizado para o desenvolvimento do Front-End do site, responsável pelo funcionamento da NavBar, opções de responsividade e cards da trilha de aprendizado.
+### JavaScript
+> Utilizado para o desenvolvimento do Front-End do site, responsável por efeitos visuais do site.
+### Python
+> Utilizado para o desenvolvimento do Back-End do site, responsável pelo funcionamento da tabela, por executar o Flask e o redirecionamento do usuário nas páginas do site.
+### Flask 
+> Utilizado para o desenvolvimento do Back-End do site, responsável por executar a base do site e redirecionamento juntamente com o Python.
+### GitHub
+> Utilizado para o versionamento de código, facilitando o trabalho em conjunto da equipe e para documentação do projeto.
+
 
 ## 🛠 Ferramentas utilizadas</h2>
 
-  - Excel
-  - Power Point
-  - Trello
-  - Figma
-  - Visual Studio Code
-  - Canva
+### Excel
+> Utilizado para a organização da equipe, divisão das tarefas, responsável por cada uma e vizualização do andamento da equipe em relação as sprints.
+### PowerPoint
+> Utilizado para o desenvolvimento dos slides para a apresentação nas sprints.
+### Trello
+> Utilizado para a melhor organização da divisão das tarefas e inspeção do andamento do projeto.
+### Figma
+> Utilizado para o desenvolvimento do protótipo do site, buscando a aprovação prévia do cliente.
+### Visual Studio Code
+> Utilizado para o desenvolvimento do site utilizando HTML, CSS, Python e JavaScript.
+### Canva
+> Utilizado para o desenvolvolvimento de imagens presentes no site e auxílio no desenvolvimento dos slides.
+### Storyset
+> Banco de imagens utilizado pela equipe no desenvolvimento do site e identidade visual.
 
 **<h2>🔗 Link para o protótipo desenvolvido no Figma </h2>**
 O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cliente e para a vizualização do projeto sem que todo o código tenha que ser baixado.<br>
