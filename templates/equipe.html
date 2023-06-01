@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     {% extends 'base.html' %}
 
@@ -7,13 +8,14 @@
     <title>Equipe</title>
     {% endblock %}
 </head>
+
 <body>
     {% block conteudo %}
 
     <!-- corpo -->
     <div class="corpo">
         <h1>Equipe Scrum</h1>
-        
+
         <!-- equipe -->
         <div class="row gx-4 gx-lg-5">
             <div class="col-lg-6 col-md-6 mx-auto my-auto" style="max-width: 600px;">
@@ -32,90 +34,104 @@
         </div>
         <!--Botao do colaspe-->
         <div>
-                  <button type="button" class="collapsible"><b>Clique para acessar o vídeo! </b>  
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            <button type="button" class="collapsible"><b>Clique para acessar o vídeo! </b>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                 </svg>
             </button>
-                <div class="content">
-                    <iframe class="center" src="https://www.youtube.com/embed/ODgwO5FVzKE" frameborder="0" width="800" height="500"></iframe>
-                </div>
-                <script>
-                    var coll = document.getElementsByClassName("collapsible");
-                    var i;
-                    
-                    
-                    for (i = 0; i < coll.length; i++) {
-                      coll[i].addEventListener("click", function() {
+            <div class="content">
+                <iframe class="center" src="https://www.youtube.com/embed/ODgwO5FVzKE" frameborder="0" width="800"
+                    height="500"></iframe>
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
                         this.classList.toggle("active");
                         var content = this.nextElementSibling;
                         if (content.style.display === "block") {
-                          content.style.display = "none";
+                            content.style.display = "none";
                         } else {
-                          content.style.display = "block";
+                            content.style.display = "block";
                         }
-                      });
-                    }
-                    
-                </script>
+                    });
+                }
+
+            </script>
+        </div>
+        <div><br><br>
+
+            <!-- scrum master -->
+            <h1>Scrum Master (SM)</h1>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-6 col-md-6 mx-auto my-auto" style="max-width: 600px;">
+                    <br><br>
+                    <p>Responsável por garantir que a equipe esteja seguindo as práticas ágeis e as regras do Scrum,
+                        além de facilitar o processo de desenvolvimento, removendo obstáculos e ajudando a equipe a se
+                        tornar cada vez mais autogerenciável. É aquele que mais deve conhecer sobre a metodologia Scrum.
+                    </p>
                 </div>
-            <div><br><br>
+                <div class="col-lg-6 col-md-6 mx-auto center" style="max-width: 600px;">
+                    <img class="img-equi" src="../static/img/scrummaster.svg" alt="Scrum Master">
+                </div>
+            </div>
 
-        <!-- scrum master -->
-        <h1>Scrum Master (SM)</h1>
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-6 col-md-6 mx-auto my-auto" style="max-width: 600px;">
-                <br><br>
-                <p>Responsável por garantir que a equipe esteja seguindo as práticas ágeis e as regras do Scrum, além de facilitar o processo de desenvolvimento, removendo obstáculos e ajudando a equipe a se tornar cada vez mais autogerenciável. É aquele que mais deve conhecer sobre a metodologia Scrum.</p>
+            <!-- product owner -->
+            <h1>Product Owner (PO)</h1>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-6 col-md-6 mx-auto center" style="max-width: 600px;">
+                    <img class="img-equi" src="../static/img/productowner.svg">
+                </div>
+                <div class="col-lg-6 col-md-6 mx-auto my-auto" style="max-width: 600px;">
+                    <br>
+                    <p>Responsável por definir e priorizar as funcionalidades do produto, trabalhando em estreita
+                        colaboração com os stakeholders para garantir que as necessidades dos usuários finais sejam
+                        atendidas.
+                        <br><br> O Product Owner é responsável por manter o Product Backlog atualizado, de forma que a
+                        equipe possa trabalhar nas tarefas mais importantes em cada Sprint. É aquele que mais entra em
+                        contato direto com o cliente.
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-6 mx-auto center" style="max-width: 600px;">
-                <img class="img-equi" src="../static/img/scrummaster.svg" alt="Scrum Master">
+
+            <!-- Time de desenvolvimento -->
+            <h1>Time de Desenvolvimento (Dev Team)</h1>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-6 col-md-6 mx-auto my-auto" style="max-width: 600px;">
+                    <br><br><br>
+                    Responsável por criar o produto, transformando as funcionalidades definidas pelo Product Owner em
+                    software funcional. <br><br> O Time de Desenvolvimento é uma equipe multifuncional e
+                    auto-organizável, que trabalha em conjunto para completar as tarefas do Sprint.
+                </div>
+                <div class="col-lg-6 col-md-6 mx-auto center" style="max-width: 600px;">
+                    <img class="img-equi" src="../static/img/devteams.svg">
+                </div>
             </div>
+
+            <hr>
+
         </div>
-
-        <!-- product owner -->
-        <h1>Product Owner (PO)</h1>
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-6 col-md-6 mx-auto center" style="max-width: 600px;">
-                <img class="img-equi" src="../static/img/productowner.svg">
-            </div>
-            <div class="col-lg-6 col-md-6 mx-auto my-auto" style="max-width: 600px;">
-                <br>
-                <p>Responsável por definir e priorizar as funcionalidades do produto, trabalhando em estreita colaboração com os stakeholders para garantir que as necessidades dos usuários finais sejam atendidas.
-                    <br><br> O Product Owner é responsável por manter o Product Backlog atualizado, de forma que a equipe possa trabalhar nas tarefas mais importantes em cada Sprint. É aquele que mais entra em contato direto com o cliente.</p>
-            </div> 
-        </div>
-
-        <!-- Time de desenvolvimento -->
-        <h1>Time de Desenvolvimento (Dev Team)</h1>
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-6 col-md-6 mx-auto my-auto" style="max-width: 600px;">
-                <br><br><br>
-                Responsável por criar o produto, transformando as funcionalidades definidas pelo Product Owner em software funcional. <br><br> O Time de Desenvolvimento é uma equipe multifuncional e auto-organizável, que trabalha em conjunto para completar as tarefas do Sprint.
-            </div>
-            <div class="col-lg-6 col-md-6 mx-auto center" style="max-width: 600px;">
-                <img class="img-equi" src="../static/img/devteams.svg">
-            </div>
-        </div> 
-
-        <hr>
-
-    </div>
         <!-- retornar a trilha -->
 
         <div class="center">
-                <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
-                Agora você já sabe sobre seu time Scrum!<br>
-                Retorne a trilha para o próximo aprendizado!<br>
-                <br>
-                <div class="frame">
-                    <a style="color: black;" href="/trilha"><button class="custom-btn btn-5">Retornar a Trilha!</button></a>
-                </div>
+            <img src="../static/img/trofeu.svg" class="center" alt="trofeu trilha"><br>
+            Agora você já sabe sobre seu time Scrum!<br>
+            Retorne a trilha para o próximo aprendizado!<br>
+            <br>
+            <div class="frame">
+                <a style="color: black;" href="/trilha"><button class="custom-btn btn-5">Retornar a Trilha!</button></a>
             </div>
         </div>
-    
-        <br>
+    </div>
 
-{%endblock%}
+    <br>
+
+    {%endblock%}
 </body>
+
 </html>

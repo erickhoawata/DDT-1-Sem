@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 
 <head>
-{% extends 'base.html' %}
+    {% extends 'base.html' %}
 
-{% block titulo %}
-<title>DDT - Método Scrum!</title>
-{% endblock %}
+    {% block titulo %}
+    <title>DDT - Método Scrum!</title>
+    {% endblock %}
 </head>
 
 <body>
@@ -18,11 +18,14 @@
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">Scrum: gere valor, supere expectativas, entregue resultados</h1>
+                    <h1 class="text-white font-weight-bold">Scrum: gere valor, supere expectativas, entregue resultados
+                    </h1>
                     <hr class="divider" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 mb-5">Scrum é um framework ágil de gerenciamento de projetos, onde equipes colaborativas entregam produtos em ciclos curtos de trabalho, focando na transparência, inspeção e adaptação contínua.</p>
+                    <p class="text-white-75 mb-5">Scrum é um framework ágil de gerenciamento de projetos, onde equipes
+                        colaborativas entregam produtos em ciclos curtos de trabalho, focando na transparência, inspeção
+                        e adaptação contínua.</p>
                     <a class="btn btn-primary btn-xl" href="#inicio">Descubra mais</a>
                 </div>
             </div>
@@ -32,52 +35,59 @@
 
         <!--Botao do colaspe-->
         <div id="inicio">
-                <button type="button" class="collapsible"><b>Clique para acessar o vídeo de introdução! </b>  
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                    </svg>
-                </button>
-                <div class="content">
-                    <iframe class="center" src="https://www.youtube.com/embed/ZPuRcOg6lTM" frameborder="0" width="800"
-                        height="500"></iframe>
-    
-                </div>
-                <script>
-                    var coll = document.getElementsByClassName("collapsible");
-                    var i;
-    
-    
-                    for (i = 0; i < coll.length; i++) {
-                        coll[i].addEventListener("click", function () {
-                            this.classList.toggle("active");
-                            var content = this.nextElementSibling;
-                            if (content.style.display === "block") {
-                                content.style.display = "none";
-                            } else {
-                                content.style.display = "block";
-                            }
-                        });
-                    }
-    
-                </script>
-            </div>
-            <br>
+            <button type="button" class="collapsible"><b>Clique para acessar o vídeo de introdução! </b>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+            </button>
+            <div class="content">
+                <iframe class="center" src="https://www.youtube.com/embed/ZPuRcOg6lTM" frameborder="0" width="800"
+                    height="500"></iframe>
 
-        
-   <!-- metodo scrum -->     
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+
+            </script>
+        </div>
+        <br>
+
+
+        <!-- metodo scrum -->
         <h2 style="text-align: center; margin-bottom: 2%; margin-top: 2%;"><b>Introdução</b></h2>
         <div class="row gx-4 gx-lg-5 gy-4" style="padding-top: 20px;">
             <div class="col-lg-6 col-md-6 mx-auto" style="max-width: 600px;">
-                Scrum é uma metodologia empregada no <b>gerenciamento de projetos</b> complexos, para facilitar a vizualização
-                dos processos de maneira mais <b>simples</b> e <b>clara</b>, mantendo registros visíveis do andamento das etapas.
+                Scrum é uma metodologia empregada no <b>gerenciamento de projetos</b> complexos, para facilitar a
+                vizualização
+                dos processos de maneira mais <b>simples</b> e <b>clara</b>, mantendo registros visíveis do andamento
+                das etapas.
                 <br><br>
 
-                A metodologia é aplicado a partir de <b>ciclos rápidos</b>, chamados de <b>sprints</b>, nos quais há um tempo
-                determinado para que as atividades sejam concluídas - geralmente, entre <b>duas</b> e <b>quatro semanas</b>.
+                A metodologia é aplicado a partir de <b>ciclos rápidos</b>, chamados de <b>sprints</b>, nos quais há um
+                tempo
+                determinado para que as atividades sejam concluídas - geralmente, entre <b>duas</b> e <b>quatro
+                    semanas</b>.
             </div>
             <div class="col-lg-6 col-md-6 mx-auto" style="max-width: 600px;">
                 <p>
-                    Priorizando a <b>criatividade</b> e a <b>fluidez</b> nos processos, o Scrum segue seis principais princípios:
+                    Priorizando a <b>criatividade</b> e a <b>fluidez</b> nos processos, o Scrum segue seis principais
+                    princípios:
                 </p>
                 <ul>
                     <li>Flexibilidade dos resultados</li>
@@ -96,54 +106,54 @@
         <div class="row gx-4 gx-lg-5">
             <div class="col-lg-6 col-md-6 mx-auto" style="max-width: 600px;">
                 O scrum foi idealizado em 1993, por três programadores que
-                formularam o <b>Manifesto Ágil</b>: Mike Beedle, Ken Schwaber, e Jeff 
+                formularam o <b>Manifesto Ágil</b>: Mike Beedle, Ken Schwaber, e Jeff
                 Sutherland.<br><br>
 
                 O método ágil foi criado, pois os desenvolvedores estavam
                 insatisfeitos com o <b>formato de cascata</b> utilizado no processo de
                 produção de softwares e resolveram buscar <b>alternativas mais
-                eficazes</b>.<br><br>
+                    eficazes</b>.<br><br>
 
                 Eles perceberam que os líderes dedicavam meses na elaboração
                 de planos detalhados que quase nunca se compriam.
             </div>
             <div class="col-lg-6 col-md-6 mx-auto" style="max-width: 600px;">
-                    A partir de estudos de caso, em especial das <b>boas práticas</b>
-                    implementadas na indústria japonesa (<b>Toyota</b> e <b>Honda</b>), os
-                    programadores chegaram aos princípios Scrum.<br><br>
+                A partir de estudos de caso, em especial das <b>boas práticas</b>
+                implementadas na indústria japonesa (<b>Toyota</b> e <b>Honda</b>), os
+                programadores chegaram aos princípios Scrum.<br><br>
 
-                    O nome dessa ferramenta veio do universo do <b>Rugby</b>, no qual
-                    a palavra <i>Scrum</i> corresponde a uma <b>reunião breve</b>, feita antes dos
-                    jogadores iniciarem um lance.<br><br>
+                O nome dessa ferramenta veio do universo do <b>Rugby</b>, no qual
+                a palavra <i>Scrum</i> corresponde a uma <b>reunião breve</b>, feita antes dos
+                jogadores iniciarem um lance.<br><br>
 
-                    Da mesma forma, a metodologia Scrum inclui a realização de
-                    <b>reuniões rápidas diariamente</b>, a fim de que todos sejam
-                    informados sobre o <b>andamento do projeto</b> e os <b>próximos
+                Da mesma forma, a metodologia Scrum inclui a realização de
+                <b>reuniões rápidas diariamente</b>, a fim de que todos sejam
+                informados sobre o <b>andamento do projeto</b> e os <b>próximos
                     passos</b>.
             </div>
         </div>
 
         <!-- historia-->
         <div class="fundo">
-        <h2 style="text-align: center; margin-bottom: 4%; margin-top: 4%;"><b>O que você vai aprender?</b></h2>
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-6 col-md-6 mx-auto" style="max-width: 600px;">
-                Confira as <b>principais habilidades</b>  que você irá desenvolver até o final do curso.
-                <br><br>
-                <ul>
-                    <li>Método Scrum</li> 
-                    <li>Artefatos</li>
-                    <li>MVP e Kanban</li>
-                    <li>Gestão da equipe de desenvolvimento</li>
-                    <li>Como avaliar sua equipe</li>
-                    <li>Planejamentos da sprint</li>
-                    <li>Eventos Scrum</li>
-                </ul>
+            <h2 style="text-align: center; margin-bottom: 4%; margin-top: 4%;"><b>O que você vai aprender?</b></h2>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-6 col-md-6 mx-auto" style="max-width: 600px;">
+                    Confira as <b>principais habilidades</b> que você irá desenvolver até o final do curso.
+                    <br><br>
+                    <ul>
+                        <li>Método Scrum</li>
+                        <li>Artefatos</li>
+                        <li>MVP e Kanban</li>
+                        <li>Gestão da equipe de desenvolvimento</li>
+                        <li>Como avaliar sua equipe</li>
+                        <li>Planejamentos da sprint</li>
+                        <li>Eventos Scrum</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 mx-auto center" style="max-width: 600px;">
+                    <img class="imgev1" src="../static/img/imghomee.png" alt="imghomee" style="max-width: 100%;">
+                </div>
             </div>
-            <div class="col-lg-6 col-md-6 mx-auto center" style="max-width: 600px;">
-                <img class="imgev1" src="../static/img/imghomee.png" alt="imghomee" style="max-width: 100%;">
-            </div>
-        </div>
         </div>
 
         <!-- começar a trilha -->
@@ -153,4 +163,5 @@
     </div>
     {% endblock %}
 </body>
+
 </html>

@@ -1,15 +1,17 @@
 /*--------- CSS DA TRILHA ------------*/
-.body{
+.body {
     height: 100%;
     width: 100%;
 }
-.titulo{
-    font-family:montserrat;
+
+.titulo {
+    font-family: montserrat;
     font-style: italic;
     font-style: bold;
     font-size: large;
 }
-.container-trilha{
+
+.container-trilha {
     height: 350px;
     display: flex;
     margin-bottom: 10%;
@@ -22,7 +24,7 @@
     white-space: nowrap;
 }
 
-.container-trilha:hover{
+.container-trilha:hover {
     overflow-x: scroll;
     opacity: 1;
 }
@@ -30,77 +32,87 @@
 .container-trilha::-webkit-scrollbar {
     height: 7px;
 }
-  
+
 .container-trilha::-webkit-scrollbar-track {
-background-color: #ffffff;
-border-radius: 100px;
+    background-color: #ffffff;
+    border-radius: 100px;
 }
 
 .container-trilha::-webkit-scrollbar-thumb {
-background-color: #18a0fb;
-border-radius: 100px;
+    background-color: #18a0fb;
+    border-radius: 100px;
 }
 
-.trilha{
+.trilha {
     height: 80%;
     width: 80%;
     display: flex;
     margin: auto;
-    }
+}
 
-.centrotrilha{
+.centrotrilha {
     border-radius: 100%;
-    height:200px;
-    width:200px;
+    height: 200px;
+    width: 200px;
     display: flex;
     text-align: center;
     justify-content: center;
 }
-h1{
-    font-family:montserrat;
+
+h1 {
+    font-family: montserrat;
 }
-.ct{
+
+.ct {
     justify-self: center;
     align-self: center;
 }
-.image2{
+
+.image2 {
     margin-top: 63;
     align-self: flex-start;
     margin-right: 5%;
 }
-.img-mulhertrilha{
+
+.img-mulhertrilha {
     height: 130px;
-    margin-top:1%;
+    margin-top: 1%;
 }
-.intro{
+
+.intro {
     display: flex;
     margin-top: 5%;
     margin-bottom: 2%;
 }
-.explicacao{
+
+.explicacao {
     display: flex;
     max-width: 50%;
     margin-right: 4%;
     justify-content: end;
     margin-left: auto;
 }
-.intro-trilha{
+
+.intro-trilha {
     display: flex;
     margin-left: 5%;
     text-align: center;
     margin: auto;
 }
-.ptrilha{
-   margin-top: 4%;
+
+.ptrilha {
+    margin-top: 4%;
 }
-.txtbalao{
+
+.txtbalao {
     margin-bottom: 1%;
     font-size: 16px;
     margin: auto;
     margin-left: 3%;
     margin-right: 3%;
 }
-.balao{
+
+.balao {
     background-color: #18A0FB;
     height: 50%;
     width: 60%;
@@ -109,21 +121,23 @@ h1{
     margin-right: 1%;
     align-self: flex-start;
 }
-.seta{
+
+.seta {
     margin-top: auto;
     margin-bottom: auto;
     padding: 0% 1%;
 }
 
-.seta-trilha{
+.seta-trilha {
     width: 50px;
 }
-.titulotrilha{
-   max-width: fit-content;
-   margin: auto;
+
+.titulotrilha {
+    max-width: fit-content;
+    margin: auto;
 }
 
-.cards-trilha{
+.cards-trilha {
     background-color: #F0F8FF;
     border-radius: 5%;
     width: 200px;
@@ -134,68 +148,78 @@ h1{
     margin: auto;
 }
 
-.cards-trilha:hover{
-    -webkit-filter: drop-shadow(2px 2px 2px  rgba(0,0,0,.5));
-    filter: drop-shadow(2px 2px 2px  rgba(0,0,0,.5));
+.cards-trilha:hover {
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
     box-shadow:
-                1px 1px #F0F8FF,
-                2px 2px #F0F8FF,
-                3px 3px #F0F8FF;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
+        1px 1px #F0F8FF,
+        2px 2px #F0F8FF,
+        3px 3px #F0F8FF;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
 }
+
 /* ---------- EFEITOS VISUAIS TRILHA ------------ */
-.circulo1:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
+.circulo1:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(10px 5px 5px rgba(0, 0, 0, .5));
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     border: 7px solid #32affd;
     border-radius: 50%;
 }
-.circulo2:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
+
+.circulo2:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(10px 5px 5px rgba(0, 0, 0, .5));
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     border: 7px solid #32affd;
     border-radius: 50%;
 }
-.circulo3:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
+
+.circulo3:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(10px 5px 5px rgba(0, 0, 0, .5));
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     border: 7px solid #32affd;
     border-radius: 50%;
 }
-.circulo4:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
+
+.circulo4:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(10px 5px 5px rgba(0, 0, 0, .5));
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     border: 7px solid #32affd;
     border-radius: 50%;
 }
-.circulo5:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.5));
+
+.circulo5:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(10px 5px 5px rgba(0, 0, 0, .5));
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     border: 7px solid #32affd;
     border-radius: 50%;
 }
-.circulo1,.circulo2,.circulo3,.circulo4,.circulo5{
+
+.circulo1,
+.circulo2,
+.circulo3,
+.circulo4,
+.circulo5 {
     border-radius: 100%;
-    border:none;
+    border: none;
     height: 120px;
     width: 120px;
-    background-color:#49D3E6;
+    background-color: #49D3E6;
     display: flex;
     align-items: center;
     justify-content: center;
