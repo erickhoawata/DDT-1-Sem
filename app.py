@@ -141,3 +141,6 @@ def teste():
     else:
         return render_template("teste.html")
 
+@app.route("/teste2")
+def teste2():
+    return render_template("teste2.html")
