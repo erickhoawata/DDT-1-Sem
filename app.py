@@ -131,3 +131,17 @@ def pilares():
 @app.route("/teste")
 def teste():
     return render_template("teste.html")
+
+# @app.route("/teste", methods=["GET","POST"])
+# def avaliacao():
+#     metodo = request.method
+#     if request.method == "POST":
+        
+#         try:
+#             fun_carlos=str(request.form.get('fun_carlos'))
+#             fun_roberta=str(request.form.get('fun_roberta'))
+#             fun_everton=str(request.form.get('fun_everton'))
+#             fun_fabricio=str(request.form.get('fun_fabricio'))
+#             fun_sara=str(request.form.get('fun_sara'))
+# def teste():
+#     return render_template("teste.html")

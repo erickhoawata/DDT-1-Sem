@@ -1,23 +1,32 @@
 # DDT 1ºBim
 
-- [O que é a DDT?](#o-que-é-a-ddt)
-- [Desafio](#desafio)
-- [Equipe](#equipe)
-- [teste](#requisitos-funcionais)
+## Índice
 
-## O que é a DDT
+- [O que é a DDT?](#-o-que-é-a-ddt)
+- [Desafio](#-desafio)
+- [Equipe](#-equipe)
+- [Requisitos Funcionais](#-requisitos-funcionais)
+- [Requisitos Não Funcionais](#-requisitos-não-funcionais)
+- [MVP](#-mvp)
+- [Planejamento de Entregas](#-planejamento-de-entregas)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Ferramentas Utilizadas](#-ferramentas-utilizadas)
+- [Protótipo](#-link-para-o-protótipo-desenvolvido-no-figma-)
+- [Site em HTML e CSS](#-site-desenvolvido-em-html-e-css-)
+
+## 📊 O que é a DDT
 
 DDT (Development Dream Team), é um time de desenvolvimento web do 1°Bimestre de Análise e Desenvolvimento da FATEC São José dos Campos - Prof. Jessen Vidal. A equipe possui como objetivo principal desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  da  metodologia  ágil (Scrum), com foco em deixar a aplicação fácil e intuitiva, proporcionando maior experiência para o usuário para que o mesmo possa aplicar as informações adiquiridas nos seus projetos futuros.
 
 <br>
 
-## Desafio
+## 🎯 Desafio
 
 Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  da  metodologia  ágil (Scrum),  todos os processos deverão  ter conceitos  e  fundamentos  com  referências,  bem  como  a aplicação com exemplos práticos para aplena compreensão do usuário do sistema.
 
 <br>
 
-## Equipe
+## 👨‍💻 Equipe
 <div align="center">
   
 |Nome|Função|GitHub|Linkedin|
@@ -31,7 +40,7 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
   
 </div>
 
-## Requisitos funcionais
+## 🔧 Requisitos funcionais
   - Linguagem Python (Requisito Fatec)
   - Linguagem HTML e CSS (Requisito Fatec)
   - Uso do framework Bootstrap
@@ -48,7 +57,7 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 
 <br>
 
-**<h2>🏆 MVP</h2>**
+## 🏆 MVP
 <div align="center">
 
 ![MVPP](https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/f1a66a2a-5d61-4aa4-ac8d-f67ed6e7d5bb)
@@ -56,7 +65,7 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 </div>
 <br>
 
-**<h2>🗂 Planejamento de Entregas</h2>**
+## 🗂 Planejamento de Entregas
 <div align="center">
 
 ![Entregas](https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/03a5b896-b549-44bc-a818-718181f9e67b)
@@ -64,13 +73,23 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 </div>
 <br>
 
-**<h2>🛠 Ferramentas utilizadas</h2>**
-<div align="center">
-  
-![ferramentas](https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/d4307582-f758-45c9-bca6-f8c181cd80d9)
-  
-</div>
-<br>
+## 🛠 Tecnologias utilizadas</h2>
+
+  - HTML
+  - CSS
+  - Bootstrap
+  - Python
+  - Flask 
+  - GitHub
+
+## 🛠 Ferramentas utilizadas</h2>
+
+  - Excel
+  - Power Point
+  - Trello
+  - Figma
+  - Visual Studio Code
+  - Canva
 
 **<h2>🔗 Link para o protótipo desenvolvido no Figma </h2>**
 O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cliente e para a vizualização do projeto sem que todo o código tenha que ser baixado.<br>
@@ -94,18 +113,4 @@ https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/da5ee34f-5867-4ed7-9f
 
 </div >
 
-<br>
-
-
-<br>
-
-## ⁉ Como instalar o nosso site?
-I - Clonar o repositório
-```
-git clone https://github.com/erickhoawata/DDT-1-Bim.git
-```
-II - Clonar o repositório
-```
-git clone https://github.com/erickhoawata/DDT-1-Bim.git
-```
 

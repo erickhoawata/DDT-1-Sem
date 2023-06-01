@@ -394,10 +394,15 @@ a{
     display: block;
     text-align: center;
 }
+
+.navbot li a:hover {
+    color: #ffffff;
+    transition: 100ms;
+}
 /* TABELA */
 .tabelacompleta{
     background-color: rgba(235, 235, 235, 0.473); 
-    min-width: min-content;
+    min-width: max-content;
     width: 80%;
     margin: 0% 10%;
     border: 3px rgba(235, 235, 235, 0.473);
@@ -426,14 +431,14 @@ a{
 .retangulo{
     width: 90%;
     height: 80%;
-    margin: 0%;
+    margin: 0% 5%;
 }
 .container-debaixo-table {
     display: flex;
     align-content: flex-start;
     width: max-content;
     height: 30px;
-
+    margin-left: 4%;
 }
 .baixotable{
     width: 70%;
@@ -560,7 +565,7 @@ p[type=number]{
 
 .imgev2{
     text-align: justify;
-    width: 400px;
+    width: 100%;
     padding: 0px 30px 0px;
     margin-top: 20%;
 }
@@ -620,8 +625,12 @@ p[type=number]{
 
 /*------css para imagens------*/
 .imgev1{
-    height: 290px;
-    width: 200px;
+    max-width:80%;
+    align-content: end;
+}
+
+.imgev9{
+    max-width:70%;
 }
 
 .left1{
@@ -637,11 +646,6 @@ p[type=number]{
 }
 
 /*------css para imagens------*/
-.imgev1{
-    text-align: justify;
-    width: 400px;
-    padding: 0px 30px 0px;
-}
 .imgev11{
     text-align: center;
     align-items: center;

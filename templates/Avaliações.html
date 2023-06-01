@@ -22,23 +22,23 @@
         </div>
         <!-- Tabela -->
         <form method="post" class="tabelacompleta">
-            <div style="width: 30%;">
+            <div style="width: 35%;">
                 <b style="margin:0% 1%;">Número de integrantes(0-10):<input onclick="this.select();" type="number" min="1" max="10" required name="qtd_pessoas" value="{{qtd_pessoas}}" class="ped-ret" id="qtd_pessoas"></b>
             </div>
             <br>
             <div class="container1">
-                <table style="margin-left: 5%;">
-                    <tr><th>Nota processo(0-1):</th></tr>
+                <table style="margin: 0% 5%;">
+                    <tr><th>Processo(0-1):</th></tr>
                     <tr><td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_proc" value="{{nota_proc}}" class="ped-ret"></td></tr>
-                    <tr><th>Nota produto(0-1):</th></tr>
+                    <tr><th>Produto(0-1):</th></tr>
                     <tr><td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_prodt" value="{{nota_prodt}}" class="ped-ret"></td></tr>
-                    <tr><th>Nota competência disc.(0-1):</th></tr>
+                    <tr><th>Competência disciplinar(0-1):</th></tr>
                     <tr><td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_compt" value="{{nota_compt}}" class="ped-ret"></td></tr>
                     <tr><th>Validação da Sprint:</th></tr>
                     <tr><td><input type="number" min="0" max="1" readonly name="vali_sprint" value="{{vali_sprint}}" class="ped-ret"></td></tr>
                 </table>
                 
-                <div style="width: 800px;">
+                <div class="parte_de_cima_da_direita">
                     <table class="retangulo">
                         <tr style="padding: 0%;">
                             <th style="padding: 0%;">Nota P2(0-3):</th>
