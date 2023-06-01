@@ -85,17 +85,17 @@
                 <br>
             <hr>
             <table class="tabela">
-                <tr>
-                    <th >Nome:</th>
-                    <th >Proatividade:</th>
-                    <th >Autonomia:</th>
-                    <th >Colaboração:</th>
-                    <th >Entrega:</th>
+                <tr style="width: min-content">
+                    <th>Nome:</th>
+                    <th>Proatividade:</th>
+                    <th>Autonomia:</th>
+                    <th>Colaboração:</th>
+                    <th>Entrega:</th>
                 </tr>
                 {%if metodo=="GET":%}
                     {% for linha in range(1,11): %}
                     <tr class="linha">
-                        <td class="pedaço"><input onclick="this.select();" class="innota" type="text"  name="nome{{linha}}"></td>
+                        <td class="pedaço" style="width: 300px;"><input onclick="this.select();" class="innota" type="text"  name="nome{{linha}}"></td>
                         <td class="pedaço" style="width: 150px;"><input onclick="this.select();" class="innota"  type="number" max="3" min="0" step="0.1" required value="0" name="nota_proat{{linha}}"></td>
                         <td class="pedaço" style="width: 150px;"><input onclick="this.select();" class="innota"  type="number" max="3" min="0" step="0.1" required value="0" name="nota_auto{{linha}}"></td>
                         <td class="pedaço" style="width: 150px;"><input onclick="this.select();" class="innota"  type="number" max="3" min="0" step="0.1" required value="0" name="nota_colab{{linha}}"></td>
@@ -106,7 +106,7 @@
                 {%else:%}
                     {%for pessoa in pessoas:%}
                     <tr class="linha">
-                        <td class="pedaço"><input onclick="this.select();" class="innota" type="text"  name="nome{{loop.index0+1}}" value="{{pessoa[0]}}" class="nome"></td>
+                        <td class="pedaço" style="width: 300px;"><input onclick="this.select();" class="innota" type="text"  name="nome{{loop.index0+1}}" value="{{pessoa[0]}}" class="nome"></td>
                         <td class="pedaço" style="width: 150px;"><input onclick="this.select();" class="innota"  type="number" max="3" min="0" step="0.1" required name="nota_proat{{loop.index0+1}}" value="{{pessoa[1]}}"></td>
                         <td class="pedaço" style="width: 150px;"><input onclick="this.select();" class="innota"  type="number" max="3" min="0" step="0.1" required name="nota_auto{{loop.index0+1}}" value="{{pessoa[2]}}"></td>
                         <td class="pedaço" style="width: 150px;"><input onclick="this.select();" class="innota"  type="number" max="3" min="0" step="0.1" required name="nota_colab{{loop.index0+1}}" value="{{pessoa[3]}}"></td>
@@ -128,7 +128,7 @@
                 <input type="number" value="{{nota_grupo}}" readonly class="ped-ret" style="margin: 5% 2%; width: 80px;" name="nota_prof">
                 
                 <input type="submit" class="botenviar" value="Verificar" style="margin-top: 5%;">
-
+                    
                 {%if nota_usada>nota_grupo:%}
                 <p style="color: red; margin: 5% 2%; width: 502px;">Você tem pontos a mais do que lhe foi dado!</p>
                 {%elif nota_grupo>nota_usada:%}
