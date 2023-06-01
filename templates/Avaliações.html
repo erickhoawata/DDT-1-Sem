@@ -121,18 +121,18 @@
             
             <div class="container1" style="width: min-content; margin:0%;">
                 
-                <div style="margin: 5% 0%;"><th><b>Utilizados:</b></th></div>
-                <input type="number" value="{{nota_usada}}" readonly class="ped-ret" style="margin: 5% 2%; width: 80px;" name="nota_prof">
+                <div style="margin: 1% 0%;"><th><b>Utilizados:</b></th></div>
+                <input type="number" value="{{nota_usada}}" readonly class="ped-ret" style="margin: 1% 2%; width: 80px;" name="nota_prof">
 
-                <div style="margin: 5% 0%;"><th><b>Possíveis:</b></th></div>
-                <input type="number" value="{{nota_grupo}}" readonly class="ped-ret" style="margin: 5% 2%; width: 80px;" name="nota_prof">
+                <div style="margin: 1% 0%;"><th><b>Possíveis:</b></th></div>
+                <input type="number" value="{{nota_grupo}}" readonly class="ped-ret" style="margin: 1% 2%; width: 80px;" name="nota_prof">
                 
-                <input type="submit" class="botenviar" value="Verificar" style="margin-top: 5%;">
+                <input type="submit" class="botenviar" value="Verificar" style="margin-top: 1%;">
                     
                 {%if nota_usada>nota_grupo:%}
-                <p style="color: red; margin: 5% 2%; width: 502px;">Você tem pontos a mais do que lhe foi dado!</p>
+                <p style="color: red; margin: 1% 2%; width: 502px;">Você está usando pontos a mais</p>
                 {%elif nota_grupo>nota_usada:%}
-                <p style="color: Green; margin: 5% 2%; min-width: 502px;">Você tem pontos sobrando!</p>
+                <p style="color: Green; margin: 1% 2%; min-width: 502px;">Você tem pontos sobrando!</p>
                 {%endif%}
 
             </div>

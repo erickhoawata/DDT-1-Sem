@@ -57,14 +57,6 @@ header.intro h1, header.intro .h1 {
     margin-left: 77px;
     align-self: center;
 }
-.links{
-    align-self: center;
-    display: flex;
-    height: 25%;
-    width: 100%;
-    justify-content: end;
-    margin-right:77px;
-}
 
 /*PARA TÍTULO*/
 h1{
@@ -191,6 +183,7 @@ button {
 }
 .center{
     text-align: center;
+    align-items: center;
     display: block;
     margin: auto;
 }
@@ -336,8 +329,17 @@ a{
 	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
 	.navbar .dropdown-menu.fade-up{ top:180%;  }
 	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
-    .ddt{ padding-left: 77px;}
 }	
+
+@media (min-width: 768px) {
+    .ddt{ padding-left: 77px;
+        text-align: start;
+    }
+
+    .links{padding-right: 77px;
+        text-align: end
+    }
+}
 
 /* navbar */
 .navtop ul {
@@ -369,8 +371,9 @@ a{
     color: rgb(0, 0, 0) !important;
 }
 /* Rodapé */
+
 .navbot{
-    display:flex;
+    display: flex;
     height: 60px;
     background-color: #dadada;
 }
@@ -383,15 +386,14 @@ a{
 }
 .navbot li {
     display: inline-block;
-    margin-top: -15px;
+    padding: 0px 20px;
 }
 .navbot li a {
     text-decoration:none;
     font-weight: bolder;
     display: inline-block;
     color: black;
-    padding: 15px 20px;
-    display: block;
+    display: flex;
     text-align: center;
 }
 
@@ -399,6 +401,15 @@ a{
     color: #ffffff;
     transition: 100ms;
 }
+
+.links{
+    display: inline-block;
+    text-align: left;
+    justify-content: space-between;
+    padding: 0px;
+    padding-top: 10px;
+}
+
 /* TABELA */
 .tabelacompleta{
     background-color: rgba(235, 235, 235, 0.473); 
