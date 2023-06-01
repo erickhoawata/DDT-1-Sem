@@ -18,8 +18,8 @@
   </div>
   <!-- Card 1 -->
     <div class="cards">
-      <form method="POST" class="container1">
-        <div class="card" style="width: 18rem;">
+      <form method="POST" class="cards">
+        <div class="card" id="card1" style="width: 18rem;">
             <img src="../static/img/drinking coconut-pana.svg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Carlos</h4>
@@ -33,14 +33,24 @@
             </div>
             {%if metodo=="POST":%}
               {%if fun_carlos == "po":%}
-              <p>voce ta certo</p>
+              <style>
+                #card1{
+                  box-shadow: 2px 2px 5px rgb(79, 248, 1);
+                  background-color: rgb(217, 248, 203);
+                }
+              </style>
               {%else:%}
-              <p>ta errado</p>
+              <style>
+                #card1{
+                  box-shadow: 2px 2px 5px rgb(255, 1, 1);
+                  background-color: rgb(248, 203, 203);
+                }
+              </style>
               {%endif%}
             {%endif%}
           </div>
           <!-- Card 2 -->
-          <div class="card" style="width: 18rem;">
+          <div class="card" id="card2" style="width: 18rem;">
             <img src="../static/img/Curly hair-pana (2).svg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Roberta</h4>
@@ -54,14 +64,24 @@
             </div>
             {%if metodo=="POST":%}
               {%if fun_roberta == "dev":%}
-              <p>voce ta certo</p>
+              <style>
+                #card2{
+                  box-shadow: 2px 2px 5px rgb(79, 248, 1);
+                  background-color: rgb(217, 248, 203);
+                }
+              </style>
               {%else:%}
-              <p>ta errado</p>
+              <style>
+                #card2{
+                  box-shadow: 2px 2px 5px rgb(255, 1, 1);
+                  background-color: rgb(248, 203, 203);
+                }
+              </style>
               {%endif%}
             {%endif%}
           </div>
           <!-- Card 3 -->
-          <div class="card" style="width: 18rem;">
+          <div class="card" id="card3" style="width: 18rem;">
             <img src="../static/img/Waist bag-pana (1).svg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Everton</h4>
@@ -75,14 +95,24 @@
             </div>
             {%if metodo=="POST":%}
               {%if fun_everton == "dev":%}
-              <p>voce ta certo</p>
+              <style>
+                #card3{
+                  box-shadow: 2px 2px 5px rgb(79, 248, 1);
+                  background-color: rgb(217, 248, 203);
+                }
+              </style>
               {%else:%}
-              <p>ta errado</p>
+              <style>
+                #card3{
+                  box-shadow: 2px 2px 5px rgb(255, 1, 1);
+                  background-color: rgb(248, 203, 203);
+                }
+              </style>
               {%endif%}
             {%endif%}
           </div>
           <!-- Card 4 -->
-          <div class="card" style="width: 18rem;">
+          <div class="card" id="card4"style="width: 18rem;">
             <img src="../static/img/Oil lamp-pana.svg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Fabrício</h4>
@@ -96,14 +126,24 @@
             </div>
             {%if metodo=="POST":%}
               {%if fun_fabricio == "dev":%}
-              <p>voce ta certo</p>
+              <style>
+                #card4{
+                  box-shadow: 2px 2px 5px rgb(79, 248, 1);
+                  background-color: rgb(217, 248, 203);
+                }
+              </style>
               {%else:%}
-              <p>ta errado</p>
+              <style>
+                #card4{
+                  box-shadow: 2px 2px 5px rgb(255, 1, 1);
+                  background-color: rgb(248, 203, 203);
+                }
+              </style>
               {%endif%}
             {%endif%}
           </div>
           <!-- Card 5 -->
-          <div class="card" style="width: 18rem;">
+          <div class="card" id="card5" style="width: 18rem;">
             <img src="../static/img/Curly hair-rafiki (3).svg" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Sara</h4>
@@ -117,19 +157,29 @@
             </div>
             {%if metodo=="POST":%}
               {%if fun_sara == "scr":%}
-              <p>voce ta certo</p>
+              <style>
+                #card5{
+                  box-shadow: 2px 2px 5px rgb(79, 248, 1);
+                  background-color: rgb(217, 248, 203);
+                }
+              </style>
               {%else:%}
-              <p>ta errado</p>
+              <style>
+                #card5{
+                  box-shadow: 2px 2px 5px rgb(255, 1, 1);
+                  background-color: rgb(248, 203, 203);
+                }
+              </style>
               {%endif%}
             {%endif%}
           </div>
           
         </div>
-        <input type="submit" value="Verificar">
+        <div class="nextpage">
+        <input class="nextpagebut" type="submit" value="Verificar">
+        <a href="/teste2"><button class="nextpagebut">Próximo</button></a>
+        </div>
       </form>
-      <div class="nextpage">
-        <button class="nextpagebut"><a href="/teste2"></a>Próximo</button>
-      </div>
       {% endblock %}
 </body>
 </html>
