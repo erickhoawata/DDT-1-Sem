@@ -140,8 +140,15 @@ def teste():
         return render_template("teste.html", metodo=metodo, fun_carlos=fun_carlos, fun_everton=fun_everton, fun_fabricio=fun_fabricio, fun_roberta=fun_roberta, fun_sara=fun_sara)
     else:
         return render_template("teste.html")
-    
-@app.route("/teste2")
+     
+@app.route("/teste2", methods=["GET","POST"])
 def teste2():
-    return render_template("teste2.html")
+    metodo = request.method
+    if request.method == "POST":
+        entrega1 = str(request.form.get('entrega1'))
+        entrega2 = str(request.form.get('entrega2'))
+        entrega3 = str(request.form.get('entrega3'))
+        return render_template("teste2.html", metodo=metodo, entrega1=entrega1, entrega2=entrega2, entrega3=entrega3)
+    else:
+        return render_template("teste2.html")
 

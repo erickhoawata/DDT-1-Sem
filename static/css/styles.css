@@ -785,9 +785,8 @@ p[type=number] {
     width: 100%;
     background-color: #3478df;
 }
-
-select {
-    height: 50px;
+.select{
+    height:50px;
     width: 100%;
     background-color: #18a0fb;
     text-align: center;
@@ -795,10 +794,9 @@ select {
     box-shadow: 1px 1px 4px #6C6C6C;
 
 }
-
-select:hover {
-    background-color: #1681c8;
-    color: #ffffff;
+.select:hover{
+    background-color:#1681c8;
+    color:#ffffff;
 }
 
 .nextpage {
@@ -817,8 +815,30 @@ select:hover {
     margin-right: 0.5%;
 
 }
+.nextpagebut:hover{
+    background-color:#146ca6;
+    color:#ffffff;
+}
 
-.nextpagebut:hover {
-    background-color: #146ca6;
-    color: #ffffff;
+.tabelaback{
+    height:100%;
+    width:100%;
+}
+table{
+    display:flex;
+    justify-content: center;
+}
+td{
+    padding-right: 30px;
+}
+.entrega{
+    border:none;
+}
+.nextpagebut2{
+    background-color:#18a0fb;
+    border-radius: 10px;
+    border:none;
+    height:60px;
+    margin-right: 0.5%;
+    margin-bottom:0%;
 }

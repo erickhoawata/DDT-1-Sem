@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-  {% extends 'base.html' %}
-  {% block titulo %}
-  <title>Teste de aprendizagem</title>
-  <link rel="stylesheet" href="teste.css">
-  {% endblock %}
+    {% extends 'base.html' %}
+    {% block titulo %}
+    <title>Teste de aprendizagem</title>
+    {% endblock %}
 </head>
 
 <body>
@@ -20,9 +19,112 @@
     <h2>Vamos arrumar o seu Backlog<br>Seu cliente quer um carro! Para fazer o carro, defina o que deve entregar em cada
       sprint utilizando os princípios de MVP(Mínimo produto viável).<br></h2>
   </div>
-  <div class="tabela">
-    <table>
+  <form method="POST">
+    <div class="tabelaback">
+      <table>
+        <tr>
+          <th>Entrega</th>
+          <th>Sprint</th>
+        </tr>
+        <tr class="td1">
+          <td><select class="entrega" id="Entrega1" name="entrega1">
+            <option value="roda"><h4>Roda do Carro</h4></option>
+            <option value="skate"><h4>Skate</h4></option>
+            <option value="nda"><h4>Nenhuma das Alternativas</h4></option></td>
+            {%if metodo=="POST":%}
+                {%if entrega1 == "skate":%}
+                <style>
+                  .td1{
+                    background-color: rgb(217, 248, 203);
+                    border:solid 2px rgb(79, 248, 1);
+                  }
+                  #Entrega1{
+                    background-color: rgb(217, 248, 203);
+                  }
+                </style>
+                {%else:%}
+                <style>
+                  .td1{
+                    background-color: rgb(248, 203, 203);
+                    border:solid 2px rgb(255, 1, 1);
+                  }
+                  #Entrega1{
+                    background-color: rgb(248, 203, 203);
+                  }
+                </style>
+                {%endif%}
+            {%endif%}
 
-    </table>
-  </div>
+            <td>1º Sprint</td>
+        </tr>
+        <tr class="td2">
+          <td><select class="entrega" id="Entrega2" name="entrega2">
+            <option value="patinete"><h4>Patinete</h4></option>
+            <option value="chassi"><h4>Chassi</h4></option>
+            <option value="nda"><h4>Nenhuma das Alternativas</h4></option></td>
+            {%if metodo=="POST":%}
+                {%if entrega2 == "patinete":%}
+                <style>
+                  .td2{
+                    background-color: rgb(217, 248, 203);
+                    border:solid 2px rgb(79, 248, 1);
+                  }
+                  #Entrega2{
+                    background-color: rgb(217, 248, 203);
+                  }
+                </style>
+                {%else:%}
+                <style>
+                  .td2{
+                    background-color: rgb(248, 203, 203);
+                    border:solid 2px rgb(255, 1, 1);
+                  }
+                  #Entrega2{
+                    background-color: rgb(248, 203, 203);
+                  }
+                </style>
+                {%endif%}
+            {%endif%}
+            <td>2º Sprint</td>
+        </tr>
+        <tr class="td3">
+          <td><select class="entrega" id="Entrega3" name="entrega3">
+            <option value="nda"><h4>Nenhuma das Alternativas</h4></option>
+            <option value="carcaça"><h4>Carcaça do Veículo</h4></option>
+            <option value="moto"><h4>Moto</h4></option></td>4
+            {%if metodo=="POST":%}
+                {%if entrega3 == "moto":%}
+                <style>
+                  .td3{
+                    background-color: rgb(217, 248, 203);
+                    border:solid 2px rgb(79, 248, 1);
+                  }
+                  #Entrega3{
+                    background-color: rgb(217, 248, 203);
+                  }
+                </style>
+                {%else:%}
+                <style>
+                  .td3{
+                    background-color: rgb(248, 203, 203);
+                    border:solid 2px rgb(255, 1, 1);
+                  }
+                  #Entrega3{
+                    background-color: rgb(248, 203, 203);
+                  }
+                </style>
+                {%endif%}
+            {%endif%}
+            <td>3º Sprint</td>
+        </tr>
+        <tr>
+          <td>Carro</td>
+            <td>4º Sprint</td>
+        </tr>
+      </table>
+      <div class="nextpage">
+        <input class="nextpagebut2" type="submit" value="Verificar">
+        </div>
+    </div>
+</form>
   {% endblock %}
