@@ -20,7 +20,12 @@
                 <h1>Como avaliar sua equipe?</h1>
                 <p>Para avaliar sua equipe, a Fatec-São José dos Campos, utiliza o metódo PACER, onde você preencherá os
                     campos de notas, com as notas que os Professores "M2" e "P2" lhe atribuíram conforme o desempenho da
-                    sua equipe, e então obterá a nota total que deverá ser destribuída para o grupo.</p>
+                    sua equipe, e então obterá a nota total que deverá ser destribuída para o grupo. Clique        
+                    <a href="https://scribehow.com/shared/Como_usar_a_tabela_de_avaliacao_PACER__jM0ydMEHTnGxGYvpriXbdw">aqui
+                    </a>
+                    para acessar o passo a passo do preenchimento da tabela.
+                </p>  
+
             </div>
 
 
@@ -37,21 +42,21 @@
                 <div class="container1">
                     <table style="margin: 0% 5%;">
                         <tr>
-                            <th>Processo(0-1):</th>
+                            <th>Processo (0-1):</th>
                         </tr>
                         <tr>
                             <td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_proc"
                                     value="{{nota_proc}}" class="ped-ret"></td>
                         </tr>
                         <tr>
-                            <th>Produto(0-1):</th>
+                            <th>Produto (0-1):</th>
                         </tr>
                         <tr>
                             <td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_prodt"
                                     value="{{nota_prodt}}" class="ped-ret"></td>
                         </tr>
                         <tr>
-                            <th>Competência disciplinar(0-1):</th>
+                            <th>Competência disciplinar (0-1):</th>
                         </tr>
                         <tr>
                             <td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_compt"
@@ -69,9 +74,9 @@
                     <div class="parte_de_cima_da_direita">
                         <table class="retangulo">
                             <tr style="padding: 0%;">
-                                <th style="padding: 0%;">Nota P2(0-3):</th>
-                                <th style="padding: 0%;">Nota equipe(0-3):</th>
-                                <th style="padding: 0%;">Nota M2(0-3):</th>
+                                <th style="padding: 0%;">Nota P2 (0-3):</th>
+                                <th style="padding: 0%;">Nota equipe (0-3):</th>
+                                <th style="padding: 0%;">Nota M2 (0-3):</th>
                                 <th style="padding: 0%;">Validação da Sprint:</th>
                             </tr>
                             <tr class="linha">
@@ -168,6 +173,7 @@
                     </tr>
                     {%endfor%}
                     {%endif%}
+
 
                     <!-- abaixo da tabela -->
 
