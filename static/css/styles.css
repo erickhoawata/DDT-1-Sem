@@ -77,6 +77,13 @@ h1 {
     font-weight: bold !important;
 }
 
+@media (max-width: 800px) {
+    h1{
+        font-size: 27px !important;
+        text-align: center;
+    }
+}
+
 /*PARA SUBTÍTULO*/
 h2 {
     font-family: montserrat !important;
@@ -108,19 +115,20 @@ button {
     font-style: italic;
 }
 
-.custom-btn svg {
+/* FORMATAÇÃO DO BOTÃO RETORNAR A TRILHA */
+.retornar-trilha svg {
     color: #18a0fb;
 }
 
-.custom-btn {
+.retornar-trilha {
     width: 240px;
     height: 40px;
     color: #fff;
     border-radius: 5px;
-    padding: 10px 35px;
+    border: none;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    background: transparent;
+    background: #18a0fb;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -131,24 +139,14 @@ button {
     outline: none;
 }
 
-.btn-5 {
-    width: 240px;
-    height: 40px;
-    line-height: 42px;
-    padding: 0;
-    border: none;
-    background: #9ec1d8;
-    background: linear-gradient(0deg, #18a0fb 0%, #18a0fb 100%);
-}
-
-.btn-5:hover {
+.retornar-trilha:hover {
     color: #000000;
     background: transparent;
     box-shadow: none;
 }
 
-.btn-5:before,
-.btn-5:after {
+.retornar-trilha:before,
+.retornar-trilha:after {
     content: '';
     position: absolute;
     top: 0;
@@ -163,32 +161,79 @@ button {
     transition: 400ms ease all;
 }
 
-.btn-5:after {
+.retornar-trilha:after {
     right: inherit;
     top: inherit;
     left: 0;
     bottom: 0;
 }
 
-.btn-5:hover:before,
-.btn-5:hover:after {
+.retornar-trilha:hover:before,
+.retornar-trilha:hover:after {
     width: 100%;
     transition: 800ms ease all;
 }
 
-/*_________________________________________*/
-/*Azul home*/
-.azul {
-    color: #31DAFF;
+/* AVANÇAR OU VOLTAR PAGINA */
+
+.trocar-pagina {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: #18a0fb;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
 }
 
-.scrum {
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 80px;
+.trocar-pagina svg {
+    color: #18a0fb;
 }
+
+.trocar-pagina:hover {
+    color: #000000;
+    background: transparent;
+    box-shadow: none;
+}
+
+.trocar-pagina:before,
+.trocar-pagina:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #146ca6;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.trocar-pagina:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.trocar-pagina:hover:before,
+.trocar-pagina:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
 
 .ddt {
     font-family: 'Montserrat';
@@ -269,19 +314,6 @@ button {
     justify-content: space-between;
     display: flex;
 }
-
-.left {
-    max-width: 46%;
-    padding-top: 5%;
-}
-
-.right {
-    max-width: 46%;
-    padding-top: 5%;
-}
-
-
-
 
 .elemento {
     text-align: justify;
@@ -426,8 +458,12 @@ a {
 }
 
 /* Rodapé */
+.navbot_full{
+    width: 100%;
+    bottom: 0;
+}
 
-.navbot {
+.navbot1 {
     display: flex;
     height: 60px;
     background-color: #dadada;
@@ -441,12 +477,12 @@ a {
     color: #FFFFFF;
 }
 
-.navbot li {
+.navbot1 li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.navbot li a {
+.navbot1 li a {
     text-decoration: none;
     font-weight: bolder;
     display: inline-block;
@@ -455,7 +491,7 @@ a {
     text-align: center;
 }
 
-.navbot li a:hover {
+.navbot1 li a:hover {
     color: #ffffff;
     transition: 100ms;
 }
@@ -472,12 +508,11 @@ a {
 
 /* TABELA */
 .tabelacompleta {
-    background-color: rgba(235, 235, 235, 0.473);
+    background-color: rgba(245, 245, 245);
     min-width: max-content;
-    margin: 0% 10%;
-    border: 10px solid rgba(235, 235, 235, 0);
-    border-radius: 5px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.329);
+    margin: 0% auto;
+    border-radius: 8px;
+    box-shadow: 8px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 .tabela {
@@ -595,10 +630,14 @@ p[type=number] {
     display: flex;
     width: 100%;
     height: 100%;
+    padding: 0px 10px 10px 10px;
 
     /* Adiciona uma barra de rolagem para a tabela */
     overflow-x: scroll;
     overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #18a0fb #ffffff;
+    scrollbar-gutter: auto;
 }
 
 .container-tabela::-webkit-scrollbar {
@@ -652,30 +691,6 @@ p[type=number] {
     display: flex;
 }
 
-.conteudo-introducao {
-    max-width: 50%;
-    margin: 5%;
-}
-
-.img-introducao {
-    max-width: 50%;
-    margin: 2%;
-}
-
-.conteudo {
-    display: flex;
-}
-
-.conteudoe {
-    max-width: 40%;
-    margin: 5%;
-}
-
-.conteudod {
-    margin: 0% 5%;
-    justify-content: right;
-}
-
 /*---- Artefatos -----*/
 
 .cont-img-art1 {
@@ -709,48 +724,7 @@ p[type=number] {
     align-content: center;
 }
 
-.left1 {
-    margin-top: 20px;
-    width: 600px;
-    padding: 0px 30px 0px;
-}
-
-.right1 {
-    text-align: justify;
-    width: 600px;
-    padding: 10px 10px;
-}
-
-/*------css para imagens------*/
-.imgev11 {
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    width: 330px;
-    max-width: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.left1 {
-    margin-top: 20px;
-    width: 600px;
-    padding: 0px 30px 0px;
-}
-
-.right1 {
-    text-align: justify;
-    width: 600px;
-    padding: 10px 10px;
-}
-
-.esp {
-    padding: 70px 30px;
-}
+/* PAGINA DE TESTE DE CONHECIMENTO */
 
 .cards {
     display: flex;
@@ -758,7 +732,6 @@ p[type=number] {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-
 }
 
 .card {

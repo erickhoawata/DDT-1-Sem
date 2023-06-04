@@ -140,7 +140,7 @@ O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cl
 <a href="https://www.figma.com/file/tDrqLQKNsiGbglnTp2CcwX/Prot%C3%B3tipo-API?node-id=0%3A1&t=iDi9wkiwjeJAybF1-1">Clique aqui para acessar o nosso protótipo</a><br>
 </div>
 
-**<h2>🖥 Site desenvolvido em HTML e CSS </h2>**
+
 Site desenvolvido pela equipe DDT, onde procuramos entregar o máximo de valor em cada sprint.
 
 <div align="center">
@@ -156,3 +156,9 @@ https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/da5ee34f-5867-4ed7-9f
 </div >
 
 
+**<h2>🔽Guia prático de como instalar e rodar o DDT - MétodoScrum!</h2>**
+Através desse passo a passo, você conseguirá acessarr o nosso site desde a instalação do Python e VisualStudioCode, até a instalação final do site.
+<div align="center">
+<a href="https://scribehow.com/shared/Guia_pratico_de_como_instalar_e_rodar_o_DDT__MetodoScrum__EfashaHbTWKK6gwqY7vorw
+">Clique aqui para acessar o nosso passo a passo</a><br>
+</div>

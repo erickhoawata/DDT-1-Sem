@@ -16,12 +16,16 @@
     <div class="corpo">
         <!--  Introdução da página de Avaliações  -->
         <div class="container">
-
             <div>
                 <h1>Como avaliar sua equipe?</h1>
                 <p>Para avaliar sua equipe, a Fatec-São José dos Campos, utiliza o metódo PACER, onde você preencherá os
                     campos de notas, com as notas que os Professores "M2" e "P2" lhe atribuíram conforme o desempenho da
-                    sua equipe, e terá a nota total que deverá ser destribuída para o grupo.</p>
+                    sua equipe, e então obterá a nota total que deverá ser destribuída para o grupo. Clique        
+                    <a href="https://scribehow.com/shared/Como_usar_a_tabela_de_avaliacao_PACER__jM0ydMEHTnGxGYvpriXbdw">aqui
+                    </a>
+                    para acessar o passo a passo do preenchimento da tabela.
+                </p>  
+
             </div>
 
 
@@ -29,30 +33,30 @@
         <!-- Tabela -->
         <div class="container-tabela">
             <form method="post" class="tabelacompleta">
-                <div style="width: 35%;">
-                    <b style="margin:0% 1%;">Número de integrantes(0-10):<input onclick="this.select();" type="number"
-                            min="1" max="10" required name="qtd_pessoas" value="{{qtd_pessoas}}" class="ped-ret"
-                            id="qtd_pessoas"></b>
+                <div style="width: 35%; padding: 10px 0px 0px 10px">
+                    <b style="margin:0% 1%;">Número de integrantes(0-10):
+                        <input onclick="this.select();" type="number" min="1" max="10" required name="qtd_pessoas" value="{{qtd_pessoas}}" class="ped-ret" id="qtd_pessoas">
+                    </b>
                 </div>
                 <br>
                 <div class="container1">
                     <table style="margin: 0% 5%;">
                         <tr>
-                            <th>Processo(0-1):</th>
+                            <th>Processo (0-1):</th>
                         </tr>
                         <tr>
                             <td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_proc"
                                     value="{{nota_proc}}" class="ped-ret"></td>
                         </tr>
                         <tr>
-                            <th>Produto(0-1):</th>
+                            <th>Produto (0-1):</th>
                         </tr>
                         <tr>
                             <td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_prodt"
                                     value="{{nota_prodt}}" class="ped-ret"></td>
                         </tr>
                         <tr>
-                            <th>Competência disciplinar(0-1):</th>
+                            <th>Competência disciplinar (0-1):</th>
                         </tr>
                         <tr>
                             <td><input type="number" min="0" max="1" required onclick="this.select();" name="nota_compt"
@@ -70,9 +74,9 @@
                     <div class="parte_de_cima_da_direita">
                         <table class="retangulo">
                             <tr style="padding: 0%;">
-                                <th style="padding: 0%;">Nota P2(0-3):</th>
-                                <th style="padding: 0%;">Nota equipe(0-3):</th>
-                                <th style="padding: 0%;">Nota M2(0-3):</th>
+                                <th style="padding: 0%;">Nota P2 (0-3):</th>
+                                <th style="padding: 0%;">Nota equipe (0-3):</th>
+                                <th style="padding: 0%;">Nota M2 (0-3):</th>
                                 <th style="padding: 0%;">Validação da Sprint:</th>
                             </tr>
                             <tr class="linha">
@@ -86,10 +90,10 @@
                                         value='{{vali_sprint}}' class="ped-ret"></td>
                             </tr>
                             <tr>
-                                <th style="padding: 0%;">Porcentagem:</th>
-                                <th style="padding: 0%;">Porcentagem:</th>
-                                <th style="padding: 0%;">Porcentagem:</th>
-                                <th style="padding: 0%;">Porcentagem:</th>
+                                <th style="padding: 0%;">Porcentagem (%):</th>
+                                <th style="padding: 0%;">Porcentagem (%):</th>
+                                <th style="padding: 0%;">Porcentagem (%):</th>
+                                <th style="padding: 0%;">Porcentagem (%):</th>
                             </tr>
                             <tr>
                                 <td style="padding: 0%;"><input type="number" readonly value="{{porcent_PO}}"
@@ -170,11 +174,12 @@
                     {%endfor%}
                     {%endif%}
 
+
                     <!-- abaixo da tabela -->
 
                 </table>
 
-                <div class="container1" style="width: min-content; margin:0%;">
+                <div class="container1" style="width: min-content; margin: 0%; padding-left: 150px;">
 
                     <div style="margin: 1% 0%;">
                         <th><b>Utilizados:</b></th>
@@ -198,9 +203,7 @@
 
                 </div>
             </form>
-            <br>
         </div>
-        <br>
         <hr>
 
         <!--  Conteúdo  -->
@@ -229,7 +232,7 @@
                 </div>
 
                 <div>
-                    <img class="imgev11 center" src="../static/img/imagem-lupa.png">
+                    <img class="imgev1 center" style="width: 300px;" src="../static/img/imagem-lupa.png">
                 </div>
 
             </div>
@@ -261,7 +264,9 @@
             <br>
         </div>
         <div class="frame">
-            <a style="color: black;" href="/trilha"><button class="custom-btn btn-5">Retornar a Trilha!</button></a>
+            <a style="color: black;" href="/eventos"><button class="trocar-pagina btn-5">◄</button></a>
+            <a style="color: black;" href="/trilha"><button class="retornar-trilha btn-5">Retornar a Trilha!</button></a>
+            <a style="color: black;" href="/teste"><button class="trocar-pagina btn-5">►</button></a>        
         </div>
     </div>
 
