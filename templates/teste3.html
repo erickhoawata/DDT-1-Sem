@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% extends 'base.html' %}
+  {% block titulo %}
+  <title>Teste de aprendizagem</title>
+  {% endblock %}
+</head>
+
+<body>
+  {% block conteudo %}
+  <!-- fim cabeçalho -->
+  <!-- corpo -->
+  <div class="introdução">
+    <h1>Vamos ao último teste de aprendizagem!</h1>
+  </div>
+  <div class="introdução2">
+    <h2>Aqui vamos usar o que você aprendeu em eventos!<br>Escolha o Evento de acordo com as características.</h2>
+  </div>
+  <!-- Card 1 -->
+    <div class="cards">
+      <form method="POST" class="cards">
+        <div class="card" id="card1" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">1ºEvento</h4>
+              <p class="card-text"><b>Duração:</b> 1 semana à 1 mês<br><b>Necessário:</b> Novo incremento ao projeto e uma meta bem definida.</p>
+              
+                <select class="select" name="eventoa">
+                <option class="option" value="spr"><h4>Sprint</h4></option>
+                <option class="option" value="plan"><h4>Sprint Planning</h4></option>
+                <option class="option" value="day"><h4>Daily Scrum</h4></option>
+                <option class="option" value="rev"><h4>Sprint Review</h4></option>
+                <option class="option" value="ret"><h4>Sprint Retrospective</h4></option>
+                </select>
+            </div>
+            {%if metodo=="POST":%}
+              {%if eventoa == "spr":%}
+              <style>
+                #card1{
+                  box-shadow: 2px 2px 5px rgb(79, 248, 1);
+                  background-color: rgb(217, 248, 203);
+                }
+              </style>
+              {%else:%}
+              <style>
+                #card1{
+                  box-shadow: 2px 2px 5px rgb(255, 1, 1);
+                  background-color: rgb(248, 203, 203);
+                }
+              </style>
+              {%endif%}
+            {%endif%}
+          </div>
+          <!-- Card 2 -->
+          <div class="card" id="card2" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">2ºEvento</h4>
+              <p class="card-text"><b>Duração:</b> 15 Minutos<br><b>Tópicos:</b> O que pretendo fazer até a proxima reunião e o que me impede de fazer.</p>
+              
+                <select class="select" name="eventob">
+                    <option class="option" value="spr"><h4>Sprint</h4></option>
+                    <option class="option" value="plan"><h4>Sprint Planning</h4></option>
+                    <option class="option" value="day"><h4>Daily Scrum</h4></option>
+                    <option class="option" value="rev"><h4>Sprint Review</h4></option>
+                    <option class="option" value="ret"><h4>Sprint Retrospective</h4></option>
+                </select>
+            </div>
+            {%if metodo=="POST":%}
+              {%if eventob == "day":%}
+              <style>
+                #card2{
+                  box-shadow: 2px 2px 5px rgb(79, 248, 1);
+                  background-color: rgb(217, 248, 203);
+                }
+              </style>
+              {%else:%}
+              <style>
+                #card2{
+                  box-shadow: 2px 2px 5px rgb(255, 1, 1);
+                  background-color: rgb(248, 203, 203);
+                }
+              </style>
+              {%endif%}
+            {%endif%}
+          </div>
+          <!-- Card 3 -->
+          <div class="card" id="card3" style="width: 18rem;">
+            <div class="card-body">
+                <h4 class="card-title">3ºEvento</h4>
+                <p class="card-text"><b>Duração:</b> 3 Horas<br><b>Tópicos:</b> O que deu certo, o que deu errado, e o que precisa ser melhorado.</p>
+                <select class="select" name="eventoc">
+                    <option class="option" value="spr"><h4>Sprint</h4></option>
+                    <option class="option" value="plan"><h4>Sprint Planning</h4></option>
+                    <option class="option" value="day"><h4>Daily Scrum</h4></option>
+                    <option class="option" value="rev"><h4>Sprint Review</h4></option>
+                    <option class="option" value="ret"><h4>Sprint Retrospective</h4></option>
+                </select>
+            </div>
+            {%if metodo=="POST":%}
+              {%if eventoc == "ret":%}
+              <style>
+                #card3{
+                  box-shadow: 2px 2px 5px rgb(79, 248, 1);
+                  background-color: rgb(217, 248, 203);
+                }
+              </style>
+              {%else:%}
+              <style>
+                #card3{
+                  box-shadow: 2px 2px 5px rgb(255, 1, 1);
+                  background-color: rgb(248, 203, 203);
+                }
+              </style>
+              {%endif%}
+            {%endif%}
+          </div>
+          <!-- Card 4 -->
+          <div class="card" id="card4"style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">4ºEvento</h4>
+              <p class="card-text"><b>Duração:</b> 8 Horas<br><b>Objetivo:</b> Criar o Sprint Backlog com o que precisa ser entregue e qual a prioridade para isso.</p>
+              
+                <select class="select" name="eventod">
+                    <option class="option" value="spr"><h4>Sprint</h4></option>
+                    <option class="option" value="plan"><h4>Sprint Planning</h4></option>
+                    <option class="option" value="day"><h4>Daily Scrum</h4></option>
+                    <option class="option" value="rev"><h4>Sprint Review</h4></option>
+                    <option class="option" value="ret"><h4>Sprint Retrospective</h4></option>
+                </select>
+            </div>
+            {%if metodo=="POST":%}
+              {%if eventod == "plan":%}
+              <style>
+                #card4{
+                  box-shadow: 2px 2px 5px rgb(79, 248, 1);
+                  background-color: rgb(217, 248, 203);
+                }
+              </style>
+              {%else:%}
+              <style>
+                #card4{
+                  box-shadow: 2px 2px 5px rgb(255, 1, 1);
+                  background-color: rgb(248, 203, 203);
+                }
+              </style>
+              {%endif%}
+            {%endif%}
+          </div>
+          <!-- Card 5 -->
+          <div class="card" id="card5" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">5ºEvento</h4>
+              <p class="card-text"><b>Duração:</b> 4 horas<br><b>Objetivo:</b> Mostrar o produto em pleno funcionamento e receber feedback do PO com o Cliente.</p>
+              
+                <select class="select" name="eventoe">
+                    <option class="option" value="spr"><h4>Sprint</h4></option>
+                    <option class="option" value="plan"><h4>Sprint Planning</h4></option>
+                    <option class="option" value="day"><h4>Daily Scrum</h4></option>
+                    <option class="option" value="rev"><h4>Sprint Review</h4></option>
+                    <option class="option" value="ret"><h4>Sprint Retrospective</h4></option>
+                </select>
+            </div>
+            {%if metodo=="POST":%}
+              {%if eventoe == "rev":%}
+              <style>
+                #card5{
+                  box-shadow: 2px 2px 5px rgb(79, 248, 1);
+                  background-color: rgb(217, 248, 203);
+                }
+              </style>
+              {%else:%}
+              <style>
+                #card5{
+                  box-shadow: 2px 2px 5px rgb(255, 1, 1);
+                  background-color: rgb(248, 203, 203);
+                }
+              </style>
+              {%endif%}
+            {%endif%}
+          </div>
+          
+        </div>
+        <div class="nextpage">
+        <input class="nextpagebut" type="submit" value="Verificar">
+        </div>
+      </form>
+      <div class="nextpage">
+        <a style="color: black;" href="/finalizar"><button class="nextpagebut">Finalizar</button></a>
+      </div>
+      {% endblock %}
+</body>
+
+</html>

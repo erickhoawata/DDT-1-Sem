@@ -839,6 +839,9 @@ td{
     border-radius: 10px;
     border:none;
     height:60px;
-    margin-right: 0.5%;
+    margin-right: 2%;
     margin-bottom:0%;
+}
+.option{
+    text-align:lefts;
 }
