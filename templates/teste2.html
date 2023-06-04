@@ -16,7 +16,7 @@
     </h1>
   </div>
   <div class="introdução2">
-    <h2>Vamos arrumar o seu Backlog<br>Seu cliente quer um carro! Para fazer o carro, defina o que deve entregar em cada
+    <h2>Vamos arrumar o seu Backlog<br>Seu cliente precisa de um meio de transporte o mais funcional possível! Para fazer isso, defina o que deve entregar em cada
       sprint utilizando os princípios de MVP(Mínimo produto viável).<br></h2>
   </div>
   <form method="POST">
@@ -28,7 +28,7 @@
         </tr>
         <tr class="td1">
           <td><select class="entrega" id="Entrega1" name="entrega1">
-            <option value="roda"><h4>Roda do Carro</h4></option>
+            <option value="roda"><h4>Roda de Carro</h4></option>
             <option value="skate"><h4>Skate</h4></option>
             <option value="nda"><h4>Nenhuma das Alternativas</h4></option></td>
             {%if metodo=="POST":%}
@@ -60,7 +60,7 @@
         <tr class="td2">
           <td><select class="entrega" id="Entrega2" name="entrega2">
             <option value="patinete"><h4>Patinete</h4></option>
-            <option value="chassi"><h4>Chassi</h4></option>
+            <option value="chassi"><h4>Chassi de Carro</h4></option>
             <option value="nda"><h4>Nenhuma das Alternativas</h4></option></td>
             {%if metodo=="POST":%}
                 {%if entrega2 == "patinete":%}
@@ -90,7 +90,7 @@
         <tr class="td3">
           <td><select class="entrega" id="Entrega3" name="entrega3">
             <option value="nda"><h4>Nenhuma das Alternativas</h4></option>
-            <option value="carcaça"><h4>Carcaça do Veículo</h4></option>
+            <option value="carcaça"><h4>Carcaça de Carro</h4></option>
             <option value="moto"><h4>Moto</h4></option></td>4
             {%if metodo=="POST":%}
                 {%if entrega3 == "moto":%}
@@ -127,4 +127,7 @@
         </div>
     </div>
 </form>
+<div class="nextpage">
+  <a style="color: black;" href="/teste3"><button class="nextpagebut">Próxima parte!</button></a>
+</div>
   {% endblock %}
