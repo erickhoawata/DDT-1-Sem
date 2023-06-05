@@ -27,12 +27,19 @@
             <div class="card-body">
               <h4 class="card-title">Carlos</h4>
               <p class="card-text">Experiente<br>Organizado<br> Comunicativo</p>
-              
+              {%if metodo=="GET":%}
                 <select class="select" name="fun_carlos">
                 <option value="scr"><h4>Scrum Master</h4></option>
                 <option value="po"><h4>Product Owner</h4></option>
                 <option value="dev"><h4>Scrum Team</h4></option>
                 </select>
+              {%else:%}
+                <select class="select" name="fun_carlos">
+                <option value="po"><h4>Product Owner</h4></option>
+                <option value="scr"><h4>Scrum Master</h4></option>
+                <option value="dev"><h4>Scrum Team</h4></option>
+                </select>
+              {%endif%}
             </div>
             {%if metodo=="POST":%}
               {%if fun_carlos == "po":%}
@@ -58,12 +65,19 @@
             <div class="card-body">
               <h4 class="card-title">Roberta</h4>
               <p class="card-text">Trabalha bem em equipe<br>Tímida<br>Experiente</p>
-              
+              {%if metodo=="GET":%}
                 <select class="select" name="fun_roberta">
                 <option value="scr"><h4>Scrum Master</h4></option>
                 <option value="po"><h4>Product Owner</h4></option>
                 <option value="dev"><h4>Scrum Team</h4></option>
                 </select>
+              {%else:%}
+                <select class="select" name="fun_roberta">
+                <option value="dev"><h4>Scrum Team</h4></option>
+                <option value="po"><h4>Product Owner</h4></option>
+                <option value="scr"><h4>Scrum Master</h4></option>
+                </select>
+              {%endif%}
             </div>
             {%if metodo=="POST":%}
               {%if fun_roberta == "dev":%}
@@ -89,11 +103,19 @@
             <div class="card-body">
               <h4 class="card-title">Everton</h4>
               <p class="card-text">Trabalha bem em equipe<br>Bastante habilidade técnica<br>Independente</p>
+              {%if metodo=="GET":%}
                 <select class="select" name="fun_everton">
                 <option value="scr"><h4>Scrum Master</h4></option>
                 <option value="po"><h4>Product Owner</h4></option>
                 <option value="dev"><h4>Scrum Team</h4></option>
                 </select>
+              {%else:%}
+                <select class="select" name="fun_everton">
+                <option value="dev"><h4>Scrum Team</h4></option>
+                <option value="po"><h4>Product Owner</h4></option>
+                <option value="scr"><h4>Scrum Master</h4></option>
+                </select>
+              {%endif%}
             </div>
             {%if metodo=="POST":%}
               {%if fun_everton == "dev":%}
@@ -119,12 +141,19 @@
             <div class="card-body">
               <h4 class="card-title">Fabrício</h4>
               <p class="card-text">Experiente<br>Atento<br>Flexível</p>
-              
+              {%if metodo=="GET":%}
                 <select class="select" name="fun_fabricio">
                 <option value="scr"><h4>Scrum Master</h4></option>
                 <option value="po"><h4>Product Owner</h4></option>
                 <option value="dev"><h4>Scrum Team</h4></option>
                 </select>
+              {%else:%}
+                <select class="select" name="fun_fabricio">
+                <option value="dev"><h4>Scrum Team</h4></option>
+                <option value="po"><h4>Product Owner</h4></option>
+                <option value="scr"><h4>Scrum Master</h4></option>
+                </select>
+              {%endif%}
             </div>
             {%if metodo=="POST":%}
               {%if fun_fabricio == "dev":%}
@@ -150,14 +179,21 @@
             <div class="card-body">
               <h4 class="card-title">Sara</h4>
               <p class="card-text">Sabe administrar pessoas<br>Comunicativo<br>Experiente em SCRUM</p>
-              
+              {%if metodo=="GET":%}
                 <select class="select" name="fun_sara">
                 <option value="scr"><h4>Scrum Master</h4></option>
                 <option value="po"><h4>Product Owner</h4></option>
                 <option value="dev"><h4>Scrum Team</h4></option>
                 </select>
+              {%else:%}
+                <select class="select" name="fun_sara">
+                <option value="scr"><h4>Scrum Master</h4></option>
+                <option value="po"><h4>Product Owner</h4></option>
+                <option value="dev"><h4>Scrum Team</h4></option>
+                </select>
+              {%endif%}
             </div>
-            {%if metodo=="POST":%}
+            {%if metodo=="POST":%} 
               {%if fun_sara == "scr":%}
               <style>
                 #card5{

@@ -139,7 +139,7 @@ def teste():
         fun_sara = str(request.form.get('fun_sara'))
         return render_template("teste.html", metodo=metodo, fun_carlos=fun_carlos, fun_everton=fun_everton, fun_fabricio=fun_fabricio, fun_roberta=fun_roberta, fun_sara=fun_sara)
     else:
-        return render_template("teste.html")
+        return render_template("teste.html", metodo=metodo)
      
 @app.route("/teste2", methods=["GET","POST"])
 def teste2():
