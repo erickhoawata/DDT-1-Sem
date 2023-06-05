@@ -15,7 +15,7 @@
   <div class="introdução">
     <h1>Vamos ao último teste de aprendizagem!</h1>
   </div>
-  <div class="introdução2">
+  <div class="introdução">
     <h2>Aqui vamos usar o que você aprendeu em eventos!<br>Escolha o Evento de acordo com as características.</h2>
   </div>
   <!-- Card 1 -->
@@ -24,7 +24,7 @@
         <div class="card" id="card1" style="width: 18rem;">
             <div class="card-body">
               <h4 class="card-title">1ºEvento</h4>
-              <p class="card-text"><b>Duração:</b> 1 semana à 1 mês<br><b>Necessário:</b> Novo incremento ao projeto e uma meta bem definida.</p>
+              <p class="card-text"><b>Duração:</b> 1 semana à 1 mês<br><b>Necessário:</b> Novo incremento ao projeto e uma meta bem definida.</p><br>
               
                 <select class="select" name="eventoa">
                 <option class="option" value="spr"><h4>Sprint</h4></option>
@@ -56,7 +56,7 @@
           <div class="card" id="card2" style="width: 18rem;">
             <div class="card-body">
               <h4 class="card-title">2ºEvento</h4>
-              <p class="card-text"><b>Duração:</b> 15 Minutos<br><b>Tópicos:</b> O que pretendo fazer até a proxima reunião e o que me impede de fazer.</p>
+              <p class="card-text"><b>Duração:</b> 15 Minutos<br><b>Tópicos:</b> O que pretendo fazer até a proxima reunião e o que me impede de fazer.</p><br>
               
                 <select class="select" name="eventob">
                     <option class="option" value="spr"><h4>Sprint</h4></option>
@@ -88,7 +88,7 @@
           <div class="card" id="card3" style="width: 18rem;">
             <div class="card-body">
                 <h4 class="card-title">3ºEvento</h4>
-                <p class="card-text"><b>Duração:</b> 3 Horas<br><b>Tópicos:</b> O que deu certo, o que deu errado, e o que precisa ser melhorado.</p>
+                <p class="card-text"><b>Duração:</b> 3 Horas<br><b>Tópicos:</b> O que deu certo, o que deu errado, e o que precisa ser melhorado.</p><br>
                 <select class="select" name="eventoc">
                     <option class="option" value="spr"><h4>Sprint</h4></option>
                     <option class="option" value="plan"><h4>Sprint Planning</h4></option>
@@ -186,8 +186,16 @@
         </div>
       </form>
       <div class="nextpage">
+        <a style="color: black;" href="/teste2"><button class="nextpagebut">Voltar</button></a>
         <a style="color: black;" href="/finalizar"><button class="nextpagebut">Finalizar</button></a>
       </div>
+      
+      <!-- Navegar pela trilha -->
+      <div class="frame" style="padding-top: 1%;">
+        <a style="color: black;" href="/avaliacao"><button class="trocar-pagina btn-5">◄</button></a>
+        <a style="color: black;" href="/trilha"><button class="retornar-trilha btn-5">Retornar a Trilha!</button></a>
+      </div>
+
       {% endblock %}
 </body>
 

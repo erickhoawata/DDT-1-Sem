@@ -425,9 +425,7 @@ a {
         top: 100%;
         transform: rotateX(0deg);
     }
-}
-
-@media (min-width: 768px) {
+    
     .ddt {
         padding-left: 77px;
         text-align: start;
@@ -697,12 +695,6 @@ p[type=number] {
     padding-bottom: 5%;
 }
 
-/* -------  AVALIAÇÔES ---------*/
-
-.introdução {
-    display: flex;
-}
-
 /*---- Artefatos -----*/
 
 .cont-img-art1 {
@@ -756,13 +748,8 @@ p[type=number] {
 }
 
 .introdução {
-    margin-top: 2.5%;
-    margin-left: 2.5%
-}
-
-.introdução2 {
-    margin-bottom: 2.5%;
-    margin-left: 2.5%;
+    display: flex;
+    margin: 2.5%
 }
 
 .enquete {
@@ -787,22 +774,26 @@ p[type=number] {
 .nextpage {
     width: 100%;
     display: flex;
-    justify-content: end;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .nextpagebut {
+    width: 100px;
+    padding: 5px;
     background-color: #18a0fb;
     border-radius: 10px;
     border: none;
     height: 60px;
-    margin-right: 0.5%;
-
 }
 .nextpagebut:hover{
     background-color:#146ca6;
     color:#ffffff;
+}
+
+div.nextpage > a{
+    padding: 10px;
 }
 
 .tabelaback{
@@ -824,7 +815,6 @@ td{
     border-radius: 10px;
     border:none;
     height:60px;
-    margin-right: 2%;
     margin-bottom:0%;
 }
 .option{

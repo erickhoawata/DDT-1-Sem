@@ -90,13 +90,14 @@ h1 {
 }
 
 .cards-trilha {
+    padding-top: 10px;
     background-color: #F0F8FF;
     border-radius: 5%;
-    width: 200px;
-    min-width: 200px;
+    width: 180px;
+    min-width: 180px;
+    height: 250px;
     transition: all 0.5s;
     cursor: default;
-    height: 280px;
     margin: auto;
 }
 
