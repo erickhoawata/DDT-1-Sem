@@ -268,11 +268,23 @@ button {
     text-align: center;
 }
 
-.content {
-    padding: 0 18px;
+div.content {
+    padding: 28px 28px;
+    padding-bottom: 59%;
     display: none;
     overflow: hidden;
     background-color: #fafafa;
+
+    position: relative;
+}
+
+div.content > iframe{
+    position: absolute;
+    
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
 }
 
 .collapsible1 {
