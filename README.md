@@ -30,8 +30,11 @@
   - [Visual Studio Code](#visual-studio-code)
   - [Canva](#canva)
   - [StorySet](#storyset)
-- [Acesso para o Protótipo](#-link-para-o-protótipo-desenvolvido-no-figma-)
-- [Site em HTML e CSS](#-site-desenvolvido-em-html-e-css-)
+- [Entregas](#-entregas)
+  - [Sprint 1 (protótipo)](#sprint-1)
+  - [Sprint 2](#sprint-2)
+  - [Sprint 3](#sprint-3)
+  - [Sprint 4](#sprint-4)
 
 <br>
 
@@ -116,7 +119,7 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 > Utilizado para o versionamento de código, facilitando o trabalho em conjunto da equipe e para documentação do projeto.
 
 
-## 🛠 Ferramentas utilizadas</h2>
+## 🛠 Ferramentas utilizadas
 
 ### Excel
 > Utilizado para a organização da equipe, divisão das tarefas, responsável por cada uma e vizualização do andamento da equipe em relação as sprints.
@@ -133,25 +136,36 @@ Desenvolver  um  sistema  web que  indique  todos  os  processos  e  artefatos  
 ### Storyset
 > Banco de imagens utilizado pela equipe no desenvolvimento do site e identidade visual.
 
-**<h2>🔗 Link para o protótipo desenvolvido no Figma </h2>**
+## 🔗 Entregas
+### Sprint 1
 O protótipo no Figma, foi desenvolvido para receber a aprovação prévia do cliente e para a vizualização do projeto sem que todo o código tenha que ser baixado.<br>
 
 <div align="center">
 <a href="https://www.figma.com/file/tDrqLQKNsiGbglnTp2CcwX/Prot%C3%B3tipo-API?node-id=0%3A1&t=iDi9wkiwjeJAybF1-1">Clique aqui para acessar o nosso protótipo</a><br>
 </div>
 
-
-Site desenvolvido pela equipe DDT, onde procuramos entregar o máximo de valor em cada sprint.
-
+### Sprint 2
+Site baseado na proposta ideal do protótipo, com um menu superior com poucos efeitos e sem o ajuste do posicionamento das imagens e textos.
 <div align="center">
 
 ![Prototipo](src/api.gif)
 
 </div>
 
+### Sprint 3
+Adição de vídeos e textos para tornar o site mais completo e intuitivo, ajuste nas imagens, implementação da trilha de aprendizagem e a tabela começa a tomar forma.
 <div align="center">
 
 https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/da5ee34f-5867-4ed7-9f38-a1de1a88547b
+
+</div >
+
+### Sprint 4
+Revisão geral do conteúdo do site, responsividade, aplicação do Método PACER na tabela de avaliação, ajustes estéticos e implementação de efeitos no site, alteração na tela home e adição de páginas de testes para o usuário.
+
+<div align="center">
+
+https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/b47bc5b1-1fcb-455c-b68f-24bc78da4be1
 
 </div >
 
