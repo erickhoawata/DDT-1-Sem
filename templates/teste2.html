@@ -27,16 +27,32 @@
           <th>Sprint</th>
         </tr>
         <tr class="td1">
-          <td><select class="entrega" id="Entrega1" name="entrega1">
-              <option value="roda">
-                <h4>Roda de Carro</h4>
-              </option>
-              <option value="skate">
-                <h4>Skate</h4>
-              </option>
-              <option value="nda">
-                <h4>Nenhuma das Alternativas</h4>
-              </option>
+          <td>
+            {%if metodo=="GET":%}
+              <select class="entrega" id="Entrega1" name="entrega1">
+                <option value="roda">
+                  <h4>Roda de Carro</h4>
+                </option>
+                <option value="skate">
+                  <h4>Skate</h4>
+                </option>
+                <option value="nda">
+                  <h4>Nenhuma das Alternativas</h4>
+                </option>
+                </select>
+              {%else:%}
+                <select class="entrega" id="Entrega1" name="entrega1">
+                  <option value="skate">
+                    <h4>Skate</h4>
+                  </option>
+                  <option value="roda">
+                    <h4>Roda de Carro</h4>
+                  </option>
+                  <option value="nda">
+                    <h4>Nenhuma das Alternativas</h4>
+                  </option>
+                  </select>
+              {%endif%}
           </td>
           {%if metodo=="POST":%}
           {%if entrega1 == "skate":%}
@@ -67,16 +83,32 @@
           <td>1º Sprint</td>
         </tr>
         <tr class="td2">
-          <td><select class="entrega" id="Entrega2" name="entrega2">
-              <option value="patinete">
-                <h4>Patinete</h4>
-              </option>
-              <option value="chassi">
-                <h4>Chassi de Carro</h4>
-              </option>
-              <option value="nda">
-                <h4>Nenhuma das Alternativas</h4>
-              </option>
+          <td> 
+            {%if metodo=="GET":%}
+              <select class="entrega" id="Entrega2" name="entrega2">
+                <option value="patinete">
+                  <h4>Patinete</h4>
+                </option>
+                <option value="chassi">
+                  <h4>Chassi de Carro</h4>
+                </option>
+                <option value="nda">
+                  <h4>Nenhuma das Alternativas</h4>
+                </option>
+              </select>
+            {%else:%}
+              <select class="entrega" id="Entrega2" name="entrega2">
+                <option value="patinete">
+                  <h4>Patinete</h4>
+                </option>
+                <option value="chassi">
+                  <h4>Chassi de Carro</h4>
+                </option>
+                <option value="nda">
+                  <h4>Nenhuma das Alternativas</h4>
+                </option>
+              </select>
+            {%endif%}
           </td>
           {%if metodo=="POST":%}
           {%if entrega2 == "patinete":%}
@@ -106,16 +138,32 @@
           <td>2º Sprint</td>
         </tr>
         <tr class="td3">
-          <td><select class="entrega" id="Entrega3" name="entrega3">
-              <option value="nda">
-                <h4>Nenhuma das Alternativas</h4>
-              </option>
-              <option value="carcaça">
-                <h4>Carcaça de Carro</h4>
-              </option>
-              <option value="moto">
-                <h4>Moto</h4>
-              </option>
+          <td>
+            {%if metodo=="GET":%}
+              <select class="entrega" id="Entrega3" name="entrega3">
+                <option value="nda">
+                  <h4>Nenhuma das Alternativas</h4>
+                </option>
+                <option value="carcaça">
+                  <h4>Carcaça de Carro</h4>
+                </option>
+                <option value="moto">
+                  <h4>Moto</h4>
+                </option>
+                </select>
+            {%else:%}
+              <select class="entrega" id="Entrega3" name="entrega3">
+                <option value="moto">
+                  <h4>Moto</h4>
+                </option>
+                <option value="carcaça">
+                  <h4>Carcaça de Carro</h4>
+                </option>
+                <option value="nda">
+                  <h4>Nenhuma das Alternativas</h4>
+                </option>
+                </select>
+            {%endif%}
           </td>
           {%if metodo=="POST":%}
           {%if entrega3 == "moto":%}
