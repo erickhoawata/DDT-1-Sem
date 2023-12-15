@@ -1,4 +1,5 @@
-# DDT 1ºBim
+# DDT 1ºSem
+
 <div align="center">
 
 ![githubtela](https://github.com/erickhoawata/DDT-1-Bim/assets/126245787/8f1a2ce3-350c-4938-b6cc-99b42e369806)
